@@ -2,6 +2,17 @@
 Anycast is used for developing static HTML websites.
 
 
+## Working with images
+In `bin` directory there is three bash script that can be modified when you have
+checked out branch `north-collective-dev`:
+
+```
+./bin/identify.sh
+./bin/crop.sh
+./bin/convert.sh
+```
+Each image must be verified manually to see how op optimize an image.
+
 ## Development
 Develop on branch `north-collective-dev`
 
