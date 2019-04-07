@@ -5,7 +5,7 @@ help:
 
 .PHONY: start
 start: ## start dev environment
-	@modd -f support/modd.dev.conf
+	@./bin/modd -f support/modd.dev.conf
 
 .PHONY: public
 public: ## lists the public directory

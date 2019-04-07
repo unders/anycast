@@ -1,3 +1,9 @@
+/bin/modd-0.8-osx64
+/bin/modd
+/bin/README.md
+/bin/servdir
+/bin/tmplgen
+
 # Logs
 logs
 *.log
