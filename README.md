@@ -7,6 +7,14 @@ Everything under the `public` directory will be deployed to `stag` and `prod` se
 ### Local development
 Develop on branch `north-collective-dev`
 
+#### Development
+
+##### Options 1
+Start dev server with `make start` command and write HTML and Sass inside `src` directory.
+
+##### Option 2
+Write directly to `public folder`.
+
 ```
 git checkout north-collective-dev
 git rebase master
