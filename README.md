@@ -13,7 +13,7 @@ Develop on branch `north-collective-dev`
 Start dev server with `make start` command and write HTML and Sass inside `src` directory.
 
 ##### Option 2
-Write directly to `public folder`.
+Write directly to `public` folder.
 
 ```
 git checkout north-collective-dev
