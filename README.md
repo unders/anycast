@@ -39,7 +39,7 @@ Deploy `public` folder to `stag` server:
 ```
 git checkout north-collective-stag
 git rebase north-collective-dev
-git push north-collective-stag origin
+git push
 ```
 
 ### Production
@@ -48,7 +48,7 @@ Deploy `public` folder to `prod` server:
 ```
 git checkout north-collective-prod
 git rebase north-collective-stag
-git push north-collective-prod origin
+git push
 ```
 
 ## Installing development tools
