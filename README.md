@@ -63,3 +63,12 @@ npm install -g imageoptim-cli
 
 ## Online tools
 
+### Images
+* [Pixel Density Display Listing](https://pixensity.com/)
+* [Placeholder](https://placeholder.com/)
+* [ImageOptim](https://imageoptim.com/mac)
+* [ImageOptim-CLI](https://jamiemason.github.io/ImageOptim-CLI/)
+
+### Favicon
+* [Favicon Generator](https://realfavicongenerator.net/)
+
