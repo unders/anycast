@@ -1,19 +1,9 @@
 # Anycast
 Anycast is used for developing static HTML websites.
 
-## Usage
-Everything under the `public` directory will be deployed to `stag` and `prod` server.
 
-### Local development
+## Development
 Develop on branch `north-collective-dev`
-
-#### Development
-
-##### Options 1
-Start dev server with `make start` command and write HTML and Sass inside `src` directory.
-
-##### Option 2
-Write directly to `public` folder.
 
 ```
 git checkout north-collective-dev
@@ -22,7 +12,17 @@ git commit
 git push
 ```
 
-### Staging server
+#### Options 1
+Start dev server with `make start` and write HTML and Sass inside `src` directory.
+
+#### Option 2
+Write directly to `public` folder.
+
+
+## Deploy
+Everything under the `public` directory will be deployed to `stag` and `prod` server.
+
+### Staging
 Deploy `public` folder to `stag` server:
 
 ```
@@ -31,7 +31,7 @@ git rebase north-collective-dev
 git push north-collective-stag origin
 ```
 
-### Production server
+### Production
 Deploy `public` folder to `prod` server:
 
 ```
