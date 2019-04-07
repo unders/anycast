@@ -1,11 +1,3 @@
-sITTAG :=v0.0.12
-
-BUILDSTAMP :=$(shell date -u '+%Y-%m-%dT%I:%M%p')
-GITHASH :=$(shell git rev-parse HEAD)
-VERSION := support/deployed-version.txt
-PREVIOUS := support/config/deployed-previous.txt
-DEPLOYED_VERSION := public/deployed-version.txt
-
 .PHONY: help
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -15,6 +7,14 @@ help:
 start: ## start dev environment
 	@modd -f support/modd.dev.conf
 
+.PHONY: public
+public: ## lists the public directory
+	@tree public
+
+.PHONY: src
+src: ## lists the src directory
+	@tree src
+
 .PHONY: tree
-tree: ## lists the file structure
-	@tree -I 'dist|node_modules|build|'
+tree: ## lists the file structure except public and src directory
+	@tree -I 'dist|node_modules|build|public|src'
