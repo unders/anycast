@@ -56,6 +56,9 @@ git push
 ### Live reloading
 * Use the livereload plugin and point it to the `public` directory
 
+### Node dependencies
+`npm install`
+
 ### Generating HTML & CSS from HTML templates and Sass:
 
 ```
