@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../../../src/sass/main.scss",
+		"../../../src/sass/_boxmodel.scss",
+		"../../../src/sass/_layout.scss",
+		"../../../src/sass/_palette.scss"
+	],
+	"sourcesContent": [
+		"@import \"./boxmodel\";\n@import \"./layout\";\n@import \"./palette\";\n\n\n//\n// RESET\n//\n\nfigure {\n  margin:0;\n}\n\nbody {\n  background: $bg_body;\n}\n\n",
+		"/*\n  Universal Box Sizing with Inheritance\n  Read more: https://css-tricks.com/box-sizing/\n*/\nhtml {\n  box-sizing: border-box;\n}\n*, *:before, *:after {\n  box-sizing: inherit;\n}\n",
+		"//\n// A MOBILE FIRST GRID\n//\n@supports (display: grid) {\n  //\n  // PAGE GRID\n  //\n  header {\n    grid-area: hd;\n  }\n  main {\n    grid-area: main;\n  }\n  footer {\n    grid-area: ft;\n  }\n  .container {\n    display: grid;\n    grid-template-areas: \"hd\" \"main\" \"ft\";\n    grid-template-rows: 300px auto 40px;\n    height: 100vh;\n  }\n}\n",
+		"$bg_body: #F9F9F9;\n"
+	],
+	"names": [],
+	"mappings": "ACAA;;;EAGE;AACF,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,UAAU,GACvB;;AACD,AAAA,CAAC,EAAE,CAAC,AAAA,OAAO,EAAE,CAAC,AAAA,MAAM,CAAC;EACnB,UAAU,EAAE,OAAO,GACpB;;ACNwB,SAAC,EAAf,OAAO,EAAE,IAAI;EAItB,AAAA,MAAM,CAAC;IACL,SAAS,EAAE,EAAE,GACd;EACD,AAAA,IAAI,CAAC;IACH,SAAS,EAAE,IAAI,GAChB;EACD,AAAA,MAAM,CAAC;IACL,SAAS,EAAE,EAAE,GACd;EACD,AAAA,UAAU,CAAC;IACT,OAAO,EAAE,IAAI;IACb,mBAAmB,EAAE,gBAAgB;IACrC,kBAAkB,EAAE,eAAe;IACnC,MAAM,EAAE,KAAK,GACd;;AFZH,AAAA,MAAM,CAAC;EACL,MAAM,EAAC,CAAC,GACT;;AAED,AAAA,IAAI,CAAC;EACH,UAAU,EGdF,OAAO,GHehB"
+}

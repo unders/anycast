@@ -1,0 +1,71 @@
+#
+# This is the tmplgen data file, see more about TOML files here:
+#
+#     * https://github.com/toml-lang/toml
+#     * https://goo.gl/CEGc3C
+#
+
+##
+## Layout derectives
+##
+
+[[Layouts]]
+# This it the default layout
+path = "/"
+Filename = "main.html"
+
+[[Layouts]]
+# This layout is used for 404.html page  - if you want a different layouts for a page.
+path = "/404.html"
+Filename = "error.html"
+
+##
+##  Template data
+##                  - Key value pair unders .String namespac
+##                  - Array Maps unders .Array namespace
+##
+##   - Below, you can add data that you can  access inside your HTML templates.
+##
+
+#
+# Usage:
+#
+#          {{ .String.Title }}     =>     Anycast default Project
+#
+# `Key = value` added under [String] is accessible inside
+# your HTML templates.
+#
+# Add your own string values here:
+#
+[String]
+Title = "Anycast"
+Title_Index = "Anycast Index page"
+Title_404 = "Page Not Found"
+
+
+#
+# Usage:
+#
+#       <ul>
+#           {{- range .Array.Users }}
+#               <li>
+#                   {{ .FirstName }}
+#                   {{ .LastName }}
+#                   {{ .Email }}
+#               </li>
+#           {{- end }}
+#       </ul>
+#
+# Add your own Data arrays here:
+#
+[[Array.Header]]
+    Name = "Anycast Base Project"
+    URL = "/"
+
+[[Array.Header]]
+    Name = "Contact"
+    URL = "/contact"
+
+[[Array.Footer]]
+    Name = "Provider"
+    URL = "/"
