@@ -53,11 +53,14 @@ git push
 
 ## Installing development tools
 
+### Tree
+* `brew install tree`
+
 ### Live reloading
 * Use the livereload plugin and point it to the `public` directory
 
 ### Node dependencies
-`npm install`
+* `npm install`
 
 ### Generating HTML & CSS from HTML templates and Sass:
 cd ./bin
