@@ -21,23 +21,17 @@
 // -------------------------
 
 @import "layout/container";
-@import "layout/main";
 @import "layout/list";
-@import "layout/inline-list";
 
 
 // Components
 // -------------------------
 
 @import "components/button";
-@import "components/icon";
-@import "components/section";
-@import "components/footer";
 
 
 // Utilities
 // -------------------------
 
-@import "utilities/type";
 @import "utilities/spacing";
 @import "utilities/accessibility";
