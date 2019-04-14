@@ -1,0 +1,13 @@
+//
+// LAYOUT / SECTION
+//-----------------------------------------------------------------------
+
+.l-section {
+  margin-top: $space-huge;
+  margin-bottom: $space-huge;
+
+  @media #{$breakpoint-medium} {
+    margin-top: $space-huge-md;
+    margin-bottom: $space-huge-md;
+  }
+}
