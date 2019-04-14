@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-  {{ template "part/navigation" . }}
-  {{- block "main" . }} {{ end }}
-  {{ template "part/footer" . }}
+  <div class="l-container">
+    {{ template "part/navigation" . }}
+    {{- block "main" . }} {{ end }}
+    {{ template "part/footer" . }}
+  </div>
 </body>
 </html>

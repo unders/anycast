@@ -1,0 +1,60 @@
+//
+// LAYOUT / GRID
+//-----------------------------------------------------------------------
+
+.l-grid {
+
+  @media #{$breakpoint-medium} {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: $space-base;
+  }
+}
+
+
+// Span
+// -------------------------
+
+.l-grid__item--span-2 {
+  grid-column-end: span 2;
+}
+
+.l-grid__item--span-3 {
+  grid-column-end: span 3;
+}
+
+.l-grid__item--span-4 {
+  grid-column-end: span 4;
+}
+
+.l-grid__item--span-5 {
+  grid-column-end: span 5;
+}
+
+.l-grid__item--span-6 {
+  grid-column-end: span 6;
+}
+
+
+// Offset
+// -------------------------
+
+.l-grid__item--offset-1 {
+  grid-column-start: 2;
+}
+
+.l-grid__item--offset-2 {
+  grid-column-start: 3;
+}
+
+.l-grid__item--offset-3 {
+  grid-column-start: 4;
+}
+
+.l-grid__item--offset-4 {
+  grid-column-start: 5;
+}
+
+.l-grid__item--offset-5 {
+  grid-column-start: 6;
+}
