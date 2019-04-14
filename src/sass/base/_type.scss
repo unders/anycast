@@ -47,7 +47,15 @@ h2 {
 // -------------------------
 
 p {
+  & + & {
+    margin-top: $space-base;
+  }
 
+  @media #{$breakpoint-medium} {
+    & + & {
+      margin-top: $space-base-md;
+    }
+  }
 }
 
 
@@ -56,7 +64,6 @@ p {
 
 a {
   color: currentColor;
-  font-weight: bold;
   text-decoration: underline;
 
   &:hover, &:focus {

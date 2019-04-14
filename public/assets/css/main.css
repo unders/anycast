@@ -7,7 +7,15 @@ html {
   box-sizing: border-box; }
 
 body {
-  background-color: #f5f5f5; }
+  padding-bottom: 8.55rem;
+  background-color: #f5f5f5;
+  background-image: url("/assets/image/bg-mountains.jpg"), linear-gradient(to bottom, whitesmoke, rgba(245, 245, 245, 0)), url("/assets/image/bg-mountains.jpg");
+  background-position: top center, bottom 13.22vw center, bottom -35vw center;
+  background-size: contain, 100% 13.22vw, contain;
+  background-repeat: no-repeat; }
+  @media only screen and (min-width: 48rem) {
+    body {
+      padding-bottom: 10.125rem; } }
 
 img {
   max-width: 100%;
@@ -47,9 +55,15 @@ h2 {
     h2 {
       font-size: 1.5rem; } }
 
+p + p {
+  margin-top: 1.425rem; }
+
+@media only screen and (min-width: 48rem) {
+  p + p {
+    margin-top: 1.6875rem; } }
+
 a {
   color: currentColor;
-  font-weight: bold;
   text-decoration: underline; }
   a:hover, a:focus {
     text-decoration: none; }
@@ -63,7 +77,7 @@ address {
 .l-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 65rem;
+  max-width: 70rem;
   padding: 0 1.06875rem; }
   @media only screen and (min-width: 48rem) {
     .l-container {
