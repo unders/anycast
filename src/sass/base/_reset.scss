@@ -17,11 +17,7 @@ html {
 }
 
 body {
-  background: $white;
-
-  * + * {
-    margin-top: $space-small;
-  }
+  background-color: $white;
 }
 
 img {
@@ -36,17 +32,4 @@ img {
 
 ul, ol, {
   list-style: none;
-}
-
-svg {
-  position: relative;
-  top: -2px;
-  display: inline-block;
-  vertical-align: middle;
-
-  g,
-  path,
-  polygon {
-    fill: $fg-color;
-  }
 }

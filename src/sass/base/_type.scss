@@ -17,10 +17,6 @@ body {
   }
 }
 
-strong {
-  font-weight: bold;
-}
-
 
 // Headings
 // -------------------------
@@ -67,4 +63,16 @@ a {
   &:hover, &:focus {
     text-decoration: none;
   }
+}
+
+
+// Other
+// -------------------------
+
+strong {
+  font-weight: bold;
+}
+
+address {
+  font-style: normal;
 }
