@@ -57,22 +57,58 @@
   }
 }
 
+
+// Bottom margin
+// -------------------------
+
 .u-margin-bottom-none {
   margin-bottom: 0 !important;
 }
 
 .u-margin-bottom-small {
+  margin-bottom: $space-xsmall !important;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $space-xsmall-md !important;
+  }
+}
+
+.u-margin-bottom-small {
   margin-bottom: $space-small !important;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $space-small-md !important;
+  }
 }
 
 .u-margin-bottom-baseline {
   margin-bottom: $space-base !important;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $space-base-md !important;
+  }
 }
 
 .u-margin-bottom-large {
   margin-bottom: $space-large !important;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $space-large-md !important;
+  }
 }
 
-.u-margin-right-xsmall {
-  margin-right: $space-xsmall !important;
+.u-margin-bottom-large {
+  margin-bottom: $space-xlarge !important;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $space-xlarge-md !important;
+  }
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: $space-huge !important;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $space-huge-md !important;
+  }
 }

@@ -1,0 +1,20 @@
+//
+// UTILITIES / TYPE
+//-----------------------------------------------------------------------
+
+.u-header-huge {
+  font-size: 3rem;
+  font-weight: bold;
+
+  @media #{$breakpoint-medium} {
+    font-size: 5rem;
+  }
+}
+
+.u-text-large {
+  font-size: $large-font-size;
+
+  @media #{$breakpoint-medium} {
+    font-size: $large-font-size-md;
+  }
+}
