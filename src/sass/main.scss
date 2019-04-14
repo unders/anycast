@@ -1,17 +1,43 @@
-@import "./boxmodel";
-@import "./layout";
-@import "./palette";
-
-
 //
-// RESET
-//
+// MAIN
+//-----------------------------------------------------------------------
 
-figure {
-  margin:0;
-}
+// Setup
+// -------------------------
 
-body {
-  background: $bg_body;
-}
+@import "setup/variables";
+@import "setup/mixins";
+@import "setup/keyframes";
 
+
+// Base
+// -------------------------
+
+@import "base/reset";
+@import "base/type";
+
+
+// Layout
+// -------------------------
+
+@import "layout/container";
+@import "layout/main";
+@import "layout/list";
+@import "layout/inline-list";
+
+
+// Components
+// -------------------------
+
+@import "components/button";
+@import "components/icon";
+@import "components/section";
+@import "components/footer";
+
+
+// Utilities
+// -------------------------
+
+@import "utilities/type";
+@import "utilities/spacing";
+@import "utilities/accessibility";
