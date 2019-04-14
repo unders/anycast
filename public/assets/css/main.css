@@ -39,14 +39,13 @@ h1 {
   font-size: 1.675rem; }
   @media only screen and (min-width: 48rem) {
     h1 {
-      font-size: 3rem;
-      line-height: 1.25; } }
+      font-size: 3rem; } }
 
 h2 {
   font-size: 1.375rem; }
   @media only screen and (min-width: 48rem) {
     h2 {
-      font-size: 2.375rem; } }
+      font-size: 1.5rem; } }
 
 a {
   color: currentColor;
@@ -105,6 +104,14 @@ address {
 
 .l-grid__item--offset-5 {
   grid-column-start: 6; }
+
+.l-section {
+  margin-top: 8.55rem;
+  margin-bottom: 8.55rem; }
+  @media only screen and (min-width: 48rem) {
+    .l-section {
+      margin-top: 10.125rem;
+      margin-bottom: 10.125rem; } }
 
 .l-list {
   width: 100%; }
@@ -173,25 +180,62 @@ address {
       margin-top: 3.375rem !important; } }
 
 .u-margin-top-huge {
-  margin-top: 5.7rem !important; }
+  margin-top: 8.55rem !important; }
   @media only screen and (min-width: 48rem) {
     .u-margin-top-huge {
-      margin-top: 6.75rem !important; } }
+      margin-top: 10.125rem !important; } }
 
 .u-margin-bottom-none {
   margin-bottom: 0 !important; }
 
 .u-margin-bottom-small {
+  margin-bottom: 0.7125rem !important; }
+  @media only screen and (min-width: 48rem) {
+    .u-margin-bottom-small {
+      margin-bottom: 0.84375rem !important; } }
+
+.u-margin-bottom-small {
   margin-bottom: 1.06875rem !important; }
+  @media only screen and (min-width: 48rem) {
+    .u-margin-bottom-small {
+      margin-bottom: 1.26562rem !important; } }
 
 .u-margin-bottom-baseline {
   margin-bottom: 1.425rem !important; }
+  @media only screen and (min-width: 48rem) {
+    .u-margin-bottom-baseline {
+      margin-bottom: 1.6875rem !important; } }
 
 .u-margin-bottom-large {
   margin-bottom: 2.1375rem !important; }
+  @media only screen and (min-width: 48rem) {
+    .u-margin-bottom-large {
+      margin-bottom: 2.53125rem !important; } }
 
-.u-margin-right-xsmall {
-  margin-right: 0.7125rem !important; }
+.u-margin-bottom-large {
+  margin-bottom: 2.85rem !important; }
+  @media only screen and (min-width: 48rem) {
+    .u-margin-bottom-large {
+      margin-bottom: 3.375rem !important; } }
+
+.u-margin-bottom-huge {
+  margin-bottom: 8.55rem !important; }
+  @media only screen and (min-width: 48rem) {
+    .u-margin-bottom-huge {
+      margin-bottom: 10.125rem !important; } }
+
+.u-header-huge {
+  font-size: 3rem;
+  font-weight: bold; }
+  @media only screen and (min-width: 48rem) {
+    .u-header-huge {
+      font-size: 5rem; } }
+
+.u-text-large {
+  font-size: 1.25rem; }
+  @media only screen and (min-width: 48rem) {
+    .u-text-large {
+      font-size: 1.5rem; } }
 
 .u-visually-hidden {
   position: absolute !important;
