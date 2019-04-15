@@ -36,6 +36,7 @@ h1 {
 
 h2 {
   font-size: 1.375rem;
+  max-width: 70%;
 
   @media #{$breakpoint-medium} {
     font-size: 1.5rem;
