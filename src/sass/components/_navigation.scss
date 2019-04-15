@@ -1,0 +1,20 @@
+//
+// COMPONENTS / NAVIGATION
+//-----------------------------------------------------------------------
+
+.c-navigation {
+  padding-top: $space-base;
+
+  @media #{$breakpoint-medium} {
+    padding-top: $space-xlarge-md;
+  }
+}
+
+.c-navigation__link {
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}

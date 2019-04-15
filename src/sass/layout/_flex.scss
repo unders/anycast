@@ -1,0 +1,12 @@
+//
+// LAYOUT / FLEX
+//-----------------------------------------------------------------------
+
+.l-flex {
+  display: flex;
+  align-items: center;
+}
+
+.l-flex--apart {
+  justify-content: space-between;
+}
