@@ -1,0 +1,20 @@
+//
+// COMPONENTS / AVATAR
+//-----------------------------------------------------------------------
+
+.c-avatar {
+  display: block;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  max-width: none;
+
+  @media #{$breakpoint-medium} {
+
+  }
+}
+
+.c-avatar--small {
+  width: 2.5rem;
+  height: 2.5rem;
+}
