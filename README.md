@@ -1,8 +1,6 @@
 # Anycast
 Anycast is used for developing static HTML websites.
 
-## trigger deploy 9
-
 
 ## Working with images
 In `bin` directory there is three bash script that can be modified when you have
