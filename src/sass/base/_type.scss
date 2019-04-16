@@ -36,10 +36,18 @@ h1 {
 
 h2 {
   font-size: 1.375rem;
-  max-width: 70%;
+  max-width: 20rem;
 
   @media #{$breakpoint-medium} {
     font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.125rem;
+
+  @media #{$breakpoint-medium} {
+    font-size: 1.25rem;
   }
 }
 
@@ -49,12 +57,12 @@ h2 {
 
 p {
   & + & {
-    margin-top: $space-base;
+    margin-top: $space-small;
   }
 
   @media #{$breakpoint-medium} {
     & + & {
-      margin-top: $space-base-md;
+      margin-top: $space-small-md;
     }
   }
 }

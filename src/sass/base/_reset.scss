@@ -22,12 +22,14 @@ body {
   background-image: url('/assets/image/bg-mountains.jpg'),
                     linear-gradient(to bottom, rgba($white, 1), rgba($white, 0)),
                     url('/assets/image/bg-mountains.jpg');
-  background-position: top center, bottom 13.22vw center, bottom -35vw center;
-  background-size: contain, 100% 13.22vw, contain;
+  background-position: top center, bottom 30vw center, bottom -35vw center;
+  background-size: 200% auto, 100% 13.22vw, 125% auto;
   background-repeat: no-repeat;
 
   @media #{$breakpoint-medium} {
     padding-bottom: $space-huge-md;
+    background-position: top center, bottom 13.22vw center, bottom -35vw center;
+    background-size: contain, 100% 13.22vw, contain;
   }
 }
 

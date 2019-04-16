@@ -5,13 +5,17 @@
 .c-avatar {
   display: block;
   border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
-  max-width: none;
+  width: 8rem;
+  max-width: 100%;
 
   @media #{$breakpoint-medium} {
-
+    width: 10rem;
   }
+}
+
+.c-avatar--small {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .c-avatar--small {
