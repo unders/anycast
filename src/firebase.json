@@ -11,10 +11,6 @@
       "source": "/",
       "headers": [
         {
-          "key": "Link",
-          "value": "</assets/css/main.css>;rel=preload;as=style;nopush"
-        },
-        {
           "key": "Cache-Control",
           "value": "public, max-age=3600"
         }
