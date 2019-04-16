@@ -1,7 +1,7 @@
 # Anycast
 Anycast is used for developing static HTML websites.
 
-## trigger deploy 5
+## trigger deploy 6
 
 
 ## Working with images
