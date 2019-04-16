@@ -18,3 +18,15 @@
     text-decoration: underline;
   }
 }
+
+.c-navigation__logo {
+  img {
+    height: 32px;
+  }
+
+  @media #{$breakpoint-medium} {
+    img {
+      height: 41px;
+    }
+  }
+}

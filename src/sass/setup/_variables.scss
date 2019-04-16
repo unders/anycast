@@ -42,7 +42,7 @@ $space-xsmall:              $space-base * 0.5;
 $space-small:               $space-base * 0.75;
 $space-large:               $space-base * 1.5;
 $space-xlarge:              $space-base * 3;
-$space-huge:                $space-base * 6;
+$space-huge:                $space-base * 4;
 
 $space-base-md:             $base-font-size-md * $base-line-height-md;
 $space-tiny-md:             $space-base-md * 0.25;
@@ -50,11 +50,12 @@ $space-xsmall-md:           $space-base-md * 0.5;
 $space-small-md:            $space-base-md * 0.75;
 $space-large-md:            $space-base-md * 1.5;
 $space-xlarge-md:           $space-base-md * 3;
-$space-huge-md:             $space-base-md * 6;
+$space-huge-md:             $space-base-md * 7;
 
 
 // Breakpoints
 // -------------------------
 
+$breakpoint-small-max:      "only screen and (max-width : 47.99rem)";
 $breakpoint-medium:         "only screen and (min-width : 48rem)";
 $breakpoint-large:          "only screen and (min-width : 60rem)";

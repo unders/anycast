@@ -7,15 +7,17 @@ html {
   box-sizing: border-box; }
 
 body {
-  padding-bottom: 8.55rem;
+  padding-bottom: 5.7rem;
   background-color: #f5f5f5;
   background-image: url("/assets/image/bg-mountains.jpg"), linear-gradient(to bottom, whitesmoke, rgba(245, 245, 245, 0)), url("/assets/image/bg-mountains.jpg");
-  background-position: top center, bottom 13.22vw center, bottom -35vw center;
-  background-size: contain, 100% 13.22vw, contain;
+  background-position: top center, bottom 30vw center, bottom -35vw center;
+  background-size: 200% auto, 100% 13.22vw, 125% auto;
   background-repeat: no-repeat; }
   @media only screen and (min-width: 48rem) {
     body {
-      padding-bottom: 10.125rem; } }
+      padding-bottom: 11.8125rem;
+      background-position: top center, bottom 13.22vw center, bottom -35vw center;
+      background-size: contain, 100% 13.22vw, contain; } }
 
 img {
   max-width: 100%;
@@ -51,17 +53,23 @@ h1 {
 
 h2 {
   font-size: 1.375rem;
-  max-width: 70%; }
+  max-width: 20rem; }
   @media only screen and (min-width: 48rem) {
     h2 {
       font-size: 1.5rem; } }
 
+h3 {
+  font-size: 1.125rem; }
+  @media only screen and (min-width: 48rem) {
+    h3 {
+      font-size: 1.25rem; } }
+
 p + p {
-  margin-top: 1.425rem; }
+  margin-top: 1.06875rem; }
 
 @media only screen and (min-width: 48rem) {
   p + p {
-    margin-top: 1.6875rem; } }
+    margin-top: 1.26562rem; } }
 
 a {
   color: currentColor;
@@ -93,20 +101,19 @@ address {
       grid-template-columns: repeat(6, 1fr);
       grid-gap: 4.275rem; } }
 
-.l-grid__item--span-2 {
-  grid-column-end: span 2; }
-
-.l-grid__item--span-3 {
-  grid-column-end: span 3; }
-
-.l-grid__item--span-4 {
-  grid-column-end: span 4; }
-
-.l-grid__item--span-5 {
-  grid-column-end: span 5; }
-
-.l-grid__item--span-6 {
-  grid-column-end: span 6; }
+@media only screen and (min-width: 48rem) {
+  .l-grid__item--span-1 {
+    grid-column-end: span 1; }
+  .l-grid__item--span-2 {
+    grid-column-end: span 2; }
+  .l-grid__item--span-3 {
+    grid-column-end: span 3; }
+  .l-grid__item--span-4 {
+    grid-column-end: span 4; }
+  .l-grid__item--span-5 {
+    grid-column-end: span 5; }
+  .l-grid__item--span-6 {
+    grid-column-end: span 6; } }
 
 @media only screen and (min-width: 48rem) {
   .l-grid__item--offset-1 {
@@ -128,12 +135,12 @@ address {
   justify-content: space-between; }
 
 .l-section {
-  margin-top: 8.55rem;
-  margin-bottom: 8.55rem; }
+  margin-top: 5.7rem;
+  margin-bottom: 5.7rem; }
   @media only screen and (min-width: 48rem) {
     .l-section {
-      margin-top: 10.125rem;
-      margin-bottom: 10.125rem; } }
+      margin-top: 11.8125rem;
+      margin-bottom: 11.8125rem; } }
 
 .l-list {
   display: flex;
@@ -173,9 +180,15 @@ address {
 .c-avatar {
   display: block;
   border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
-  max-width: none; }
+  width: 8rem;
+  max-width: 100%; }
+  @media only screen and (min-width: 48rem) {
+    .c-avatar {
+      width: 10rem; } }
+
+.c-avatar--small {
+  width: 2.5rem;
+  height: 2.5rem; }
 
 .c-avatar--small {
   width: 2.5rem;
@@ -192,6 +205,13 @@ address {
   font-weight: bold; }
   .c-navigation__link:hover, .c-navigation__link:focus {
     text-decoration: underline; }
+
+.c-navigation__logo img {
+  height: 32px; }
+
+@media only screen and (min-width: 48rem) {
+  .c-navigation__logo img {
+    height: 41px; } }
 
 .u-margin-top-none {
   margin-top: 0 !important; }
@@ -227,10 +247,10 @@ address {
       margin-top: 5.0625rem !important; } }
 
 .u-margin-top-huge {
-  margin-top: 8.55rem !important; }
+  margin-top: 5.7rem !important; }
   @media only screen and (min-width: 48rem) {
     .u-margin-top-huge {
-      margin-top: 10.125rem !important; } }
+      margin-top: 11.8125rem !important; } }
 
 .u-margin-bottom-none {
   margin-bottom: 0 !important; }
@@ -266,13 +286,13 @@ address {
       margin-bottom: 5.0625rem !important; } }
 
 .u-margin-bottom-huge {
-  margin-bottom: 8.55rem !important; }
+  margin-bottom: 5.7rem !important; }
   @media only screen and (min-width: 48rem) {
     .u-margin-bottom-huge {
-      margin-bottom: 10.125rem !important; } }
+      margin-bottom: 11.8125rem !important; } }
 
 .u-header-huge {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: bold; }
   @media only screen and (min-width: 48rem) {
     .u-header-huge {
@@ -283,6 +303,20 @@ address {
   @media only screen and (min-width: 48rem) {
     .u-text-large {
       font-size: 1.5rem; } }
+
+@media only screen and (max-width: 47.99rem) {
+  .u-align-center-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; } }
+
+@media only screen and (min-width: 48rem) {
+  .u-align-left-md {
+    display: unset;
+    flex-direction: unset;
+    align-items: unset;
+    text-align: unset; } }
 
 .u-visually-hidden {
   position: absolute !important;
@@ -296,5 +330,54 @@ address {
   body:hover .u-visually-hidden input,
   body:hover .u-visually-hidden button {
     display: none !important; }
+
+.u-overline {
+  position: relative;
+  padding-top: 2.1375rem; }
+  .u-overline:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-color: rgba(53, 3, 179, 0.2); }
+  @media only screen and (min-width: 48rem) {
+    .u-overline {
+      padding-top: 2.53125rem; } }
+
+.u-offset-underline {
+  position: relative;
+  padding-bottom: 2.1375rem; }
+  .u-offset-underline:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: -100vw;
+    width: calc(100vw + 100px);
+    height: 6px;
+    background-image: linear-gradient(to right, rgba(53, 3, 179, 0) 75vw, rgba(53, 3, 179, 0.2) 85vw, rgba(53, 3, 179, 0.2) 100%); }
+  @media only screen and (min-width: 48rem) {
+    .u-offset-underline {
+      padding-bottom: 2.53125rem; }
+      .u-offset-underline:before {
+        width: calc(100vw + 175px); } }
+
+.u-offset-overline {
+  position: relative;
+  padding-top: 2.1375rem; }
+  .u-offset-overline:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -100vw;
+    width: calc(100vw + 100px);
+    height: 6px;
+    background-image: linear-gradient(to right, rgba(53, 3, 179, 0) 75vw, rgba(53, 3, 179, 0.2) 85vw, rgba(53, 3, 179, 0.2) 100%); }
+  @media only screen and (min-width: 48rem) {
+    .u-offset-overline {
+      padding-top: 2.53125rem; }
+      .u-offset-overline:before {
+        width: calc(100vw + 175px); } }
 
 /*# sourceMappingURL=main.css.map */
