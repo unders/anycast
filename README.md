@@ -1,6 +1,9 @@
 # Anycast
 Anycast is used for developing static HTML websites.
 
+## Web
+ * [staging](https://north-collective-stag.firebaseapp.com/)
+
 
 ## Working with images
 In `bin` directory there is three bash script that can be modified when you have
