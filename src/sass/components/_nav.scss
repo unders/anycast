@@ -1,0 +1,44 @@
+//
+// NAV
+//-----------------------------------------------------------------------
+
+.c-nav {
+  display: flex;
+
+  &__link {
+    border-radius: $base-border-radius;
+    color: $gray-1;
+    font-size: 1.6rem;
+    line-height: 6.4rem;
+    padding: 0 $grid * 2;
+    display: block;
+
+    &:focus, &:hover, &--current {
+      background: $gray-5;
+    }
+
+  }
+
+  &__icon {
+    margin-right: $grid;
+  }
+
+  &--list {
+    min-width: $grid * 24;
+    flex-direction: column;
+
+    .c-nav__link {
+      text-decoration: none;
+      white-space: nowrap;
+      width: 100%;
+      display: block;
+
+      &:hover, &:focus {
+        //background: $gray-5;
+      }
+
+    }
+
+  }
+
+}

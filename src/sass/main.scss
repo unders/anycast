@@ -1,17 +1,54 @@
-@import "./boxmodel";
-@import "./layout";
-@import "./palette";
-
+// ELEMENTS BY JohannesLeuchovius.com
+//-----------------------------------------------------------------------
 
 //
-// RESET
-//
+// VENDOR
+//---------------------------
 
-figure {
-  margin:0;
-}
+@import "vendor/normalize";
 
-body {
-  background: $bg_body;
-}
+
+// FONTS & ICONS
+//---------------------------
+
+//@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700|Playfair+Display:700');
+@import 'vendor/icons.scss';
+
+
+// BASE
+//---------------------------
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/global";
+@import "base/type";
+@import "base/utilities";
+
+
+// LAYOUTS
+//---------------------------
+
+@import "layouts/base";
+
+
+// COMPONENTS
+//---------------------------
+
+@import "components/navbar";
+@import "components/buttons";
+@import "components/nav";
+@import "components/lists";
+@import "components/grid";
+@import "components/text";
+@import "components/icons";
+@import "components/forms";
+@import "components/badge";
+@import "components/hero";
+@import "components/media";
+@import "components/avatars";
+@import "components/footer";
+@import "components/alerts";
+@import "components/animations";
+@import "components/menu";
+@import "components/filter";
 

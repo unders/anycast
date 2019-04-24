@@ -1,0 +1,28 @@
+//
+// NAVBAR
+//-----------------------------------------------------------------------
+
+.c-navbar {
+  z-index: $zindex-navbar;
+  height: $grid*8;
+  //margin-right: -$gutter/2;
+  //margin-left: -$gutter/2;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+
+  &__brand {
+    background: url("../images/worldtoday.svg") no-repeat scroll center center / 100% auto;
+    text-indent: -999999px;
+    display: block;
+    width: 19rem;
+    height: $grid*8;
+
+    &:hover, &:focus {
+      opacity: .6;
+    }
+
+  }
+
+}

@@ -1,0 +1,43 @@
+//
+// MENU
+//-----------------------------------------------------------------------
+
+.c-menu {
+
+  @media (max-width: $wide-max) { // Drawer style
+
+    // Drawer menu bottom
+
+  }
+
+  @media (min-width: $wide) { // Dropdown style
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+
+    &__toggle {
+      outline: none;
+      margin: 0;
+    }
+
+    &__content {
+      overflow: hidden;
+      border-radius: $base-border-radius;
+      background: $white;
+      position: absolute;
+      top: 100%;
+      right: $grid * 2;
+      margin-top: .3rem;
+      //display: none;
+      z-index: $zindex-menu;
+
+      .toggle-open {
+        display: block;
+        animation: .3s fadeIn both;
+      }
+
+    }
+
+  }
+
+}

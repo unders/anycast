@@ -4,20 +4,143 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Anycast default project">
-    <title>Anycast Index page</title>
-    <link rel="stylesheet" href="/assets/css/classless.css">
+    <meta name="description" content="World Today">
+    <title>World Today</title>
     <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="assets/javascripts/data-toggle.js"></script>
 </head>
 <body>
-    <h1>World Today</h1>
+    <header class="c-navbar l-container">
+
+    <nav class="c-navbar__nav c-nav">
+      <a class="c-nav__link" href="/"><span class="icon icon--arrow-left"></span></a>
+    </nav>
+
+    <a class="c-navbar__brand" href="/">World Today</a>
+
+    <nav class="c-navbar__nav c-nav">
+      <div class="c-nav__entry c-menu">
+        <a class="c-nav__link c-menu__toggle" href="#" data-toggle=".c-navbar .c-menu"><span class="icon icon--user"></span></a>
+        <div class="c-menu__content">
+          <nav class="c-nav c-nav--list">
+            <a href="/profile" class="c-nav__link"><span class="c-nav__icon icon icon--user"></span>Profile</a>
+            <a href="/settings" class="c-nav__link"><span class="c-nav__icon icon icon--settings"></span>Settings</a>
+            <a href="/signout" class="c-nav__link"><span class="c-nav__icon icon icon--log-out"></span>Sign out</a>
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+  </header>
 
 
-  list
+  <main class="l-main">
+
+    <div class="c-filter c-filter--open_">
+      <div class="c-filter_header l-container">
+        <div class="c-filter__title h3">Toplist</div>
+        <button class="c-filter__toggle c-filter__toggle--active_ btn btn--primary"><span class="btn__icon icon icon--sliders"></span>Filter</button>
+      </div>
+      <div class="c-filter__content">
+        <div class="l-container">
+
+          <section class="c-filter__categories">
+            <div class="h4">Sections</div>
+            <a class="c-filter__item" href="#">Business</a> 
+            <a class="c-filter__item c-filter__item--current" href="#">General</a> 
+            <a class="c-filter__item" href="#">Business</a>
+            <a class="c-filter__item" href="#">Environment</a>
+            <a class="c-filter__item" href="#">Economics</a>
+            <a class="c-filter__item" href="#">Politics</a>
+            <a class="c-filter__item" href="#">Technology</a>
+            <a class="c-filter__item" href="#">Science</a>
+            <a class="c-filter__item" href="#">Health</a>
+          </section>
+          <section class="c-filter__categories">
+            <div class="h4">Topics</div>
+            <a class="c-filter__item" href="#">Brexit</a>
+            <a class="c-filter__item" href="#">Meeto</a>
+            <a class="c-filter__item" href="#">Global Warming</a>
+            <a class="c-filter__item" href="#">Donald Trump</a>
+            <a class="c-filter__item" href="#">Migration</a>
+            <a class="c-filter__item" href="#">Melania Trump</a>
+            <a class="c-filter__item" href="#">North Korea</a>
+          </section>
+          <section class="c-filter__sort">
+            <div class="h4">Sort by</div>
+            <a class="c-filter__item" href="#">Trending</a>
+            <a class="c-filter__item" href="#">Newest</a>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <ul class="c-articles l-container">
+      <li class="c-article__item">
+        <span class="c-article__order">1</span>
+        <a href="#" class="c-article__link">Far far away behind the word mountains, far from the countries Vokalia and Consonantia</a> 
+        <ul class="c-article__meta">
+          <li class="c-article__meta-item"><a href="#" class="c-article__meta-link">Vox.com</a></li>
+          <li class="c-article__meta-item">5h ago</li>
+          <li class="c-article__meta-item">2.1k upvotes</li>
+          <li class="c-article__meta-item"><a href="#" class="c-article__meta-link">64 comments</a></li>
+          <li class="c-article__meta-item c-article__meta-item--categories"><a href="#" class="c-article__meta-link">Politics</a><a href="#" class="c-article__meta-link">Brexit</a></li>
+        </ul>
+        <div class="c-article__actions c-menu"> 
+          <button class="c-article__action u-visible--desktop"><span class="icon icon--arrow-up"></span>Upvote</button>
+          <button class="c-article__action c-menu__toggle" data-toggle=".c-article__actions .c-menu__content"><span class="icon icon--more-horizontal"></span></button>
+          <div class="c-menu__content">
+            <div class="c-menu__header u-visible--mobile">
+              <div class="c-article__item c-article__item--snapshot">
+                <span class="c-article__order">1</span>
+                <a href="#" class="c-article__link">Far far away behind the word mountains, far from the countries Vokalia and Consonantia</a>
+                <ul class="c-article__meta">
+                  <li class="c-article__meta-item">Vox.com</li>
+                  <li class="c-article__meta-item">5h ago</li>
+                  <li class="c-article__meta-item">2.1k upvotes</li>
+                  <li class="c-article__meta-item">64 comments</li>
+                </ul>
+              </div>
+            </div>
+            <nav class="c-nav c-nav--list">
+              <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-up"></span>Read article</a>
+              <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-up"></span>Upvote</a>
+              <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--message"></span>Discuss</a>
+              <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--bookmark"></span>Save</a>
+              <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--share"></span>Share</a>
+              <a href="#" class="c-nav__link c-nav_link--divider-above u-visible--mobile"><span class="c-nav__icon icon icon--close"></span>Cancel</a>
+            </nav>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <nav class="nav nav--pagination">
+      <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-left"></span></a>
+      <span class="c-nav__text">1</span>
+      <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-right"></span></a>
+    </nav>
+
+    <div class="c-ad">Google ad</div>
+
+  </main>
+
 
 
     
-        Provider
+
+    <footer class="c-footer l-container">
+
+      <ul class="c-nav">
+        <a class="c-nav__link" href="#">About</a>
+        <a class="c-nav__link" href="#">Privacy</a>
+        <a class="c-nav__link" href="#">Terms</a>
+        <a class="c-nav__link" href="#">Feedback</a>
+        <a class="c-nav__link" href="#">Contact</a>
+      </ul>
+
+    </footer>
 
 </body>
 </html>

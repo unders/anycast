@@ -1,0 +1,38 @@
+//
+// BADGES
+//-----------------------------------------------------------------------
+
+.badge {
+  display: inline-block;
+  padding: 0 $grid;
+  background: $gray-dark;
+  color: $white;
+  font-size: .9rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 2rem;
+
+  &--brand {
+    background: $brand-primary;
+  }
+
+  &--info {
+    background: $brand-info;
+  }
+
+  &--success {
+    background: $brand-success;
+  }
+
+  &--warning, &--yellow {
+    background: $brand-warning;
+  }
+
+  &--danger {
+    background: $brand-danger;
+  }
+
+}

@@ -1,0 +1,25 @@
+//
+// ICONS
+//-----------------------------------------------------------------------
+
+.icon {
+  font-size: 2.2rem;
+
+  &, &:before, &:after {
+    line-height: 0.7;
+  }
+
+  &:before {
+    position: relative;
+    top: 1px;
+  }
+
+  &--medium {
+
+  }
+
+  &--loud {
+    font-size: $grid * 8;
+  }
+
+}

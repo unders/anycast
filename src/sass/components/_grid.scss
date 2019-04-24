@@ -1,0 +1,42 @@
+//
+// GRID
+//-----------------------------------------------------------------------
+
+.grid {
+
+  @media (min-width: $wide) {
+    display: grid;
+    grid-template: auto / repeat(6, 1fr);
+    grid-gap: $grid*4;
+
+    &__item {
+
+      &--1col {
+        grid-column: span 1;
+      }
+
+      &--2col {
+        grid-column: span 2;
+      }
+
+      &--3col {
+        grid-column: span 3;
+      }
+
+      &--4col {
+        grid-column: span 4;
+      }
+
+      &--5col {
+        grid-column: span 5;
+      }
+
+      &--6col {
+        grid-column: span 6;
+      }
+
+    }
+
+  }
+
+}

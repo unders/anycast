@@ -1,0 +1,22 @@
+//
+// FOOTER
+//-----------------------------------------------------------------------
+
+.footer {
+  padding: $grid*6 0 $grid*6-$base-margin;
+
+  &__brand {
+    margin-bottom: $base-margin;
+  }
+
+  @media (min-width: $wide) {
+
+      &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+
+}

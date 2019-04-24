@@ -1,0 +1,25 @@
+//
+// GLOBAL
+//-----------------------------------------------------------------------
+
+html {
+  height: 100%;
+}
+
+body {
+  background: $base-body-background;
+  color: $base-body-color;
+  transition: .2s;
+
+  &.toggle-open {
+    overflow: hidden;
+  }
+
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}

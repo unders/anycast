@@ -1,0 +1,66 @@
+//
+// BASE
+//-----------------------------------------------------------------------
+
+$padding-top:         $grid*12;
+
+// GLOBAL LAOUT
+
+body {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "main"
+    "footer";
+}
+
+.main {
+  padding-top: $padding-top;
+  grid-area: main;
+
+  &--vcenter {
+    display: grid;
+    align-items: center;
+  }
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+// CONTAINERS
+
+.container {
+  padding: 0 2rem;
+
+
+  &--dense {
+    width: 100%;
+    max-width: 48rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &--max {
+    max-width: 120rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: $wide) {
+    padding: 0 $gutter;
+  }
+
+}
+
+article {
+  margin-top: $base-margin*2;
+  margin-bottom: $base-margin*2;
+}
+
+.block {
+  margin-bottom: $base-margin*2;
+}

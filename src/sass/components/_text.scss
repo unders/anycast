@@ -1,0 +1,28 @@
+//
+// TEXTBLOCK
+//-----------------------------------------------------------------------
+
+.textblock {
+  margin-bottom: 12vh; // vertical rythm
+
+  &__title {
+    grid-column: 2 / span 1;
+  }
+
+  &__body {
+    grid-column: 2 / span 1;
+  }
+
+  @media (min-width: $wide) {
+
+    &__title {
+      grid-column: 2 / span 2;
+    }
+
+    &__body {
+      grid-column: span 4;
+    }
+
+  }
+
+}

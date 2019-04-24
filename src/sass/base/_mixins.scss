@@ -1,0 +1,88 @@
+//
+// MIXINS
+//-----------------------------------------------------------------------
+
+@mixin clearfix {
+  &:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+
+@mixin truncate {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin caret {
+
+  &:after {
+    content: '';
+    background: url("../images/icon-chevron-down.svg") no-repeat scroll center left / 100% auto;
+    display: inline-block;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-left: .8rem;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    transition: .2s ease;
+  }
+
+  &.toggle-open:after {
+    transform: rotate(180deg);
+  }
+
+}
+
+@mixin icon {
+  &:before {
+    content: '';
+    display: inline-block;
+  }
+}
+
+@mixin vcenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin abs-cover { // #Elements
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+// FLOATING FORMS
+
+@mixin float-label-input {
+  &::placeholder {
+    opacity: 1;
+    transition: all .2s;
+  }
+  &:placeholder-shown:not(:focus)::placeholder {
+      opacity: 0;
+  }
+}
+
+@mixin float-label-scaled {
+  &:placeholder-shown:not(:focus) + * {
+      font-size: 150%;
+      opacity: .5;
+      @content;
+  }
+}

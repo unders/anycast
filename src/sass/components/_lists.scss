@@ -1,0 +1,29 @@
+//
+// LISTS
+//-----------------------------------------------------------------------
+
+.list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $grid * 2;
+
+  &__item {
+    margin-right: $grid * 2;
+    white-space: nowrap;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+  }
+
+
+  &--muted {
+    color: $gray-light;
+  }
+
+  &--tiny {
+    font-size: 1.3rem;
+  }
+
+}

@@ -39,7 +39,7 @@ Filename = "error.html"
 #
 [String]
 Title = "Anycast"
-Title_Index = "Anycast Index page"
+Title_Index = "World Today"
 Title_404 = "Page Not Found"
 
 
