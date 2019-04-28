@@ -1,3 +1,32 @@
 //
 // MODAL
 //-----------------------------------------------------------------------
+
+.l-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: $zindex-modal;
+  display: block;
+  width: 75%;
+  overflow: hidden;
+  background-color: $color-body-background;
+  border: 0;
+  border-radius: $border-radius;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+
+  &--full {
+    padding: $grid-gutter;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: none;
+  }
+
+  @media #{$breakpoint-medium} {
+
+  }
+}

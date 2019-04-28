@@ -9,9 +9,9 @@
         <button class="c-filter__toggle btn btn--primary" data-toggle=".c-filter"><span class="btn__icon icon icon--sliders"></span>Filter</button>
       </div>
       <div class="c-filter__content">
-        <div class="l-container grid">
+        <div class="l-container l-grid">
 
-          <section class="c-filter__sections grid__item--3col">
+          <section class="c-filter__sections l-grid__item--3col">
             <div class="h4">Sections</div>
             <nav class="c-filter__items">
               <a class="c-filter__item" href="#">Business</a> <!-- Extend btn btn--text -->
@@ -25,7 +25,7 @@
               <a class="c-filter__item" href="#">Health</a>
             </nav>
           </section>
-          <section class="c-filter__topics grid__item--2col">
+          <section class="c-filter__topics l-grid__item--2col">
             <div class="h4">Topics</div>
             <nav class="c-filter__items">
               <a class="c-filter__item" href="#">Brexit</a>
@@ -36,10 +36,12 @@
               <a class="c-filter__item" href="#">Melania Trump</a>
             </nav>
           </section>
-          <section class="c-filter__sort  grid__item--1col">
+          <section class="c-filter__sort l-grid__item--1col">
             <div class="h4">Sort by</div>
-            <a class="c-filter__item" href="#">Trending</a>
-            <a class="c-filter__item" href="#">Newest</a>
+            <nav class="c-filter__items">
+              <a class="c-filter__item" href="#">Trending</a>
+              <a class="c-filter__item" href="#">Newest</a>
+            </nav>
           </section>
 
         </div>
@@ -50,7 +52,7 @@
       <li class="c-article__item">
         <span class="c-article__order">1</span>
         <a href="#" class="c-article__link">Far far away behind the word mountains, far from the countries Vokalia and Consonantia</a> <!-- Add psuedo layer as a cover -->
-        <ul class="c-article__meta">
+        <ul class="c-article__meta-items">
           <li class="c-article__meta-item"><a href="#" class="c-article__meta-link">Vox.com</a></li>
           <li class="c-article__meta-item">5h ago</li>
           <li class="c-article__meta-item">2.1k upvotes</li>
@@ -58,8 +60,8 @@
           <li class="c-article__meta-item c-article__meta-item--categories"><a href="#" class="c-article__meta-link">Politics</a><a href="#" class="c-article__meta-link">Brexit</a></li>
         </ul>
         <div class="c-article__actions c-menu"> <!-- drawer / sheet bottom on mobile and c-menu on desktop, extend drawer on mobile? -->
-          <button class="c-article__action u-visible--desktop"><span class="icon icon--arrow-up"></span>Upvote</button>
-          <button class="c-article__action c-menu__toggle" data-toggle=".c-article__actions .c-menu__content"><span class="icon icon--more-horizontal"></span></button>
+          <button class="c-article__action btn u-visible--desktop"><span class="icon icon--arrow-up"></span>Upvote</button>
+          <button class="c-article__action btn c-menu__toggle" data-toggle=".c-article__actions .c-menu__content"><span class="icon icon--more-horizontal"></span></button>
           <div class="c-menu__content">
             <div class="c-menu__header u-visible--mobile">
               <div class="c-article__item c-article__item--snapshot">
@@ -86,11 +88,11 @@
       </li>
     </ul>
 
-    <nav class="nav nav--pagination">
+    <!-- <nav class="nav nav--pagination">
       <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-left"></span></a>
       <span class="c-nav__text">1</span>
       <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-right"></span></a>
-    </nav>
+    </nav> -->
 
     <div class="c-ad">Google ad</div>
 

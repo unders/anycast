@@ -1,0 +1,62 @@
+//
+// ARTICLES
+//-----------------------------------------------------------------------
+
+.c-articles {
+
+  .c-article__item {
+    display: grid;
+  }
+
+  .c-article__order {
+    font-size: 1.4rem;
+  }
+
+  .c-article__link {
+    font-size: 1.6rem;
+    font-weight: $text-font-weight-heavy;
+  }
+
+  .c-article__meta-items {
+    font-size: 1.1rem;
+    color: $color-gray-2;
+    display: flex;
+  }
+
+  .c-article__meta-item {
+    margin-right: $spacing-tiny;
+
+  }
+
+  .c-article__meta-link {
+    color: $color-gray-2;
+
+    &:hover, &:focus {
+      color: $color-gray-1;
+    }
+  }
+
+  @media #{$breakpoint-small-max} {
+
+    .c-article__meta-item--categories {
+      display: none;
+    }
+
+  }
+
+  @media #{$breakpoint-medium} {
+    .c-article__order {
+      font-size: 1.8rem;
+    }
+
+    .c-article__link {
+      font-size: 1.8rem;
+    }
+
+    .c-article__meta-items {
+      font-size: 1.4rem;
+    }
+
+  }
+
+}

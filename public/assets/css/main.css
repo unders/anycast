@@ -1236,22 +1236,44 @@ body {
   grid-area: footer; }
 
 @media only screen and (min-width: 900px) {
-  .grid {
+  .l-grid {
     display: grid;
     grid-template: auto/repeat(6, 1fr);
     grid-gap: 3.2rem; }
-    .grid__item--1col {
+    .l-grid__item--1col {
       grid-column: span 1; }
-    .grid__item--2col {
+    .l-grid__item--2col {
       grid-column: span 2; }
-    .grid__item--3col {
+    .l-grid__item--3col {
       grid-column: span 3; }
-    .grid__item--4col {
+    .l-grid__item--4col {
       grid-column: span 4; }
-    .grid__item--5col {
+    .l-grid__item--5col {
       grid-column: span 5; }
-    .grid__item--6col {
+    .l-grid__item--6col {
       grid-column: span 6; } }
+
+.l-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 300;
+  display: block;
+  width: 75%;
+  overflow: hidden;
+  background-color: #E0E0E0;
+  border: 0;
+  border-radius: 0.4rem;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0; }
+  .l-modal--full {
+    padding: 1.6rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: none; }
 
 button, input[type="submit"] {
   -webkit-font-smoothing: antialiased; }
@@ -1429,8 +1451,7 @@ figure {
 .c-navbar {
   z-index: 200;
   height: 6.4rem;
-  margin-top: 2.4rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -1438,10 +1459,16 @@ figure {
     background: url("../images/worldtoday.svg") no-repeat scroll center center/100% auto;
     text-indent: -999999px;
     display: block;
-    width: 19rem;
+    width: 14rem;
     height: 6.4rem; }
     .c-navbar__brand:hover, .c-navbar__brand:focus {
       opacity: .6; }
+  @media only screen and (min-width: 900px) {
+    .c-navbar {
+      margin-top: 2.4rem;
+      margin-bottom: 1.6rem; }
+      .c-navbar__brand {
+        width: 19rem; } }
 
 .c-menu {
   position: relative;
@@ -1474,39 +1501,98 @@ figure {
       margin-top: .3rem;
       z-index: 100; } }
 
-.c-filter {
-  margin-bottom: 2.4rem; }
-  .c-filter__header {
-    text-align: center; }
-  .c-filter__title {
-    line-height: 6.4rem; }
-  .c-filter__toggle.toggle-open .icon:before {
-    content: "\e8f6"; }
+.c-filter__header {
+  text-align: center; }
+
+.c-filter__title {
+  line-height: 6.4rem; }
+
+.c-filter__toggle.toggle-open .icon:before {
+  content: "\e8f6"; }
+
+.c-filter__content {
+  background: #F5F5F5;
+  padding: 3.2rem 0;
+  display: none; }
+
+.c-filter.toggle-open .c-filter__content {
+  display: block; }
+
+.c-filter__items {
+  display: grid;
+  grid-template: auto/repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 0.8rem; }
+
+.c-filter__item {
+  text-align: left;
+  margin-bottom: 0.8rem;
+  display: block; }
+
+@media only screen and (max-width: 899px) {
+  .c-filter__toggle {
+    position: fixed;
+    right: 1.6rem;
+    bottom: 1.6rem;
+    z-index: 310; }
   .c-filter__content {
-    background: #F5F5F5;
-    padding: 3.2rem 0;
-    display: none; }
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    right: 0;
+    bottom: -100%;
+    left: 0;
+    z-index: 300;
+    transition: .2s; }
   .c-filter.toggle-open .c-filter__content {
-    display: block; }
+    bottom: 0; }
   .c-filter__items {
-    display: grid;
-    grid-template: auto/repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 0.8rem; }
-  .c-filter__item {
-    text-align: left;
-    margin-bottom: 0.8rem;
-    display: block; }
-  @media only screen and (max-width: 899px) {
-    .c-filter__toggle {
-      position: fixed;
-      right: 1.6rem;
-      bottom: 1.6rem; } }
-  @media only screen and (min-width: 900px) {
+    margin-bottom: 2.4rem; } }
+
+@media only screen and (min-width: 900px) {
+  .c-filter {
+    margin-bottom: 2.4rem; }
     .c-filter__header {
       border-bottom: 1px solid #BFBFBF;
       display: flex;
       justify-content: space-between;
-      align-items: center; } }
+      align-items: center; }
+    .c-filter.toggle-open .c-filter__header {
+      border-color: transparent; } }
+
+.c-articles .c-article__item {
+  display: grid; }
+
+.c-articles .c-article__order {
+  font-size: 1.4rem; }
+
+.c-articles .c-article__link {
+  font-size: 1.6rem;
+  font-weight: 500; }
+
+.c-articles .c-article__meta-items {
+  font-size: 1.1rem;
+  color: #8A8A8A;
+  display: flex; }
+
+.c-articles .c-article__meta-item {
+  margin-right: 0.8rem; }
+
+.c-articles .c-article__meta-link {
+  color: #8A8A8A; }
+  .c-articles .c-article__meta-link:hover, .c-articles .c-article__meta-link:focus {
+    color: #333; }
+
+@media only screen and (max-width: 899px) {
+  .c-articles .c-article__meta-item--categories {
+    display: none; } }
+
+@media only screen and (min-width: 900px) {
+  .c-articles .c-article__order {
+    font-size: 1.8rem; }
+  .c-articles .c-article__link {
+    font-size: 1.8rem; }
+  .c-articles .c-article__meta-items {
+    font-size: 1.4rem; } }
 
 .badge {
   display: inline-block;

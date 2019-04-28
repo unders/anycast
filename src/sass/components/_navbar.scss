@@ -4,9 +4,8 @@
 
 .c-navbar {
   z-index: $zindex-navbar;
-  height: $spacing-base*8;
-  margin-top: $spacing-small;
-  margin-bottom: $spacing-xsmall;
+  height: $spacing-xlarge;
+  margin-bottom: $spacing-tiny;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,11 +14,20 @@
     background: url("../images/worldtoday.svg") no-repeat scroll center center / 100% auto;
     text-indent: -999999px;
     display: block;
-    width: 19rem;
-    height: $spacing-base*8;
+    width: 14rem;
+    height: $spacing-xlarge;
 
     &:hover, &:focus {
       opacity: .6;
+    }
+  }
+
+  @media #{$breakpoint-medium} {
+    margin-top: $spacing-small;
+    margin-bottom: $spacing-xsmall;
+
+    &__brand {
+      width: 19rem;
     }
   }
 }

@@ -3,7 +3,6 @@
 //-----------------------------------------------------------------------
 
 .c-filter {
-  margin-bottom: $spacing-small;
 
   &__header {
     text-align: center;
@@ -51,12 +50,33 @@
       position: fixed;
       right: $grid-gutter;
       bottom: $grid-gutter;
+      z-index: $zindex-modal+10;
+    }
+
+    &__content {
+      height: 100%;
+      overflow: scroll;
+      position: fixed;
+      right: 0;
+      bottom: -100%;
+      left: 0;
+      z-index: $zindex-modal;
+      transition: .2s;
+    }
+
+    &.toggle-open .c-filter__content {
+      bottom: 0;
+    }
+
+    &__items {
+      margin-bottom: $spacing-small;
     }
 
   }
 
 
   @media #{$breakpoint-medium} { // Inline style
+    margin-bottom: $spacing-small;
 
     &__header {
       border-bottom: $border-width solid $color-gray-3;
@@ -65,8 +85,8 @@
       align-items: center;
     }
 
-    &__content {
-
+    &.toggle-open .c-filter__header {
+      border-color: transparent;
     }
 
   }
