@@ -13,7 +13,7 @@
     grid-column: 2 / span 1;
   }
 
-  @media (min-width: $wide) {
+  @media #{$breakpoint-medium} {
 
     &__title {
       grid-column: 2 / span 2;

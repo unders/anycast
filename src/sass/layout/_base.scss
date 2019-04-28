@@ -1,0 +1,31 @@
+//
+// BASE
+//-----------------------------------------------------------------------
+
+body {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.l-header {
+  grid-area: header;
+}
+
+.l-main {
+  grid-area: main;
+
+  &--vcenter {
+    display: grid;
+    align-items: center;
+  }
+}
+
+.l-footer {
+  grid-area: footer;
+}

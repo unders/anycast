@@ -1,3 +1,73 @@
 //
 // FILTER
 //-----------------------------------------------------------------------
+
+.c-filter {
+  margin-bottom: $spacing-small;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    line-height: $spacing-xlarge;
+  }
+
+  &__toggle.toggle-open .icon:before {
+    content: "\e8f6";
+  }
+
+  &__content {
+    background: $color-gray-5;
+    padding: $spacing-medium 0;
+    display: none;
+  }
+
+  &.toggle-open .c-filter__content {
+    display: block;
+  }
+
+  &__items {
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: $spacing-tiny;
+  }
+
+  &__item {
+    @extend .btn;
+    text-align: left;
+    margin-bottom: $spacing-tiny;
+    display: block;
+
+   &--current {
+    @extend .btn--primary;
+   }
+  }
+
+
+  @media #{$breakpoint-small-max} { // Modal style
+
+    &__toggle {
+      position: fixed;
+      right: $grid-gutter;
+      bottom: $grid-gutter;
+    }
+
+  }
+
+
+  @media #{$breakpoint-medium} { // Inline style
+
+    &__header {
+      border-bottom: $border-width solid $color-gray-3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__content {
+
+    }
+
+  }
+}

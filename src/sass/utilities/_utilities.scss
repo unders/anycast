@@ -1,0 +1,41 @@
+//
+// UTILITIES
+//-----------------------------------------------------------------------
+
+// TYPE
+//---------------------------
+
+.u-text-quiet {
+  color: $color-gray-2;
+}
+
+.u-text-loud {
+}
+
+// ELEVATION
+//---------------------------
+
+.u-high {
+  box-shadow: $box-shadow-high;
+}
+
+.u-higher {
+  box-shadow: $box-shadow-higher;
+}
+
+.u-highest {
+  box-shadow: $box-shadow-highest;
+}
+
+
+// VISIBILITY
+//---------------------------
+
+
+
+// MIX
+//---------------------------
+
+.truncate {
+  @include truncate;
+}

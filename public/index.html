@@ -7,10 +7,11 @@
     <meta name="description" content="World Today">
     <title>World Today</title>
     <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="assets/javascripts/data-toggle.js"></script>
 </head>
 <body>
-    <header class="c-navbar l-container">
+    <header class="c-navbar l-header l-container">
 
     <nav class="c-navbar__nav c-nav">
       <a class="c-nav__link" href="/"><span class="icon icon--arrow-left"></span></a>
@@ -20,7 +21,7 @@
 
     <nav class="c-navbar__nav c-nav">
       <div class="c-nav__entry c-menu">
-        <a class="c-nav__link c-menu__toggle" href="#" data-toggle=".c-navbar .c-menu"><span class="icon icon--user"></span></a>
+        <a class="c-nav__link c-menu__toggle" href="#" data-toggle=".c-navbar .c-menu, body"><span class="icon icon--user"></span></a>
         <div class="c-menu__content">
           <nav class="c-nav c-nav--list">
             <a href="/profile" class="c-nav__link"><span class="c-nav__icon icon icon--user"></span>Profile</a>
@@ -36,37 +37,40 @@
 
   <main class="l-main">
 
-    <div class="c-filter c-filter--open_">
-      <div class="c-filter_header l-container">
-        <div class="c-filter__title h3">Toplist</div>
-        <button class="c-filter__toggle c-filter__toggle--active_ btn btn--primary"><span class="btn__icon icon icon--sliders"></span>Filter</button>
+    <div class="c-filter">
+      <div class="c-filter__header l-container">
+        <div class="c-filter__title h3"><span class="u-text-quiet">Toplist</span></div>
+        <button class="c-filter__toggle btn btn--primary" data-toggle=".c-filter"><span class="btn__icon icon icon--sliders"></span>Filter</button>
       </div>
       <div class="c-filter__content">
-        <div class="l-container">
+        <div class="l-container grid">
 
-          <section class="c-filter__categories">
+          <section class="c-filter__sections grid__item--3col">
             <div class="h4">Sections</div>
-            <a class="c-filter__item" href="#">Business</a> 
-            <a class="c-filter__item c-filter__item--current" href="#">General</a> 
-            <a class="c-filter__item" href="#">Business</a>
-            <a class="c-filter__item" href="#">Environment</a>
-            <a class="c-filter__item" href="#">Economics</a>
-            <a class="c-filter__item" href="#">Politics</a>
-            <a class="c-filter__item" href="#">Technology</a>
-            <a class="c-filter__item" href="#">Science</a>
-            <a class="c-filter__item" href="#">Health</a>
+            <nav class="c-filter__items">
+              <a class="c-filter__item" href="#">Business</a> 
+              <a class="c-filter__item c-filter__item--current" href="#">General</a> 
+              <a class="c-filter__item" href="#">Business</a>
+              <a class="c-filter__item" href="#">Environment</a>
+              <a class="c-filter__item" href="#">Economics</a>
+              <a class="c-filter__item" href="#">Politics</a>
+              <a class="c-filter__item" href="#">Technology</a>
+              <a class="c-filter__item" href="#">Science</a>
+              <a class="c-filter__item" href="#">Health</a>
+            </nav>
           </section>
-          <section class="c-filter__categories">
+          <section class="c-filter__topics grid__item--2col">
             <div class="h4">Topics</div>
-            <a class="c-filter__item" href="#">Brexit</a>
-            <a class="c-filter__item" href="#">Meeto</a>
-            <a class="c-filter__item" href="#">Global Warming</a>
-            <a class="c-filter__item" href="#">Donald Trump</a>
-            <a class="c-filter__item" href="#">Migration</a>
-            <a class="c-filter__item" href="#">Melania Trump</a>
-            <a class="c-filter__item" href="#">North Korea</a>
+            <nav class="c-filter__items">
+              <a class="c-filter__item" href="#">Brexit</a>
+              <a class="c-filter__item" href="#">Meeto</a>
+              <a class="c-filter__item" href="#">Global Warming</a>
+              <a class="c-filter__item" href="#">Donald Trump</a>
+              <a class="c-filter__item" href="#">Migration</a>
+              <a class="c-filter__item" href="#">Melania Trump</a>
+            </nav>
           </section>
-          <section class="c-filter__sort">
+          <section class="c-filter__sort  grid__item--1col">
             <div class="h4">Sort by</div>
             <a class="c-filter__item" href="#">Trending</a>
             <a class="c-filter__item" href="#">Newest</a>
@@ -130,7 +134,7 @@
 
     
 
-    <footer class="c-footer l-container">
+    <footer class="c-footer l-footer l-container">
 
       <ul class="c-nav">
         <a class="c-nav__link" href="#">About</a>

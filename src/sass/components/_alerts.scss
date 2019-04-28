@@ -8,20 +8,20 @@
   display: block;
   position: fixed;
   width: 32rem;
-  padding: $grid*2 2rem;
+  padding: $spacing-base*2 2rem;
   max-height: 100%;
   z-index: $zindex-alert;
   overflow-y: auto;
 
   .alert {
-    padding-right: $grid*2;
-    margin-bottom: $grid;
+    padding-right: $spacing-base*2;
+    margin-bottom: $spacing-base;
   }
 
-  @media (min-width: $wide) {
+  @media #{$breakpoint-medium} {
     width: 38rem;
-    padding-right: $gutter;
-    padding-left: $gutter;
+    padding-right: $grid-gutter;
+    padding-left: $grid-gutter;
   }
 
 }
@@ -52,39 +52,39 @@
 }
 
 .alert {
-  background-color: $gray-dark;
+  background-color: $color-gray-1;
   position: relative;
-  margin: $grid 0 $base-margin;
-  padding: $grid*2 $grid*4 $grid*2 $grid*2;
-  border-radius: $base-border-radius;
-  color: $white;
+  margin: $spacing-base 0 $spacing-small;
+  padding: $spacing-base*2 $spacing-small $spacing-xsmall $spacing-xsmall;
+  border-radius: $border-radius;
+  color: $color-white;
 }
 
 .alert--brand {
-  background: $brand-primary;
+  background: $color-brand-primary;
 }
 
 .alert--info {
-  background: $brand-info;
+  background: $color-info;
 }
 
 .alert--warning {
-  background: $brand-warning;
+  background: $color-warning;
 }
 
 .alert--success {
-  background: $brand-success;
+  background: $color-success;
 }
 
 .alert--danger {
-  background: $brand-danger;
+  background: $color-danger;
 }
 
 
 // MESSAGE
 
 .message {
-  height: $grid*20;
+  height: $spacing-super*2;
   display: flex;
   flex-direction: column;
   justify-content: center;

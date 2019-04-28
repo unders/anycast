@@ -5,26 +5,26 @@
 // HERO
 
 .hero {
-  padding-top: $nav-height + $grid * 4;
-  padding-bottom: $grid * 4;
+  padding-top: $nav-height + $spacing-base * 4;
+  padding-bottom: $spacing-base * 4;
   margin-bottom: $base-margin;
   margin-top: -$padding-top;
   background: $background-light-gray;
 
   &__header {
-    margin-bottom: $grid;
+    margin-bottom: $spacing-base;
   }
 
   &__actions {
     justify-content: flex-start;
   }
 
-  @media (min-width: $wide) {
+  @media #{$breakpoint-medium} {
 
     &__inner {
       display: grid;
       grid-template: auto / 5fr 1fr;
-      grid-gap: 0 $grid*4;
+      grid-gap: 0 $spacing-base*4;
     }
 
     &__actions {
@@ -41,8 +41,8 @@
 
 .hero-loud {
   overflow: hidden;
-  padding-top: $nav-height + $grid * 6;
-  padding-bottom: $grid * 4;
+  padding-top: $nav-height + $spacing-base * 6;
+  padding-bottom: $spacing-base * 4;
   margin-bottom: $base-margin;
   margin-top: -$padding-top;
   background: $brand-secendary no-repeat center center / cover;
@@ -75,13 +75,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: $white;
+    color: $color-white;
     text-align: center;
     //animation: .4s .2s fadeIn both;
   }
 
   &__header {
-    margin-bottom: $grid;
+    margin-bottom: $spacing-base;
 
     & + .hero-loud__brand {
       margin-top: $base-margin;
@@ -90,7 +90,7 @@
   }
 
   &__meta {
-    margin-bottom: $grid * 4;
+    margin-bottom: $spacing-base * 4;
   }
 
   &__brand {
@@ -98,7 +98,7 @@
   }
 
   &__nav {
-    margin-bottom: -$grid * 4;
+    margin-bottom: -$spacing-base * 4;
   }
 
   &__nav .nav__link {

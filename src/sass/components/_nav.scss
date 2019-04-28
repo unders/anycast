@@ -6,25 +6,25 @@
   display: flex;
 
   &__link {
-    border-radius: $base-border-radius;
-    color: $gray-1;
+    border-radius: $border-radius;
+    color: $color-gray-1;
     font-size: 1.6rem;
     line-height: 6.4rem;
-    padding: 0 $grid * 2;
+    padding: 0 $spacing-base * 2;
     display: block;
 
     &:focus, &:hover, &--current {
-      background: $gray-5;
+      background: $color-white;
     }
 
   }
 
   &__icon {
-    margin-right: $grid;
+    margin-right: $spacing-base;
   }
 
   &--list {
-    min-width: $grid * 24;
+    min-width: $spacing-base * 24;
     flex-direction: column;
 
     .c-nav__link {

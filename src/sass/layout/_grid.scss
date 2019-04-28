@@ -4,10 +4,10 @@
 
 .grid {
 
-  @media (min-width: $wide) {
+  @media #{$breakpoint-medium} {
     display: grid;
     grid-template: auto / repeat(6, 1fr);
-    grid-gap: $grid*4;
+    grid-gap: $spacing-medium;
 
     &__item {
 

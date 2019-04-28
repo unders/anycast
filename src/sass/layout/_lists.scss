@@ -5,10 +5,10 @@
 .list-inline {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: $grid * 2;
+  margin-bottom: $spacing-base * 2;
 
   &__item {
-    margin-right: $grid * 2;
+    margin-right: $spacing-base * 2;
     white-space: nowrap;
 
     &:last-of-type {
@@ -19,7 +19,7 @@
 
 
   &--muted {
-    color: $gray-light;
+    color: $color-gray-4;
   }
 
   &--tiny {

@@ -1,0 +1,17 @@
+//
+// CONTAINER
+//-----------------------------------------------------------------------
+
+.l-container {
+  padding: 0 $grid-gutter;
+  //max-width: 120rem;
+
+  &--dense {
+    max-width: 48rem;
+  }
+
+  @media #{$breakpoint-medium} {
+    padding: 0 $grid-gutter-md;
+  }
+
+}

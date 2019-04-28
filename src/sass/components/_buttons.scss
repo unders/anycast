@@ -12,26 +12,26 @@ button, input[type="submit"] {
   align-items: center;
   border-radius: 4rem;
   border: 1px solid transparent;
-  background: lighten($gray-lighter, 10%);
-  color: $gray-dark;
+  background: $color-gray-5;
+  color: $color-text;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: normal;
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
-  padding: 1.1rem $grid*3;
+  padding: 1rem $spacing-small;
   vertical-align: middle;
   text-decoration: none;
   transition: all .15s ease-in-out;
 
   &:visited {
-    color: $gray-dark;
+    color: $color-text;
   }
 
   &:hover,
   &:focus {
-    background: $gray-lighter;
+    background: $color-gray-4;
   }
 
   &:active,
@@ -48,15 +48,15 @@ button, input[type="submit"] {
   }
 
   &__icon {
-    margin-right: $grid;
+    margin-right: $spacing-base;
   }
 
   &--circle {
     display: inline-flex;
     justify-content: center;
     overflow: hidden;
-    width: $grid*5;
-    height: $grid*5;
+    width: $spacing-base*5;
+    height: $spacing-base*5;
     padding: 0;
 
     .btn__icon {
@@ -69,37 +69,37 @@ button, input[type="submit"] {
 
 
 .btn--primary {
-  border-color: $link-color;
-  background: $link-color;
-  color: $white;
+  border-color: $color-link;
+  background: $color-link;
+  color: $color-white;
 
   &:visited {
-    color: $white;
+    color: $color-white;
   }
 
   &:hover,
   &:focus {
-    border-color: $link-color-hover;
-    background: $link-color-hover;
-    color: $white;
+    border-color: $color-link-hover;
+    background: $color-link-hover;
+    color: $color-white;
   }
 
 }
 
 .btn--success {
-  border-color: $brand-success;
-  background: $brand-success;
-  color: $white;
+  border-color: $color-success;
+  background: $color-success;
+  color: $color-white;
 
   &:visited {
-    color: $white;
+    color: $color-white;
   }
 
   &:hover,
   &:focus {
-    border-color: darken($brand-success, 6%);
-    background: darken($brand-success, 6%);
-    color: $white;
+    border-color: darken($color-success, 6%);
+    background: darken($color-success, 6%);
+    color: $color-white;
   }
 
 }
@@ -108,37 +108,37 @@ button, input[type="submit"] {
 // OUTLINE
 
 .btn--outline-primary {
-  border-color: $link-color;
+  border-color: $color-link;
   background: transparent;
-  color: $link-color;
+  color: $color-link;
 
   &:visited {
-    color: $link-color;
+    color: $color-link;
   }
 
   &:hover,
   &:focus {
-    border-color: $link-color-hover;
-    background: $link-color;
-    color: $white;
+    border-color: $color-link-hover;
+    background: $color-link;
+    color: $color-white;
   }
 
 }
 
 .btn--outline-light {
-  border-color: $white;
+  border-color: $color-white;
   background: transparent;
-  color: $white;
+  color: $color-white;
 
   &:visited {
-    color: $white;
+    color: $color-white;
   }
 
   &:hover,
   &:focus {
-    border-color: $white;
-    background: $white;
-    color: $gray-dark;
+    border-color: $color-white;
+    background: $color-white;
+    color: $color-gray-1;
   }
 
 }
@@ -149,26 +149,26 @@ button, input[type="submit"] {
 .btn--link {
   border-color: transparent;
   background: transparent;
-  color: $link-color;
+  color: $color-link;
 
   &:visited {
-    color: $link-color;
+    color: $color-link;
   }
 
   &:hover,
   &:focus {
     border-color: transparent;
     background: transparent;
-    color: $link-color-hover;
+    color: $color-link-hover;
   }
 
 }
 
 .btn--loud {
-  padding: 1.5rem $grid*4;
+  padding: 1.5rem $spacing-base*4;
 
   .btn__icon {
-    font-size: $grid*3;
+    font-size: $spacing-base*3;
   }
 
 }
@@ -180,11 +180,11 @@ button, input[type="submit"] {
 .btn--close {
   background: no-repeat;
   position: absolute;
-  right: $grid*2;
+  right: $spacing-base*2;
   padding: 0;
   outline: 0;
-  color: $white;
-  font-size: $grid*3;
+  color: $color-white;
+  font-size: $spacing-base*3;
   font-weight: normal;
   line-height: 1;
   opacity: .6;
@@ -206,7 +206,7 @@ button, input[type="submit"] {
   margin: 0 -.4rem;
 
   .btn {
-    margin: $grid $grid/2;
+    margin: $spacing-base $spacing-base/2;
   }
 
   &--center {

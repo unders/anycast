@@ -7,101 +7,105 @@ html {
 }
 
 body {
-  font-family: $font-family-base;
-  font-size: 1.8rem;
-  line-height: $base-line-height;
+  font-family: $text-font-family;
+  font-size: $text-font-size;
+  line-height: $text-line-height;
+  color: $color-text;
+  -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-}
+  -moz-osx-font-smoothing: grayscale;
 
-
-// HEADERS
-
-.jumbo, .h1, .h2, .h3 {
-  margin-bottom: $header-margin;
-  font-weight: 700;
-  line-height: 1.08;
-
-  &:not(:first-child) {
-    margin-top: $header-margin * 2;
+  @media #{$breakpoint-medium} {
+    font-size: $text-font-size-md;
+    line-height: $text-line-height-md;
   }
 
 }
 
-.jumbo {
-  font-size: 9.6rem;
+
+// HEADINGS
+//---------------------------
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  font-weight: $text-font-weight-heavy;
+  line-height: 1.25;
 }
 
-.h1, h1 {
-  font-size: 4.8rem;
+h1, .h1 {
+  font-size: 2rem;
+
+  @media #{$breakpoint-medium} {
+    font-size: 3.2rem;
+  }
 }
 
-.h2, h2 {
-  font-size: 3.2rem;
-}
-
-.h3, h3 {
+h2, .h2 {
   font-size: 2.4rem;
-}
 
-.paragraph {
-  font-weight: normal;
-  margin-bottom: $paragraph-margin;
-
-  &--large {
+  @media #{$breakpoint-medium} {
     font-size: 2.4rem;
   }
-
-  &--loud {
-    font-weight: 700;
-  }
-
-  &--muted {
-    color: $gray-light;
-  }
-
 }
 
-.text {
+h3, .h3 {
+  font-size: 1.6rem;
 
-  &--muted {
-    color: $gray-light;
+  @media #{$breakpoint-medium} {
+    font-size: 1.8rem;
+  }
+}
+
+h4, .h4 {
+  color: $color-gray-2;
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  line-height: $spacing-small;
+  text-transform: uppercase;
+  border-bottom: $border-width solid $color-gray-3;
+  margin-bottom: $spacing-xsmall;
+}
+
+
+// PARAGRAPHS
+//---------------------------
+
+p {
+  & + & {
+    margin-top: $spacing-small;
   }
 
+  @media #{$breakpoint-medium} {
+    & + & {
+      margin-top: $spacing-small;
+    }
+  }
 }
+
+
+// LINKS
+//---------------------------
 
 a {
   text-decoration: none;
-  color: $base-font-color;
+  color: $color-text;
   transition: .2s;
 }
 
 .link {
-  color: $link-color;
-  border-bottom: 1px solid $link-color;
+  color: $color-link;
+  border-bottom: 1px solid $color-link;
 
   &:hover, &:focus {
-    color: $link-color-hover;
-    border-color: $link-color-hover;
-  }
-
-  &--muted {
-    border: none;
-  }
-
-  &--light {
-    color: $gray-lighter;
-    border-color: $gray-lighter;
-
-    &:focus, &:hover {
-      color: $white;
-      border-color: $white;
-    }
+    color: $color-link-hover;
+    border-color: $color-link-hover;
   }
 
 }
 
 
-// BASIC LISTS
+// LISTS
+//---------------------------
 
 ol, ul {
   list-style: none;
@@ -109,93 +113,29 @@ ol, ul {
   margin: 0;
 }
 
-ul.default {
-  &, ul {
-    list-style-type: disc;
-    margin: 0 0 $base-margin 0;
-    padding-left: $base-margin;
-
-    li {
-      margin-bottom: $paragraph-margin;
-    }
-
-  }
-}
-
-ol.default {
-  &, ol {
-    list-style-type: decimal;
-    margin: 0 0 $base-margin 0;
-    padding-left: $base-margin;
-
-    li {
-      margin-bottom: $paragraph-margin;
-    }
-
-  }
-}
-
-dl {
-  display: grid;
-  margin: $base-margin 0 $paragraph-margin;
-
-  dt {
-    padding-top: $paragraph-margin;
-    font-weight: bold;
-  }
-
-  dd {
-    padding-bottom: $paragraph-margin;
-    border-bottom: 1px solid $base-border-color;
-  }
-
-  @media (min-width: $wide) {
-    display: grid;
-    grid-template: auto / repeat(2, auto);
-    margin-bottom: 0;
-
-    dt, dd {
-      padding-bottom: $paragraph-margin;
-      margin-bottom: $paragraph-margin;
-    }
-
-    dt {
-      padding-top: 0;
-      padding-right: $grid*2;
-      border-bottom: 1px solid $base-border-color;
-    }
-
-  }
-
-}
-
 
 // SELECTIONS
+//---------------------------
 
 ::selection {
-  background: $gray-dark;
-  color: $white;
+  background: $color-gray-1;
+  color: $color-white;
 }
 
 ::-moz-selection {
-  background: $gray-dark;
-  color: $white;
+  background: $color-gray-1;
+  color: $color-white;
 }
 
 
 // OTHER
-
-.truncate {
-  @include truncate;
-}
+//---------------------------
 
 address {
   font-style: normal;
-  margin-bottom: $base-margin;
 }
 
 hr {
   border: none;
-  border-bottom: 1px solid $base-border-color;
-  margin: $base-margin 0;
+  border-bottom: 1px solid $border-color;
 }

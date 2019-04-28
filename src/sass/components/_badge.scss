@@ -4,9 +4,9 @@
 
 .badge {
   display: inline-block;
-  padding: 0 $grid;
-  background: $gray-dark;
-  color: $white;
+  padding: 0 $spacing-base;
+  background: $color-gray-1;
+  color: $color-white;
   font-size: .9rem;
   line-height: 1.6rem;
   font-weight: bold;
@@ -16,23 +16,23 @@
   border-radius: 2rem;
 
   &--brand {
-    background: $brand-primary;
+    background: $color-brand-primary;
   }
 
   &--info {
-    background: $brand-info;
+    background: $color-info;
   }
 
   &--success {
-    background: $brand-success;
+    background: $color-success;
   }
 
   &--warning, &--yellow {
-    background: $brand-warning;
+    background: $color-warning;
   }
 
   &--danger {
-    background: $brand-danger;
+    background: $color-danger;
   }
 
 }

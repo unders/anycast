@@ -7,12 +7,22 @@ html {
 }
 
 body {
-  background: $base-body-background;
-  color: $base-body-color;
+  background: $color-body-background;
   transition: .2s;
 
   &.toggle-open {
     overflow: hidden;
+
+    &:after {
+      content: '';
+      background: rgba($color-gray-4, .5);
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: $zindex-menu;
+    }
   }
 
 }
