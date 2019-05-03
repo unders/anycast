@@ -6,13 +6,16 @@ button, input[type="submit"] {
   -webkit-font-smoothing: antialiased;
 }
 
+
+// TEXT
+
 .btn {
   position: relative;
   display: inline-flex;
   align-items: center;
-  border-radius: 4rem;
+  border-radius: $border-radius-rounded !important;
   border: 1px solid transparent;
-  background: $color-gray-5;
+  background: transparent;
   color: $color-text;
   font-size: 1.4rem;
   font-weight: bold;
@@ -31,7 +34,7 @@ button, input[type="submit"] {
 
   &:hover,
   &:focus {
-    background: $color-gray-4;
+    background: $color-gray-5;
   }
 
   &:active,
@@ -43,7 +46,7 @@ button, input[type="submit"] {
   &[disabled] {
     cursor: none;
     pointer-events: none;
-    opacity: .65;
+    opacity: $disabled-opacity;
     box-shadow: none;
   }
 
@@ -51,22 +54,43 @@ button, input[type="submit"] {
     margin-right: $spacing-base;
   }
 
-  &--circle {
-    display: inline-flex;
+  &--icon {
+    display: inline-flex !important;
     justify-content: center;
+    align-content: center;
     overflow: hidden;
-    width: $spacing-base*5;
-    height: $spacing-base*5;
+    width: $spacing-base*6;
+    height: $spacing-base*6;
     padding: 0;
 
     .btn__icon {
       margin: 0;
     }
-
   }
-
 }
 
+
+// DEFAULT
+
+.btn--default {
+  border-color: $color-gray-5;
+  background: $color-gray-5;
+  color: $color-text;
+
+  &:visited {
+    color: $color-text;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-white;
+    background: $color-white;
+    color: $color-text;
+  }
+}
+
+
+// PRIMARY
 
 .btn--primary {
   border-color: $color-link;
@@ -83,46 +107,26 @@ button, input[type="submit"] {
     background: $color-link-hover;
     color: $color-white;
   }
-
-}
-
-.btn--success {
-  border-color: $color-success;
-  background: $color-success;
-  color: $color-white;
-
-  &:visited {
-    color: $color-white;
-  }
-
-  &:hover,
-  &:focus {
-    border-color: darken($color-success, 6%);
-    background: darken($color-success, 6%);
-    color: $color-white;
-  }
-
 }
 
 
 // OUTLINE
 
-.btn--outline-primary {
-  border-color: $color-link;
+.btn--outline {
+  border-color: $color-text;
   background: transparent;
-  color: $color-link;
+  color: $color-text;
 
   &:visited {
-    color: $color-link;
+    color: $color-text;
   }
 
   &:hover,
   &:focus {
-    border-color: $color-link-hover;
-    background: $color-link;
+    border-color: $color-text;
+    background: $color-text;
     color: $color-white;
   }
-
 }
 
 .btn--outline-light {
@@ -140,38 +144,50 @@ button, input[type="submit"] {
     background: $color-white;
     color: $color-gray-1;
   }
-
 }
 
 
-// OTHER
+// COLOR MODIFIERS
 
-.btn--link {
-  border-color: transparent;
-  background: transparent;
-  color: $color-link;
+.btn--success {
+  border-color: $color-success;
+  background: $color-success;
+  color: $color-white;
 
   &:visited {
-    color: $color-link;
+    color: $color-white;
   }
 
   &:hover,
   &:focus {
-    border-color: transparent;
-    background: transparent;
-    color: $color-link-hover;
+    border-color: darken($color-success, 6%);
+    background: darken($color-success, 6%);
+    color: $color-white;
   }
-
 }
 
-.btn--loud {
-  padding: 1.5rem $spacing-base*4;
+.btn--danger {
+  border-color: $color-danger;
+  background: $color-danger;
+  color: $color-white;
 
-  .btn__icon {
-    font-size: $spacing-base*3;
+  &:visited {
+    color: $color-white;
   }
 
+  &:hover,
+  &:focus {
+    border-color: darken($color-danger, 6%);
+    background: darken($color-danger, 6%);
+    color: $color-white;
+  }
 }
+
+
+// BUTTON GROUP
+
+
+// OTHER
 
 .btn--block {
   display: block;
@@ -193,7 +209,6 @@ button, input[type="submit"] {
     background: transparent;
     opacity: 1;
   }
-
 }
 
 
@@ -216,5 +231,4 @@ button, input[type="submit"] {
   &--right {
     justify-content: flex-end;
   }
-
 }

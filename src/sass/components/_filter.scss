@@ -50,7 +50,7 @@
       position: fixed;
       right: $grid-gutter;
       bottom: $grid-gutter;
-      z-index: $zindex-modal+10;
+      z-index: $zindex-menu - 10;
     }
 
     &__content {

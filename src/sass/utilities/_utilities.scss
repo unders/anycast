@@ -31,11 +31,32 @@
 // VISIBILITY
 //---------------------------
 
+@media #{$breakpoint-small-max} {
 
+  .u-hidden-small {
+    display: none !important;
+  }
+}
+
+@media #{$breakpoint-medium} {
+
+  .u-hidden-medium {
+    display: none !important;
+  }
+}
 
 // MIX
 //---------------------------
 
 .truncate {
   @include truncate;
+}
+
+.divider-dot {
+  margin: 0 $spacing-tiny/2;
+  display: inline-block;
+
+  &:after {
+    content: '•';
+  }
 }

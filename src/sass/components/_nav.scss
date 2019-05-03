@@ -4,12 +4,13 @@
 
 .c-nav {
   display: flex;
+  align-items: center;
 
   &__link {
     border-radius: $border-radius;
     color: $color-gray-1;
     font-size: 1.6rem;
-    line-height: 6.4rem;
+    //line-height: 6.4rem;
     padding: 0 $spacing-base * 2;
     display: block;
 
@@ -17,10 +18,18 @@
       background: $color-white;
     }
 
+    &:not(.c-nav__link--btn) {
+      line-height: 6.4rem;
+    }
   }
 
   &__icon {
-    margin-right: $spacing-base;
+    margin-right: $spacing-xsmall;
+    display: inline-block;
+  }
+
+  &__link--btn {
+
   }
 
   &--list {
@@ -28,17 +37,55 @@
     flex-direction: column;
 
     .c-nav__link {
+      border-top: 1px solid transparent;
+      border-radius: 0;
       text-decoration: none;
       white-space: nowrap;
       width: 100%;
-      display: block;
 
       &:hover, &:focus {
         //background: $gray-5;
       }
 
+      &--divider-above {
+        border-color: $color-gray-4;
+      }
     }
-
   }
 
+
+  // PAGINATION
+
+  &--pagination {
+    margin-bottom: $spacing-xlarge;
+    border-top: 1px solid $color-gray-3;
+    padding-top: $spacing-tiny;
+    justify-content: center;
+  }
+
+  &__page-number {
+    padding: 0 $spacing-small;
+  }
+
+
+  // SMALL
+
+  &--small {
+
+    .c-nav__link {
+      border-radius: $border-radius-rounded;
+      font-size: 1.4rem;
+      line-height: $spacing-medium;
+    }
+  }
+
+
+  // QUIET
+
+  &--quiet {
+
+    .c-nav__link {
+      color: $color-gray-2;
+    }
+  }
 }

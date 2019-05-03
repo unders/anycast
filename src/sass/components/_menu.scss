@@ -9,6 +9,7 @@
   &__toggle {
     outline: none;
     margin: 0;
+    z-index: $zindex-menu;
   }
 
   &__content {
@@ -35,7 +36,6 @@
     &.toggle-open .c-menu__content {
       bottom: 0;
     }
-
   }
 
   @media #{$breakpoint-medium} { // Dropdown style
@@ -49,7 +49,6 @@
       margin-top: .3rem;
       z-index: $zindex-menu;
     }
-
   }
 
 }

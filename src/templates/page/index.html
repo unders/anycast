@@ -48,53 +48,132 @@
       </div>
     </div>
 
-    <ul class="c-articles l-container">
-      <li class="c-article__item">
-        <span class="c-article__order">1</span>
-        <a href="#" class="c-article__link">Far far away behind the word mountains, far from the countries Vokalia and Consonantia</a> <!-- Add psuedo layer as a cover -->
-        <ul class="c-article__meta-items">
-          <li class="c-article__meta-item"><a href="#" class="c-article__meta-link">Vox.com</a></li>
-          <li class="c-article__meta-item">5h ago</li>
-          <li class="c-article__meta-item">2.1k upvotes</li>
-          <li class="c-article__meta-item"><a href="#" class="c-article__meta-link">64 comments</a></li>
-          <li class="c-article__meta-item c-article__meta-item--categories"><a href="#" class="c-article__meta-link">Politics</a><a href="#" class="c-article__meta-link">Brexit</a></li>
-        </ul>
-        <div class="c-article__actions c-menu"> <!-- drawer / sheet bottom on mobile and c-menu on desktop, extend drawer on mobile? -->
-          <button class="c-article__action btn u-visible--desktop"><span class="icon icon--arrow-up"></span>Upvote</button>
-          <button class="c-article__action btn c-menu__toggle" data-toggle=".c-article__actions .c-menu__content"><span class="icon icon--more-horizontal"></span></button>
-          <div class="c-menu__content">
-            <div class="c-menu__header u-visible--mobile">
-              <div class="c-article__item c-article__item--snapshot">
-                <span class="c-article__order">1</span>
-                <a href="#" class="c-article__link">Far far away behind the word mountains, far from the countries Vokalia and Consonantia</a>
-                <ul class="c-article__meta">
-                  <li class="c-article__meta-item">Vox.com</li>
-                  <li class="c-article__meta-item">5h ago</li>
-                  <li class="c-article__meta-item">2.1k upvotes</li>
-                  <li class="c-article__meta-item">64 comments</li>
-                </ul>
+    <div class="l-container">
+
+      <ul class="c-articles">
+        <li class="c-article__item">
+          <span class="c-article__order">1</span>
+          <a href="#" class="c-article__link">Far far away behind the word mountains, far from the countries Vokalia and Consonantia</a>
+          <ul class="c-article__meta-items">
+            <li class="c-article__meta-item"><a href="#" class="c-article__meta-link">Vox.com</a></li>
+            <li class="c-article__meta-item">5h ago</li>
+            <li class="c-article__meta-item">2.1k upvotes</li>
+            <li class="c-article__meta-item"><a href="#" class="c-article__meta-link">64 comments</a></li>
+            <li class="c-article__meta-item c-article__meta-item--categories"><a href="#" class="c-article__meta-link">Politics</a><span class="divider-dot"></span><a href="#" class="c-article__meta-link">Brexit</a></li>
+          </ul>
+          <div class="c-article__actions c-menu">
+            <button class="c-article__action u-hidden-small btn"><span class="icon btn__icon icon--arrow-up"></span>Upvote</button>
+            <button class="c-article__action btn btn--icon c-menu__toggle" data-toggle=".c-article__actions.c-menu, body"><span class="icon icon--more-horizontal"></span></button>
+            <div class="c-menu__content">
+              <div class="c-menu__header u-hidden-medium">
+                <div class="c-article__item c-article__item--snapshot">
+                  <span class="c-article__order">1</span>
+                  <a href="#" class="c-article__link">Far far away behind the word mountains, far from the countries Vokalia and Consonantia</a>
+                  <ul class="c-article__meta-items">
+                    <li class="c-article__meta-item">Vox.com</li>
+                    <li class="c-article__meta-item">5h ago</li>
+                    <li class="c-article__meta-item">2.1k upvotes</li>
+                    <li class="c-article__meta-item">64 comments</li>
+                  </ul>
+                </div>
               </div>
+              <nav class="c-nav c-nav--list">
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-up-right"></span>Read article</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-up"></span>Upvote</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--message-square"></span>Discuss</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--bookmark"></span>Save</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--share"></span>Share</a>
+                <a href="#" class="c-nav__link c-nav__link--divider-above u-hidden-medium"><span class="c-nav__icon icon icon--x"></span>Cancel</a>
+              </nav>
             </div>
-            <nav class="c-nav c-nav--list">
-              <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-up"></span>Read article</a>
-              <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-up"></span>Upvote</a>
-              <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--message"></span>Discuss</a>
-              <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--bookmark"></span>Save</a>
-              <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--share"></span>Share</a>
-              <a href="#" class="c-nav__link c-nav_link--divider-above u-visible--mobile"><span class="c-nav__icon icon icon--close"></span>Cancel</a>
-            </nav>
           </div>
-        </div>
-      </li>
-    </ul>
+        </li>
 
-    <!-- <nav class="nav nav--pagination">
-      <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-left"></span></a>
-      <span class="c-nav__text">1</span>
-      <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-right"></span></a>
-    </nav> -->
+        <li class="c-article__item">
+          <span class="c-article__order">1</span>
+          <a href="#" class="c-article__link">Far far away behind the word mountains, far from the countries Vokalia and Consonantia</a>
+          <ul class="c-article__meta-items">
+            <li class="c-article__meta-item"><a href="#" class="c-article__meta-link">Vox.com</a></li>
+            <li class="c-article__meta-item">5h ago</li>
+            <li class="c-article__meta-item">2.1k upvotes</li>
+            <li class="c-article__meta-item"><a href="#" class="c-article__meta-link">64 comments</a></li>
+            <li class="c-article__meta-item c-article__meta-item--categories"><a href="#" class="c-article__meta-link">Politics</a><span class="divider-dot"></span><a href="#" class="c-article__meta-link">Brexit</a></li>
+          </ul>
+          <div class="c-article__actions c-menu">
+            <button class="c-article__action u-hidden-small btn"><span class="icon btn__icon icon--arrow-up"></span>Upvote</button>
+            <button class="c-article__action btn btn--icon c-menu__toggle" data-toggle=".c-article__actions.c-menu, body"><span class="icon icon--more-horizontal"></span></button>
+            <div class="c-menu__content">
+              <div class="c-menu__header u-hidden-medium">
+                <div class="c-article__item c-article__item--snapshot">
+                  <span class="c-article__order">1</span>
+                  <a href="#" class="c-article__link">Far far away behind the word mountains, far from the countries Vokalia and Consonantia</a>
+                  <ul class="c-article__meta-items">
+                    <li class="c-article__meta-item">Vox.com</li>
+                    <li class="c-article__meta-item">5h ago</li>
+                    <li class="c-article__meta-item">2.1k upvotes</li>
+                    <li class="c-article__meta-item">64 comments</li>
+                  </ul>
+                </div>
+              </div>
+              <nav class="c-nav c-nav--list">
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-up-right"></span>Read article</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-up"></span>Upvote</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--message-square"></span>Discuss</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--bookmark"></span>Save</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--share"></span>Share</a>
+                <a href="#" class="c-nav__link c-nav__link--divider-above u-hidden-medium"><span class="c-nav__icon icon icon--x"></span>Cancel</a>
+              </nav>
+            </div>
+          </div>
+        </li>
+        <li class="c-article__item">
+          <span class="c-article__order">1</span>
+          <a href="#" class="c-article__link">Far far away behind the word mountains, far from the countries Vokalia and Consonantia</a>
+          <ul class="c-article__meta-items">
+            <li class="c-article__meta-item"><a href="#" class="c-article__meta-link">Vox.com</a></li>
+            <li class="c-article__meta-item">5h ago</li>
+            <li class="c-article__meta-item">2.1k upvotes</li>
+            <li class="c-article__meta-item"><a href="#" class="c-article__meta-link">64 comments</a></li>
+            <li class="c-article__meta-item c-article__meta-item--categories"><a href="#" class="c-article__meta-link">Politics</a><span class="divider-dot"></span><a href="#" class="c-article__meta-link">Brexit</a></li>
+          </ul>
+          <div class="c-article__actions c-menu">
+            <button class="c-article__action u-hidden-small btn"><span class="icon btn__icon icon--arrow-up"></span>Upvote</button>
+            <button class="c-article__action btn btn--icon c-menu__toggle" data-toggle=".c-article__actions.c-menu, body"><span class="icon icon--more-horizontal"></span></button>
+            <div class="c-menu__content">
+              <div class="c-menu__header u-hidden-medium">
+                <div class="c-article__item c-article__item--snapshot">
+                  <span class="c-article__order">1</span>
+                  <a href="#" class="c-article__link">Far far away behind the word mountains, far from the countries Vokalia and Consonantia</a>
+                  <ul class="c-article__meta-items">
+                    <li class="c-article__meta-item">Vox.com</li>
+                    <li class="c-article__meta-item">5h ago</li>
+                    <li class="c-article__meta-item">2.1k upvotes</li>
+                    <li class="c-article__meta-item">64 comments</li>
+                  </ul>
+                </div>
+              </div>
+              <nav class="c-nav c-nav--list">
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-up-right"></span>Read article</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--arrow-up"></span>Upvote</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--message-square"></span>Discuss</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--bookmark"></span>Save</a>
+                <a href="#" class="c-nav__link"><span class="c-nav__icon icon icon--share"></span>Share</a>
+                <a href="#" class="c-nav__link c-nav__link--divider-above u-hidden-medium"><span class="c-nav__icon icon icon--x"></span>Cancel</a>
+              </nav>
+            </div>
+          </div>
+        </li>
+      </ul>
 
-    <div class="c-ad">Google ad</div>
+      <nav class="c-nav c-nav--pagination">
+        <a href="#" class="c-nav__link"><span class="icon icon--arrow-left"></span></a>
+        <span class="c-nav__page-number">1</span>
+        <a href="#" class="c-nav__link"><span class="icon icon--arrow-right"></span></a>
+      </nav>
+
+      <div class="c-ad">Google ad</div>
+
+    </div>
 
   </main>
 
