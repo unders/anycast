@@ -3,12 +3,12 @@
 //-----------------------------------------------------------------------
 
 .c-navbar {
-  z-index: $zindex-navbar;
   height: $spacing-xlarge;
   margin-bottom: $spacing-tiny;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: $zindex-navbar;
 
   &__brand {
     background: url("../images/worldtoday.svg") no-repeat scroll center center / 100% auto;
@@ -18,7 +18,18 @@
     height: $spacing-xlarge;
 
     &:hover, &:focus {
-      opacity: .6;
+      //opacity: .6;
+    }
+  }
+
+  &--light {
+
+    .c-navbar__brand {
+      filter: invert(100%) brightness(3);
+    }
+
+    .c-navbar__nav > .c-nav__link {
+      @extend .c-button--light;
     }
   }
 

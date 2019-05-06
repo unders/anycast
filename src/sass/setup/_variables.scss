@@ -32,18 +32,21 @@ $color-link-hover:        darken($color-brand-primary, 10%);
 //---------------------------
 
 $text-font-family-sans-serif:   'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$text-font-family-serif:        'Playfair Display', 'Georgia' serif;
+$text-font-family-serif:        'Playfair Display', 'Georgia', serif;
 
 $text-font-family:              $text-font-family-sans-serif;
 
+//$text-font-size-small:          1.2rem;
 $text-font-size:                1.8rem;
 $text-line-height:              1.625;
 
+//$text-font-size-small-md:       1.4rem;
 $text-font-size-md:             1.8rem;
 $text-line-height-md:           1.625;
 
 $text-font-weight:              300;
 $text-font-weight-heavy:        500;
+$text-font-weight-massive:      700;
 
 
 // BOX SHADOWS
@@ -83,7 +86,14 @@ $spacing-large:           $spacing-base * 6;    // 48px
 $spacing-xlarge:          $spacing-base * 8;    // 64px
 $spacing-super:           $spacing-base * 10;   // 80px
 
-// Medium variables?
+// Maybe not ?
+$spacing-tiny-md:         $spacing-base;        // 8px
+$spacing-xsmall-md:       $spacing-base * 2;    // 16px
+$spacing-small-md:        $spacing-base * 3;    // 24px
+$spacing-medium-md:       $spacing-base * 4;    // 32px
+$spacing-large-md:        $spacing-base * 6;    // 48px
+$spacing-xlarge-md:       $spacing-base * 8;    // 64px
+$spacing-super-md:        $spacing-base * 10;   // 80px
 
 
 // GRID
@@ -104,7 +114,9 @@ $breakpoint-large:        "only screen and (min-width : 1400px)";
 // Z-INDEXES
 //---------------------------
 
-$zindex-menu:             100;
+$zindex-mask:             100;
 $zindex-navbar:           200;
 $zindex-modal:            300;
-$zindex-alert:            400;
+$zindex-filter:           400;
+$zindex-menu:             500;
+$zindex-alert:            600;

@@ -28,19 +28,34 @@
 
   &__items {
     display: grid;
-    grid-template: auto / repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template: auto / repeat(auto-fit, minmax(18rem, 1fr));
     grid-gap: $spacing-tiny;
   }
 
   &__item {
-    @extend .btn;
+    @extend .c-button;
+    @extend .c-button--default;
     text-align: left;
     margin-bottom: $spacing-tiny;
     display: block;
+    position: relative;
 
-   &--current {
-    @extend .btn--primary;
-   }
+    &--current {
+      @extend .c-button--primary;
+    }
+
+   &--clear {
+     padding-right: $spacing-medium;
+
+     &:before {
+      @extend .icon;
+      @extend .icon--x;
+      font-size: 1.8rem;
+      position: absolute;
+      right: 1.2rem;
+      top: calc(50% - .6rem);
+     }
+    }
   }
 
 
@@ -50,7 +65,7 @@
       position: fixed;
       right: $grid-gutter;
       bottom: $grid-gutter;
-      z-index: $zindex-menu - 10;
+      z-index: $zindex-filter + 10;
     }
 
     &__content {
@@ -60,7 +75,7 @@
       right: 0;
       bottom: -100%;
       left: 0;
-      z-index: $zindex-modal;
+      z-index: $zindex-filter;
       transition: .2s;
     }
 

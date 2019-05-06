@@ -4,18 +4,22 @@
 
 .c-menu {
   position: relative;
-  z-index: $zindex-menu;
+  //z-index: $zindex-menu;
 
   &__toggle {
     outline: none;
     margin: 0;
-    z-index: $zindex-menu;
+
+    &.toggle-open {
+      z-index: $zindex-menu;
+    }
   }
 
   &__content {
-    background: $color-gray-5;
+    background: $color-white;
     display: none;
     @extend .u-high;
+    z-index: $zindex-menu;
   }
 
   &.toggle-open .c-menu__content {

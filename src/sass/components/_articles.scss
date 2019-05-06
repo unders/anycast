@@ -86,9 +86,10 @@
       padding: $spacing-xsmall $spacing-tiny;
       transition: .1s;
 
-      &:hover, &:focus {
+      &:hover, &:focus, &--current {
         background: $color-white;
         box-shadow: $box-shadow-high;
+        z-index: $zindex-filter;
 
         .c-article__actions {
           display: flex;
@@ -145,12 +146,12 @@
       justify-content: flex-end;
       align-items: center;
       align-content: center;
+      z-index: $zindex-menu;
     }
 
     .c-article__action:not(:first-of-type) {
       margin-left: $spacing-tiny;
     }
-
   }
 
 }

@@ -1,24 +1,19 @@
 //
-// AVATARS
+// COMPONENTS / AVATARS
 //-----------------------------------------------------------------------
 
-.avatar {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: $spacing-base*5;
-  height: $spacing-base*5;
-  border-radius: 100%;
-  background: $color-brand-primary;
-  color: $color-white;
+.c-avatar {
+  display: block;
+  border-radius: $border-radius-rounded;
+  width: 3.2rem;
+  max-width: 100%;
+  margin: 0;
 
-  &--loud {
-    width: $spacing-base*8;
-    height: $spacing-base*8;
+  &--medium {
+    width: 4rem;
+  }
 
-    .avatar__icon {
-      font-size: $spacing-base*4;
-    }
-
+  &--large {
+    width: $spacing-xlarge*2;
   }
 }

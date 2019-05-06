@@ -15,21 +15,31 @@
     display: block;
 
     &:focus, &:hover, &--current {
-      background: $color-white;
+      background: $color-gray-5;
     }
 
-    &:not(.c-nav__link--btn) {
+    &:not(.c-nav__link--button) {
       line-height: 6.4rem;
+    }
+
+    &--c-button {
+      width: $spacing-base*6;
+      height: $spacing-base*6;
+    }
+
+    &--disabled {
+      opacity: $disabled-opacity;
+      cursor: default;
+
+      &:hover, &:focus {
+        background: transparent;
+      }
     }
   }
 
   &__icon {
     margin-right: $spacing-xsmall;
     display: inline-block;
-  }
-
-  &__link--btn {
-
   }
 
   &--list {

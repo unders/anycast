@@ -1,19 +1,26 @@
 //
-// BADGES
+// CHIPS
 //-----------------------------------------------------------------------
 
-.badge {
-  display: inline-block;
-  padding: 0 $spacing-base;
-  background: $color-gray-1;
+.c-chip {
+  display: inline-flex;
+  padding: 0 $spacing-tiny;
+  background: $color-text;
   color: $color-white;
-  font-size: .9rem;
+  font-size: 1.1rem;
   line-height: 1.6rem;
-  font-weight: bold;
-  text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
-  border-radius: 2rem;
+  border-radius: $border-radius;
+
+  &--light {
+    background: rgba($color-white, .2);
+
+    &:hover, &:focus {
+      background: $color-white;
+      color: $color-text;
+    }
+  }
 
   &--brand {
     background: $color-brand-primary;
@@ -27,12 +34,18 @@
     background: $color-success;
   }
 
-  &--warning, &--yellow {
+  &--warning {
     background: $color-warning;
   }
 
   &--danger {
     background: $color-danger;
   }
+}
 
+.c-chip-set {
+  margin-bottom: $spacing-small;
+
+  .c-chip {
+  }
 }

@@ -2,64 +2,21 @@
 // HERO
 //-----------------------------------------------------------------------
 
-// HERO
-
-.hero {
-  padding-top: $nav-height + $spacing-base * 4;
-  padding-bottom: $spacing-base * 4;
-  margin-bottom: $base-margin;
-  margin-top: -$padding-top;
-  background: $background-light-gray;
-
-  &__header {
-    margin-bottom: $spacing-base;
-  }
-
-  &__actions {
-    justify-content: flex-start;
-  }
-
-  @media #{$breakpoint-medium} {
-
-    &__inner {
-      display: grid;
-      grid-template: auto / 5fr 1fr;
-      grid-gap: 0 $spacing-base*4;
-    }
-
-    &__actions {
-      justify-content: flex-end;
-      align-items: center;
-    }
-
-  }
-
-}
-
-
-// HERO LOUD
-
-.hero-loud {
+.c-hero {
+  background: $color-brand-primary;
+  min-height: 60vh;
+  padding: $spacing-xlarge + $spacing-tiny 0;
   overflow: hidden;
-  padding-top: $nav-height + $spacing-base * 6;
-  padding-bottom: $spacing-base * 4;
-  margin-bottom: $base-margin;
-  margin-top: -$padding-top;
-  background: $brand-secendary no-repeat center center / cover;
   position: relative;
+  display: flex;
 
-  &--no-margin {
-    margin-bottom: 0;
+  &--business {
+
   }
 
-  &--img:after {
-    content: '';
-    background-image: linear-gradient(-180deg, rgba(0,0,0,0) 0%, $black 100%);
-    @include abs-cover;
-    top: 40%;
-  }
-
-  &__image {
+  &__media {
+    filter: grayscale(100%);
+    opacity: .2;
     position: absolute;
     margin-bottom: 0;
     height: 100%;
@@ -70,39 +27,63 @@
 
   &__content {
     position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: $color-white;
     text-align: center;
-    //animation: .4s .2s fadeIn both;
   }
 
-  &__header {
-    margin-bottom: $spacing-base;
+  &__title {
+    @extend .u-header-xlarge;
+    font-family: $text-font-family-serif;
+    font-weight: $text-font-weight-massive;
+    margin-bottom: $spacing-xsmall;
+  }
 
-    & + .hero-loud__brand {
-      margin-top: $base-margin;
+  &__meta-items {
+    margin-bottom: $spacing-xsmall;
+    display: flex;
+  }
+
+  &__meta-item {
+    color: $color-white;
+    font-size: 1.3rem;
+
+    &:not(:last-of-type) {
+      margin-right: $spacing-small;
+    }
+  }
+
+  &__meta-link {
+    color: $color-white;
+    border-bottom: 1px solid transparent;
+
+    &:hover, &:focus {
+      border-bottom-color: $color-white;
+    }
+  }
+
+  &__actions {
+
+  }
+
+  @media #{$breakpoint-medium} {
+    padding: $spacing-xlarge + $spacing-small + $spacing-xsmall 0;
+
+    &__title {
+      margin-bottom: $spacing-small;
     }
 
-  }
+    &__meta-items {
+      margin-bottom: $spacing-small;
+    }
 
-  &__meta {
-    margin-bottom: $spacing-base * 4;
-  }
+    &__meta-item {
+      font-size: 1.4rem;
+    }
 
-  &__brand {
-    margin-bottom: $base-margin;
-  }
-
-  &__nav {
-    margin-bottom: -$spacing-base * 4;
-  }
-
-  &__nav .nav__link {
-    font-size: 1.8rem;
   }
 
 }
