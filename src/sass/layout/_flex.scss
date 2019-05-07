@@ -1,0 +1,12 @@
+//
+// LAYOUT / FLEX
+//-----------------------------------------------------------------------
+
+.l-flex {
+  display: flex;
+  align-items: center;
+}
+
+.l-flex--grow {
+  flex-grow: 1;
+}

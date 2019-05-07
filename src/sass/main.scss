@@ -35,16 +35,17 @@
 @import "layout/container";
 @import "layout/base";
 @import "layout/grid";
+@import "layout/flex";
 @import "layout/modal";
 
 
 // COMPONENTS
 //---------------------------
 
-@import "components/buttons";
 @import "components/icons";
 @import "components/media";
 @import "components/navs";
+@import "components/buttons";
 @import "components/navbar";
 @import "components/menus";
 @import "components/filter";
@@ -53,8 +54,9 @@
 @import "components/avatars";
 @import "components/footer";
 @import "components/ads";
-//@import "components/forms";
 @import "components/hero";
+@import "components/input-groups";
+//@import "components/forms";
 //@import "components/alert";
 //@import "components/animation";
 //@import "components/text";
