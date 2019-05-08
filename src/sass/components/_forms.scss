@@ -8,7 +8,6 @@
   display: block;
   position: relative;
   padding: 0;
-  //margin-bottom: $spacing-small;
 
   &__label {
     position: absolute;
@@ -23,7 +22,7 @@
   &__input {
     background: transparent;
     width: 100%;
-    padding: $spacing-tiny 0;
+    padding: $spacing-xsmall 0;
     border: 0;
     border-radius: 0;
     border-bottom: 1px solid $color-gray-3;
@@ -63,17 +62,9 @@
   }
 
   &__helper {
-    margin: $spacing-base/2 0 0 0;
+    margin: $spacing-tiny 0 0 0;
     font-size: 1.4rem;
     color: $color-gray-3;
-  }
-
-  &--no-label {
-
-    &__input {
-
-    }
-
   }
 
 
@@ -289,69 +280,6 @@
 
 }
 
-// CONTROL BOXES
-
-.control-box-group {
-  display: grid;
-  grid-template: auto / repeat(auto-fit, minmax(26rem, 1fr));
-  grid-gap: $spacing-base;
-}
-
-.control-box {
-
-  &__helper {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-  }
-
-  &__toggle {
-    height: 14rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border-radius: $border-radius;
-    transition: .2s;
-    color: $color-link;
-    border: 1px solid rgba($color-link, .5);
-    //background: rgba(0,0,0,.05);
-
-    &:hover, &:focus {
-      background: rgba($color-link, .05);
-      border-color: $color-link;
-    }
-
-  }
-
-  &__icon {
-    font-size: $spacing-base*4;
-    margin-bottom: $spacing-base;
-  }
-
-  &__helper:checked ~ .control-box__toggle {
-    background: $color-brand-primary;
-    color: $color-white;
-
-    &:hover, &:focus {
-      //background: $link-color-hover;
-    }
-  }
-
-  &__helper:disabled ~ .control-box__toggle {
-    border-color: rgba(0,0,0,.1);
-    color: $color-gray-3;
-    cursor: not-allowed;
-
-    &:hover, &:focus {
-      background: rgba(0,0,0,.05);
-    }
-
-  }
-
-}
-
 .form__actions {
-  margin-top: $spacing-base*2;
+  margin-top: $spacing-small;
 }

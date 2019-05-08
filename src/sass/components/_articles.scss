@@ -3,12 +3,12 @@
 //-----------------------------------------------------------------------
 
 .c-articles {
-  margin-bottom: $spacing-medium;
+  margin-bottom: $spacing-large;
 
   .c-article__item {
     display: grid;
     grid-template: auto auto / auto 1fr auto;
-    grid-column-gap: $spacing-tiny;
+    grid-column-gap: $spacing-xsmall;
     grid-template-areas:
     "order link actions"
     "order meta actions";
@@ -27,7 +27,7 @@
     font-size: 1.6rem;
     font-weight: $text-font-weight-heavy;
     grid-area: link;
-    margin-bottom: $spacing-tiny/2;
+    margin-bottom: $spacing-tiny;
   }
 
   .c-article__meta-items {
@@ -54,11 +54,11 @@
   @media #{$breakpoint-small-max} {
 
     .c-article__item {
-      margin-bottom: $spacing-xsmall;
+      margin-bottom: $spacing-small;
     }
 
     .c-article__order {
-      width: $spacing-medium;
+      width: $spacing-large;
     }
 
     .c-article__link {
@@ -66,7 +66,7 @@
     }
 
     .c-article__meta-item {
-      margin-right: $spacing-tiny;
+      margin-right: $spacing-xsmall;
 
       &--categories {
         display: none;
@@ -74,8 +74,8 @@
     }
 
     .c-article__item--snapshot {
-      margin: $spacing-xsmall;
-      padding-bottom: $spacing-xsmall;
+      margin: $spacing-small;
+      padding-bottom: $spacing-small;
       border-bottom: 1px solid $color-gray-4;
     }
 
@@ -85,7 +85,7 @@
 
     .c-article__item {
       border-radius: $border-radius;
-      padding: $spacing-xsmall $spacing-tiny;
+      padding: $spacing-xsmall-md $spacing-tiny-md;
       transition: .1s;
 
       &:hover, &:focus, &--current {
@@ -101,7 +101,7 @@
 
     .c-article__order {
       font-size: 1.8rem;
-      width: $spacing-large;
+      width: $spacing-large-md;
     }
 
     .c-article__link {
@@ -124,7 +124,7 @@
     }
 
     .c-article__meta-item:not(:last-of-type) {
-      margin-right: $spacing-medium;
+      margin-right: $spacing-medium-md;
     }
 
     .c-article__meta-link {
@@ -136,8 +136,8 @@
       background: $color-white;
       background: linear-gradient(270deg, $color-white 75%, rgba(255, 255, 255, 0) 100%);
       border-radius: 0 $border-radius $border-radius 0;
-      padding-right: $spacing-xsmall;
-      padding-left: $spacing-super;
+      padding-right: $spacing-xsmall-md;
+      padding-left: $spacing-base * 10;
       grid-area: unset;
       position: absolute;
       top: 0;
@@ -152,8 +152,7 @@
     }
 
     .c-article__action:not(:first-of-type) {
-      margin-left: $spacing-tiny;
+      margin-left: $spacing-tiny-md;
     }
   }
-
 }

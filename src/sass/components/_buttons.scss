@@ -13,7 +13,7 @@ button, input[type="submit"] {
   position: relative;
   display: inline-flex;
   align-items: center;
-  border-radius: $border-radius-rounded;
+  border-radius: $border-radius;
   border: 1px solid transparent;
   background: transparent;
   color: $color-text;
@@ -34,11 +34,9 @@ button, input[type="submit"] {
 
   &:hover,
   &:focus,
+  &:active,
   &--active {
     background: $color-gray-5;
-  }
-
-  &:active {
     outline: 0;
   }
 
@@ -50,7 +48,7 @@ button, input[type="submit"] {
   }
 
   &__icon {
-    margin-right: $spacing-base;
+    margin-right: $spacing-xsmall;
   }
 
   &--icon {
@@ -67,8 +65,8 @@ button, input[type="submit"] {
     }
 
     &.c-button--large {
-      width: $spacing-large;
-      height: $spacing-large;
+      width: $spacing-xlarge;
+      height: $spacing-xlarge;
     }
   }
 
@@ -77,8 +75,8 @@ button, input[type="submit"] {
     justify-content: center;
     align-content: center;
     overflow: hidden;
-    width: $spacing-base*6;
-    height: $spacing-base*6;
+    width: $spacing-xlarge;
+    height: $spacing-xlarge;
     padding: 0 !important;
     margin: 0 !important;
   }
@@ -221,11 +219,11 @@ button, input[type="submit"] {
 .c-button--close {
   background: no-repeat;
   position: absolute;
-  right: $spacing-xsmall;
+  right: $spacing-small;
   padding: 0;
   outline: 0;
   color: $color-white;
-  font-size: $spacing-small;
+  font-size: $spacing-medium;
   font-weight: normal;
   line-height: 1;
   opacity: .6;
@@ -246,7 +244,7 @@ button, input[type="submit"] {
   justify-content: flex-end;
 
   .c-button {
-    margin: 0 $spacing-base/2 $spacing-tiny;
+    margin: 0 $spacing-tiny $spacing-xsmall;
 
     &:last-of-type {
       margin-right: 0;

@@ -1,12 +1,34 @@
 {{ define "title" }}{{.String.Title_Index}}{{ end }}
 {{ define "main" }}
-    <picture>
-        <source srcset="/assets/image/design_max.webp" type="image/webp">
-        <img src="/assets/image/design_max.jpg" alt="design">
-    </picture>
-    <h3>Design 2</h3>
-    <p>
-        We offer professional quality websites at a
-        competitive price. — no hassles
-    </p>
+
+<main class="l-main l-container">
+
+  <div class="l-grid u-margin-bottom-medium">
+    <div class="l-grid__item--span-1">
+      <img src="/assets/images/avatar-member-johannes.png" alt="" class="c-avatar c-avatar--block u-margin-bottom-xsmall">
+    </div>
+    <div class="l-grid__item--span-4">
+      <h1>Johannes Leuchovius</h1>
+      <p>Far far away, behind the word mountains, far from the countries <a href="#">Vokalia and Consonantia</a>, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      <ul class="l-list l-list--inline u-text-quiet">
+        <li><a href="#">Johannesleuchovius.com</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">E-mail</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="c-nav c-nav--tabs">
+    <a href="/profile.html" class="c-nav__link c-nav__link--current">Upvotes</a>
+    <a href="/settings.html" class="c-nav__link">Comments</a>
+    <a href="/signed-out.html" class="c-nav__link">Saved</a>
+  </nav>
+
+  {{ template "part/articles--unordered" . }}
+
+  {{ template "part/pagination" . }}
+
+</main>
+
 {{ end }}

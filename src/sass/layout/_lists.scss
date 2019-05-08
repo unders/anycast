@@ -1,29 +1,25 @@
-//
-// LISTS
+// LAYOUT / LISTS
 //-----------------------------------------------------------------------
 
-.list-inline {
+.l-list {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: $spacing-base * 2;
+  flex-direction: column;
 
-  &__item {
-    margin-right: $spacing-base * 2;
-    white-space: nowrap;
+  > li {
+    margin-bottom: $spacing-xsmall;
+  }
 
-    &:last-of-type {
-      margin-right: 0;
+  @media #{$breakpoint-medium} {
+    > li {
+      margin-bottom: $spacing-xsmall-md;
     }
-
   }
+}
 
+.l-list--inline {
+  flex-direction: row;
 
-  &--muted {
-    color: $color-gray-4;
+  > li + li {
+    margin-left: $spacing-small;
   }
-
-  &--tiny {
-    font-size: 1.3rem;
-  }
-
 }

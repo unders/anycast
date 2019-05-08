@@ -36,11 +36,11 @@ $text-font-family-serif:        'Playfair Display', 'Georgia', serif;
 
 $text-font-family:              $text-font-family-sans-serif;
 
-//$text-font-size-small:          1.4rem;
+$text-font-size-small:          1.4rem;
 $text-font-size:                1.6rem;
 $text-line-height:              1.625;
 
-//$text-font-size-small-md:       1.6rem;
+$text-font-size-small-md:       1.6rem;
 $text-font-size-md:             1.8rem;
 $text-line-height-md:           1.625;
 
@@ -63,8 +63,8 @@ $box-shadow-highest:      0 20px 55px -8px rgba(#000, 0.4);
 
 $border-color:            $color-gray-4;
 $border-width:            1px;
-$border-radius:           .4rem;
-$border-radius-rounded:   5rem;
+$border-radius:           0; //.4rem;
+$border-radius-rounded:   200rem;
 
 
 // DISABLED
@@ -77,7 +77,26 @@ $disabled-opacity:        .5;
 //---------------------------
 
 $spacing-base:            0.8rem;
+$spacing-base-md:         0.8rem;
 
+$spacing-tiny:            $spacing-base / 2;      // 4px
+$spacing-xsmall:          $spacing-base;          // 8px
+$spacing-small:           $spacing-base * 2;      // 16px
+$spacing-medium:          $spacing-base * 3;      // 24px
+$spacing-large:           $spacing-base * 4;      // 32px
+$spacing-xlarge:          $spacing-base * 6;      // 48px
+$spacing-super:           $spacing-base * 8;      // 64px
+
+$spacing-tiny-md:         $spacing-base-md;       // 8px
+$spacing-xsmall-md:       $spacing-base-md * 2;   // 16px
+$spacing-small-md:        $spacing-base-md * 3;   // 24px
+$spacing-medium-md:       $spacing-base-md * 4;   // 32px
+$spacing-large-md:        $spacing-base-md * 6;   // 48px
+$spacing-xlarge-md:       $spacing-base-md * 8;   // 64px
+$spacing-super-md:        $spacing-base-md * 12;  // 96px
+
+
+/* FIRST VERSION
 $spacing-tiny:            $spacing-base;        // 8px
 $spacing-xsmall:          $spacing-base * 2;    // 16px
 $spacing-small:           $spacing-base * 3;    // 24px
@@ -85,15 +104,7 @@ $spacing-medium:          $spacing-base * 4;    // 32px
 $spacing-large:           $spacing-base * 6;    // 48px
 $spacing-xlarge:          $spacing-base * 8;    // 64px
 $spacing-super:           $spacing-base * 10;   // 80px
-
-// Maybe not ?
-$spacing-tiny-md:         $spacing-base;        // 8px
-$spacing-xsmall-md:       $spacing-base * 2;    // 16px
-$spacing-small-md:        $spacing-base * 3;    // 24px
-$spacing-medium-md:       $spacing-base * 4;    // 32px
-$spacing-large-md:        $spacing-base * 6;    // 48px
-$spacing-xlarge-md:       $spacing-base * 8;    // 64px
-$spacing-super-md:        $spacing-base * 10;   // 80px
+*/
 
 
 // GRID

@@ -3,8 +3,8 @@
 //-----------------------------------------------------------------------
 
 .c-navbar {
-  height: $spacing-xlarge;
-  margin-bottom: $spacing-tiny;
+  height: $spacing-super;
+  margin-bottom: $spacing-xsmall;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,8 +34,8 @@
   }
 
   @media #{$breakpoint-medium} {
-    margin-top: $spacing-small;
-    margin-bottom: $spacing-xsmall;
+    margin-top: $spacing-small-md;
+    margin-bottom: $spacing-xsmall-md;
 
     &__brand {
       width: 19rem;

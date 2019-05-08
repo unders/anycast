@@ -9,7 +9,7 @@
   }
 
   &__title {
-    line-height: $spacing-xlarge;
+    line-height: $spacing-super;
   }
 
   &__toggle.toggle-open .icon:before {
@@ -18,7 +18,7 @@
 
   &__content {
     background: $color-gray-5;
-    padding: $spacing-medium 0;
+    padding: $spacing-large 0;
     display: none;
   }
 
@@ -29,14 +29,14 @@
   &__items {
     display: grid;
     grid-template: auto / repeat(auto-fit, minmax(18rem, 1fr));
-    grid-gap: $spacing-tiny;
+    grid-gap: $spacing-xsmall;
   }
 
   &__item {
     @extend .c-button;
     @extend .c-button--default;
     text-align: left;
-    margin-bottom: $spacing-tiny;
+    margin-bottom: $spacing-xsmall;
     display: block;
     position: relative;
 
@@ -45,7 +45,7 @@
     }
 
    &--clear {
-     padding-right: $spacing-medium;
+     padding-right: $spacing-large;
 
      &:before {
       @extend .icon;
@@ -84,14 +84,14 @@
     }
 
     &__items {
-      margin-bottom: $spacing-small;
+      margin-bottom: $spacing-medium;
     }
 
   }
 
 
   @media #{$breakpoint-medium} { // Inline style
-    margin-bottom: $spacing-small;
+    margin-bottom: $spacing-small-md;
 
     &__header {
       border-bottom: $border-width solid $color-gray-3;

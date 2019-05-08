@@ -10,8 +10,7 @@
     border-radius: $border-radius;
     color: $color-gray-1;
     font-size: 1.6rem;
-    //line-height: 6.4rem;
-    padding: 0 $spacing-base * 2;
+    padding: 0 $spacing-small;
     display: block;
 
     &:focus, &:hover, &--current {
@@ -22,14 +21,15 @@
       line-height: 6.4rem;
     }
 
-    &--c-button {
-      width: $spacing-base*6;
-      height: $spacing-base*6;
+    &--button {
+      border-radius: $border-radius-rounded !important;
+      width: $spacing-xlarge;
+      height: $spacing-xlarge;
     }
 
     &--disabled {
       opacity: $disabled-opacity;
-      cursor: default;
+      cursor: not-allowed;
 
       &:hover, &:focus {
         background: transparent;
@@ -38,7 +38,7 @@
   }
 
   &__icon {
-    margin-right: $spacing-xsmall;
+    margin-right: $spacing-small;
     display: inline-block;
   }
 
@@ -53,10 +53,6 @@
       white-space: nowrap;
       width: 100%;
 
-      &:hover, &:focus {
-        //background: $gray-5;
-      }
-
       &--divider-above {
         border-color: $color-gray-4;
       }
@@ -67,14 +63,14 @@
   // PAGINATION
 
   &--pagination {
-    margin-bottom: $spacing-xlarge;
+    @extend .u-margin-bottom-xlarge;
     border-top: 1px solid $color-gray-3;
-    padding-top: $spacing-tiny;
+    padding-top: $spacing-xsmall;
     justify-content: center;
   }
 
   &__page-number {
-    padding: 0 $spacing-small;
+    padding: 0 $spacing-medium;
   }
 
 
@@ -85,17 +81,32 @@
     .c-nav__link {
       border-radius: $border-radius-rounded;
       font-size: 1.4rem;
-      line-height: $spacing-medium;
+      line-height: $spacing-large;
     }
   }
 
 
-  // QUIET
+  // TABS
 
-  &--quiet {
+  &--tabs {
+    @extend .u-margin-bottom-medium;
+    border-bottom: 1px solid $color-gray-3;
 
     .c-nav__link {
-      color: $color-gray-2;
+      border-bottom: 1px solid transparent;
+      padding: 0 $spacing-xlarge;
+      position: relative;
+      bottom: -1px;
+
+
+      &:focus, &:hover {
+        border-bottom-color: $color-gray-3;
+      }
+
+      &--current {
+        border-bottom-color: $color-gray-1 !important;
+        background: transparent;
+      }
     }
   }
 }

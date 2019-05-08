@@ -5,7 +5,7 @@
 .c-hero {
   background: $color-brand-primary;
   min-height: 70vh;
-  padding-top: $spacing-xlarge + $spacing-tiny;
+  padding-top: $spacing-super + $spacing-xsmall;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -45,11 +45,11 @@
     @extend .u-header-xlarge;
     font-family: $text-font-family-serif;
     font-weight: $text-font-weight-massive;
-    margin-bottom: $spacing-xsmall; // Vertical Margin
+    @extend .u-margin-bottom-small;
   }
 
   &__meta-items {
-    margin-bottom: $spacing-xsmall; // Vertical Margin
+    @extend .u-margin-bottom-small;
     display: flex;
   }
 
@@ -58,7 +58,7 @@
     font-size: 1.3rem;
 
     &:not(:last-of-type) {
-      margin-right: $spacing-small;
+      margin-right: $spacing-medium;
     }
   }
 
@@ -72,12 +72,12 @@
   }
 
   &__article-link {
-    margin-bottom: $spacing-xsmall; // Vertical Margin
+    @extend .u-margin-bottom-small;
   }
 
   &__actions {
     width: 100%;
-    margin-bottom: $spacing-small;
+    margin-bottom: $spacing-medium;
     align-self: end;
   }
 
@@ -85,26 +85,12 @@
   @media #{$breakpoint-medium} {
     padding-top: $spacing-xlarge + $spacing-small + $spacing-xsmall;
 
-    &__title {
-      margin-bottom: $spacing-small; // Vertical Margin
-    }
-
-    &__meta-items {
-      margin-bottom: $spacing-small; // Vertical Margin
-    }
-
     &__meta-item {
       font-size: 1.4rem;
     }
 
-    &__article-link {
-      margin-bottom: $spacing-small; // Vertical Margin
-    }
-
     &__actions {
-      margin-bottom: $spacing-base * 5;
+      margin-bottom: $spacing-base-md * 5;
     }
-
   }
-
 }

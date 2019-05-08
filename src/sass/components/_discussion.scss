@@ -10,11 +10,11 @@
   }
 
   &__title {
-    line-height: $spacing-xlarge;
+    line-height: $spacing-super;
   }
 
   &__comment-box {
-    margin-bottom: $spacing-xsmall;
+    margin-bottom: $spacing-small;
     display: grid;
     grid-template: auto auto / auto 1fr;
     grid-template-areas:
@@ -24,7 +24,7 @@
 
   .c-avatar {
     grid-area: avatar;
-    margin-right: $spacing-small;
+    margin-right: $spacing-medium;
   }
 
   &__comment-field {
@@ -59,7 +59,7 @@
   }
 
   &__block {
-    padding: $spacing-large 0;
+    padding: $spacing-xlarge 0;
 
     &:nth-child(even) {
       background: $color-gray-5;
@@ -80,7 +80,7 @@
     line-height: 3.2rem;
 
     span:not(:last-of-type) {
-      margin-right: $spacing-small;
+      margin-right: $spacing-medium;
     }
   }
 
@@ -89,15 +89,11 @@
   }
 
   &__body {
-    margin-bottom: $spacing-small;
+    margin-bottom: $spacing-medium;
   }
 
 
   @media #{$breakpoint-medium} {
-
-    &__header {
-      //margin-bottom: $spacing-xsmall; // Vertical Margin
-    }
 
     &__entry-header {
       //font-size: 1.6rem;
@@ -105,5 +101,4 @@
     }
 
   }
-
 }

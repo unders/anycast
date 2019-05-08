@@ -7,6 +7,10 @@
 
 .u-text-quiet {
   color: $color-gray-2;
+
+  a {
+    color: $color-gray-2;
+  }
 }
 
 .u-text-loud {
@@ -24,6 +28,66 @@
     font-size: $text-font-size-small-md;
   }
 } */
+
+
+// MARGIN
+//---------------------------
+
+.u-margin-bottom-tiny {
+  margin-bottom: $spacing-tiny;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $spacing-tiny-md;
+  }
+}
+
+.u-margin-bottom-xsmall {
+  margin-bottom: $spacing-xsmall;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $spacing-xsmall-md;
+  }
+}
+
+.u-margin-bottom-small {
+  margin-bottom: $spacing-small;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $spacing-small-md;
+  }
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: $spacing-medium;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $spacing-medium-md;
+  }
+}
+
+.u-margin-bottom-large {
+  margin-bottom: $spacing-large;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $spacing-large-md;
+  }
+}
+
+.u-margin-bottom-xlarge {
+  margin-bottom: $spacing-xlarge;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $spacing-xlarge-md;
+  }
+}
+
+.u-margin-bottom-super {
+  margin-bottom: $spacing-super;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $spacing-super-md;
+  }
+}
 
 
 // ELEVATION
@@ -67,7 +131,7 @@
 }
 
 .divider-dot {
-  margin: 0 $spacing-tiny/2;
+  margin: 0 $spacing-tiny;
   display: inline-block;
 
   &:after {

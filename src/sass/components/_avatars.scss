@@ -9,11 +9,15 @@
   max-width: 100%;
   margin: 0;
 
-  &--large {
-    width: $spacing-xlarge*2;
+  &--block {
+    width: 8rem;
   }
 
   @media #{$breakpoint-medium} {
+
+    &--block {
+      width: 100%;
+    }
 
     &--medium {
       width: 4rem;

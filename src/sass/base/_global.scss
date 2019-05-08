@@ -2,10 +2,6 @@
 // GLOBAL
 //-----------------------------------------------------------------------
 
-html {
-  height: 100%;
-}
-
 body {
   background: $color-body-background;
   transition: .2s;
@@ -25,11 +21,4 @@ body {
     }
   }
 
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  outline: none;
 }

@@ -8,14 +8,14 @@
   display: block;
   position: fixed;
   width: 32rem;
-  padding: $spacing-base*2 2rem;
+  padding: $spacing-small 2rem;
   max-height: 100%;
   z-index: $zindex-alert;
   overflow-y: auto;
 
   .alert {
-    padding-right: $spacing-base*2;
-    margin-bottom: $spacing-base;
+    padding-right: $spacing-small;
+    margin-bottom: $spacing-xsmall;
   }
 
   @media #{$breakpoint-medium} {

@@ -19,7 +19,6 @@ body {
     font-size: $text-font-size-md;
     line-height: $text-line-height-md;
   }
-
 }
 
 
@@ -35,6 +34,11 @@ h1, h2, h3, h4,
 .u-header-xsmall {
   font-weight: $text-font-weight-heavy;
   line-height: 1.25;
+  margin-bottom: $spacing-xsmall;
+
+  @media #{$breakpoint-medium} {
+    margin-bottom: $spacing-xsmall-md;
+  }
 }
 
 .u-header-super {
@@ -82,10 +86,9 @@ h4, .u-header-xsmall {
   color: $color-gray-2;
   font-size: 1.3rem;
   letter-spacing: 0.1em;
-  line-height: $spacing-small;
+  line-height: $spacing-medium;
   text-transform: uppercase;
   border-bottom: $border-width solid $color-gray-3;
-  margin-bottom: $spacing-xsmall;
 }
 
 
@@ -93,14 +96,10 @@ h4, .u-header-xsmall {
 //---------------------------
 
 p {
-  & + & {
-    margin-top: $spacing-xsmall;
-  }
+  margin-bottom: $spacing-xsmall;
 
   @media #{$breakpoint-medium} {
-    & + & {
-      margin-top: $spacing-xsmall;
-    }
+    margin-bottom: $spacing-xsmall-md;
   }
 }
 
