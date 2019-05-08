@@ -1157,7 +1157,7 @@ body {
   @media only screen and (min-width: 900px) {
     body {
       font-size: 1.8rem;
-      line-height: 1.625; } }
+      line-height: 180%; } }
 
 h1, h2, h3, h4,
 .u-header-super,
@@ -1264,14 +1264,14 @@ hr {
 
 .l-container {
   margin: 0 auto;
-  padding: 0 0.8rem;
+  padding: 0 1.6rem;
   width: 100%;
   max-width: 130rem; }
   .l-container--small {
     max-width: 90rem; }
   @media only screen and (min-width: 900px) {
     .l-container {
-      padding: 0 2.4rem; } }
+      padding: 0 3.2rem; } }
 
 body {
   display: grid;
@@ -1340,7 +1340,7 @@ body {
 .l-list--inline {
   flex-direction: row; }
   .l-list--inline > li + li {
-    margin-left: 1.6rem; }
+    margin-left: 2.4rem; }
 
 .l-flex {
   display: flex;
@@ -1364,7 +1364,7 @@ body {
   visibility: hidden;
   opacity: 0; }
   .l-modal--full {
-    padding: 0.8rem;
+    padding: 1.6rem;
     top: 0;
     right: 0;
     bottom: 0;
@@ -1656,7 +1656,8 @@ button, input[type="submit"] {
   text-align: center; }
 
 .c-filter__title {
-  line-height: 6.4rem; }
+  line-height: 6.4rem;
+  margin: 0; }
 
 .c-filter__toggle.toggle-open .icon:before, .c-filter__toggle.toggle-open .c-filter__item--clear:before {
   content: "\e8f6"; }
@@ -1690,8 +1691,8 @@ button, input[type="submit"] {
 @media only screen and (max-width: 899px) {
   .c-filter__toggle {
     position: fixed;
-    right: 0.8rem;
-    bottom: 0.8rem;
+    right: 1.6rem;
+    bottom: 1.6rem;
     z-index: 410; }
   .c-filter__content {
     height: 100%;
@@ -1739,6 +1740,7 @@ button, input[type="submit"] {
     margin-bottom: 0.4rem; }
   .c-articles .c-article__meta-items {
     font-size: 1.1rem;
+    line-height: 1.6rem;
     color: #8A8A8A;
     display: flex;
     grid-area: meta; }
@@ -1781,7 +1783,7 @@ button, input[type="submit"] {
       width: 4.8rem; }
     .c-articles .c-article__link {
       font-size: 1.8rem;
-      line-height: 2.4rem; }
+      line-height: 140%; }
       .c-articles .c-article__link:before {
         content: '';
         position: absolute;
@@ -1948,10 +1950,11 @@ button, input[type="submit"] {
 
 .c-discussion__header {
   border-bottom: 1px solid #BFBFBF;
-  margin-bottom: 0.8rem; }
+  margin-bottom: 1.6rem; }
 
 .c-discussion__title {
-  line-height: 6.4rem; }
+  line-height: 6.4rem;
+  margin: 0; }
 
 .c-discussion__comment-box {
   margin-bottom: 1.6rem;

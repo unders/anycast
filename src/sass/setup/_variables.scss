@@ -42,7 +42,7 @@ $text-line-height:              1.625;
 
 $text-font-size-small-md:       1.6rem;
 $text-font-size-md:             1.8rem;
-$text-line-height-md:           1.625;
+$text-line-height-md:           180%; // 1.625;
 
 $text-font-weight:              400;
 $text-font-weight-heavy:        500;
@@ -110,8 +110,8 @@ $spacing-super:           $spacing-base * 10;   // 80px
 // GRID
 //---------------------------
 
-$grid-gutter:             $spacing-xsmall;
-$grid-gutter-md:          $spacing-medium;
+$grid-gutter:             $spacing-small;
+$grid-gutter-md:          $spacing-medium-md;
 
 
 // BREAKPOINTS

@@ -6,11 +6,12 @@
 
   &__header {
     border-bottom: $border-width solid $color-gray-3;
-    margin-bottom: $spacing-xsmall; // Vertical Margin
+    margin-bottom: $spacing-small;
   }
 
   &__title {
     line-height: $spacing-super;
+    margin: 0;
   }
 
   &__comment-box {

@@ -32,6 +32,7 @@
 
   .c-article__meta-items {
     font-size: 1.1rem;
+    line-height: 1.6rem;
     color: $color-gray-2;
     display: flex;
     grid-area: meta;
@@ -106,7 +107,7 @@
 
     .c-article__link {
       font-size: 1.8rem;
-      line-height: 2.4rem;
+      line-height: 140%;
 
       &:before {
         content: '';
