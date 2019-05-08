@@ -8,8 +8,8 @@
   width: 100%;
   max-width: 130rem;
 
-  &--dense {
-    max-width: 80rem;
+  &--small {
+    max-width: 90rem;
   }
 
   @media #{$breakpoint-medium} {

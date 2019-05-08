@@ -9,11 +9,14 @@
   max-width: 100%;
   margin: 0;
 
-  &--medium {
-    width: 4rem;
-  }
-
   &--large {
     width: $spacing-xlarge*2;
+  }
+
+  @media #{$breakpoint-medium} {
+
+    &--medium {
+      width: 4rem;
+    }
   }
 }

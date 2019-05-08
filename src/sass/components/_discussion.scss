@@ -1,0 +1,109 @@
+//
+// COMPONENTS / DISCUSSION
+//-----------------------------------------------------------------------
+
+.c-discussion {
+
+  &__header {
+    border-bottom: $border-width solid $color-gray-3;
+    margin-bottom: $spacing-xsmall; // Vertical Margin
+  }
+
+  &__title {
+    line-height: $spacing-xlarge;
+  }
+
+  &__comment-box {
+    margin-bottom: $spacing-xsmall;
+    display: grid;
+    grid-template: auto auto / auto 1fr;
+    grid-template-areas:
+      "avatar field"
+      "avatar footer";
+  }
+
+  .c-avatar {
+    grid-area: avatar;
+    margin-right: $spacing-small;
+  }
+
+  &__comment-field {
+    grid-area: field;
+
+    &.toggle-open + .c-discussion__comment-footer { // Temp styling
+      display: flex;
+    }
+
+    &.toggle-open .c-field__input { // Temp styling
+      border-color: $color-brand-primary;
+      border-bottom-width: .2rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .c-field__input {
+    background: transparent;
+    border-bottom-color: transparent;
+    //height: 4.4rem;
+    padding: .5rem 0;
+
+    &::placeholder {
+      color: $color-gray-2;
+      transition: .2s;
+    }
+  }
+
+  &__comment-footer {
+    grid-area: footer;
+    display: none;
+  }
+
+  &__block {
+    padding: $spacing-large 0;
+
+    &:nth-child(even) {
+      background: $color-gray-5;
+    }
+  }
+
+  &__entry {
+    display: grid;
+    grid-template: auto auto / auto 1fr;
+    grid-template-areas:
+      "avatar header"
+      "avatar content";
+  }
+
+  &__entry-header {
+    grid-area: header;
+    //font-size: 1.4rem;
+    line-height: 3.2rem;
+
+    span:not(:last-of-type) {
+      margin-right: $spacing-small;
+    }
+  }
+
+  &__content {
+    grid-area: content;
+  }
+
+  &__body {
+    margin-bottom: $spacing-small;
+  }
+
+
+  @media #{$breakpoint-medium} {
+
+    &__header {
+      //margin-bottom: $spacing-xsmall; // Vertical Margin
+    }
+
+    &__entry-header {
+      //font-size: 1.6rem;
+      line-height: 4rem;
+    }
+
+  }
+
+}

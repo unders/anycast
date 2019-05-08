@@ -71,6 +71,7 @@ h2, .u-header-medium {
 
 h3, .u-header-small {
   font-size: 1.6rem;
+  font-weight: $text-font-weight;
 
   @media #{$breakpoint-medium} {
     font-size: 1.8rem;
@@ -93,12 +94,12 @@ h4, .u-header-xsmall {
 
 p {
   & + & {
-    margin-top: $spacing-small;
+    margin-top: $spacing-xsmall;
   }
 
   @media #{$breakpoint-medium} {
     & + & {
-      margin-top: $spacing-small;
+      margin-top: $spacing-xsmall;
     }
   }
 }
@@ -113,9 +114,9 @@ a {
   transition: .2s;
 }
 
-.link {
-  color: $color-link;
-  border-bottom: 1px solid $color-link;
+p a {
+  color: $color-text;
+  border-bottom: 1px solid $color-gray-3;
 
   &:hover, &:focus {
     color: $color-link-hover;

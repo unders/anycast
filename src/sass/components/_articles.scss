@@ -39,9 +39,11 @@
 
   .c-article__meta-link {
     color: $color-gray-2;
+    border-bottom: 1px solid transparent;
 
     &:hover, &:focus {
-      color: $color-gray-1;
+      color: $color-text;
+      border-bottom-color: $color-text;
     }
   }
 

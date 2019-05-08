@@ -2,39 +2,13 @@
 // FORMS
 //-----------------------------------------------------------------------
 
-.form {
-  margin-bottom: $base-margin*2;
-
-  &__section {
-
-  }
-
-  .is-hidden {
-    display: none;
-  }
-
-  .is-visible {
-    animation: .4s .0s fadeInUp both;
-  }
-
-  &--dense {
-    width: 100%;
-    max-width: 48rem;
-    margin-top: $base-margin;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-}
-
 // FIELDS WITH FLOATING LABEL
 
-.field {
+.c-field {
   display: block;
   position: relative;
   padding: 0;
-  margin: 0 0 $spacing-base*2 0;
-  border: none;
+  //margin-bottom: $spacing-small;
 
   &__label {
     position: absolute;
@@ -42,37 +16,38 @@
     top: 0;
     cursor: text;
     font-size: 1.4rem;
-    color: $gray-light;
-    transition: all .2s;
+    color: $color-gray-2;
+    transition: .2s;
   }
 
   &__input {
-
-    &::placeholder {
-      color: $gray-lighter;
-      transition: all .2s;
-    }
-    &:placeholder-shown:not(:focus)::placeholder {
-      opacity: 0;
-    }
-
+    background: transparent;
     width: 100%;
-    padding: 1rem 0 $spacing-base*2;
-    margin-top: 1.4rem;
-    font-size: 1.8rem;
+    padding: $spacing-tiny 0;
     border: 0;
     border-radius: 0;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid $color-gray-3;
+    margin-bottom: .1rem;
+
+    &::placeholder {
+      color: $color-gray-2;
+      transition: .2s;
+    }
+    &:placeholder-shown:not(:focus)::placeholder {
+      //opacity: 0;
+    }
 
     &:placeholder-shown:not(:focus) + * {
       font-size: 1.8rem;
-      color: $gray-light;
+      color: $color-gray-3;
       top: 2.4rem;
     }
 
     &:focus {
       outline: none;
-      border-color: $brand-primary;
+      border-color: $color-brand-primary;
+      border-bottom-width: .2rem;
+      margin-bottom: 0;
     }
 
     &[disabled], &:disabled {
@@ -90,7 +65,15 @@
   &__helper {
     margin: $spacing-base/2 0 0 0;
     font-size: 1.4rem;
-    color: $gray-light;
+    color: $color-gray-3;
+  }
+
+  &--no-label {
+
+    &__input {
+
+    }
+
   }
 
 
@@ -99,11 +82,11 @@
   &--success {
 
     .field__input {
-      border-color: $brand-success;
+      border-color: $color-success;
     }
 
     .field__helper {
-      color: $brand-success;
+      color: $color-success;
     }
 
   }
@@ -111,11 +94,11 @@
   &--error {
 
     .field__input {
-      border-color: $brand-danger;
+      border-color: $color-danger;
     }
 
     .field__helper {
-      color: $brand-danger;
+      color: $color-danger;
     }
 
   }
@@ -166,11 +149,11 @@
       }
 
       &:hover, &:focus {
-        color: $link-color;
+        color: $color-link;
       }
 
       &[disabled], &:disabled {
-        color: $black;
+        color: $color-black;
         opacity: .5;
         background: rgba(0,0,0,.05);
         cursor: not-allowed;
@@ -205,14 +188,9 @@
 
 }
 
-// FILE
-
 
 // CHECKBOXES AND RADIOS
 
-.control-group {
-
-}
 .control {
   display: block;
   position: relative;
@@ -234,7 +212,7 @@
     height: 20px;
     width: 20px;
     background: #e6e6e6;
-    border-radius: $base-border-radius;
+    border-radius: $border-radius;
     transition: .2s;
   }
 
@@ -250,13 +228,13 @@
 
   // Checked state
   input:checked ~ .control__indicator {
-  	background: $link-color;
+  	background: $color-link;
   }
 
   // Hover state whilst checked
   &:hover input:not([disabled]):checked ~ .control__indicator,
   input:checked:focus ~ .control__indicator {
-  	background: $link-color-hover;
+  	background: $color-link-hover;
   }
 
   // Disabled state
@@ -317,7 +295,6 @@
   display: grid;
   grid-template: auto / repeat(auto-fit, minmax(26rem, 1fr));
   grid-gap: $spacing-base;
-  margin-bottom: $base-margin;
 }
 
 .control-box {
@@ -335,15 +312,15 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-radius: $base-border-radius;
+    border-radius: $border-radius;
     transition: .2s;
-    color: $link-color;
-    border: 1px solid rgba($link-color, .5);
+    color: $color-link;
+    border: 1px solid rgba($color-link, .5);
     //background: rgba(0,0,0,.05);
 
     &:hover, &:focus {
-      background: rgba($link-color, .05);
-      border-color: $link-color;
+      background: rgba($color-link, .05);
+      border-color: $color-link;
     }
 
   }
@@ -354,7 +331,7 @@
   }
 
   &__helper:checked ~ .control-box__toggle {
-    background: $brand-primary;
+    background: $color-brand-primary;
     color: $color-white;
 
     &:hover, &:focus {
@@ -364,7 +341,7 @@
 
   &__helper:disabled ~ .control-box__toggle {
     border-color: rgba(0,0,0,.1);
-    color: $gray-light;
+    color: $color-gray-3;
     cursor: not-allowed;
 
     &:hover, &:focus {
@@ -376,5 +353,5 @@
 }
 
 .form__actions {
-  margin-top: $base-margin*2;
+  margin-top: $spacing-base*2;
 }
