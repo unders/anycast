@@ -1,0 +1,83 @@
+{{ define "title" }}{{.String.Title_Index}}{{ end }}
+{{ define "main" }}
+
+  <main class="l-main l-container l-container--small">
+
+    <nav class="c-nav c-nav--tabs">
+      <a href="/settings-profile.html" class="c-nav__link c-nav__link--current">Profile</a>
+      <a href="/settings-password.html" class="c-nav__link">Password</a>
+      <a href="/settings-account.html" class="c-nav__link">Account</a>
+      <a href="/settings-notifications.html" class="c-nav__link">Email & Notifications</a>
+    </nav>
+
+    <div class="c-form">
+
+      <div class="l-grid">
+        <div class="l-grid__item--span-1">
+          <a href="#" class="l-flex l-flex--apart u-margin-bottom-small">
+            <img src="/assets/images/avatar-member-johannes.png" alt="" class="c-avatar c-avatar--block u-margin-bottom-xsmall">
+            <div class="c-button c-button--default">Change profile image</div>
+          </a>
+        </div>
+        <div class="l-grid__item--span-5">
+
+        <div class="c-field">
+  				<input class="c-field__input" id="fullName" type="text" placeholder="Your name here..." value="Johannes Leuchovius">
+  				<label class="c-field__label" for="fullName">Full name</label>
+        </div>
+
+        <div class="c-field">
+  				<input class="c-field__input" id="fullName" type="text" placeholder="Your username here..." value="leuchovius">
+  				<label class="c-field__label" for="fullName">Username</label>
+  				<div class="c-field__helper">https://worldtoday.app/@<span class="u-text-loud">leuchovius</span></div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="c-field">
+				<textarea class="c-field__input" id="bio" type="text" placeholder="Your username here..." value="">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</textarea>
+				<label class="c-field__label" for="bio">Biography</label>
+      </div>
+
+      <h2>Contact</h2>
+
+      <div class="l-grid">
+        <div class="l-grid__item--span-3">
+
+          <div class="c-field">
+    				<input class="c-field__input" id="website" type="text" placeholder="Your website URL" value="https://johannesleuchovius.com">
+    				<label class="c-field__label" for="website">Website</label>
+          </div>
+
+          <div class="c-field">
+    				<input class="c-field__input" id="facebook" type="text" placeholder="Your website URL" value="johannesleuchovius">
+    				<label class="c-field__label" for="facebook">Facebook</label>
+          </div>
+
+        </div>
+        <div class="l-grid__item--span-3">
+
+          <div class="c-field">
+    				<input class="c-field__input" id="twitter" type="text" placeholder="Your twitter username" value="">
+    				<label class="c-field__label" for="twitter">Twitter</label>
+          </div>
+
+          <div class="c-field">
+    				<input class="c-field__input" id="instagram" type="text" placeholder="Your website URL" value="johannesleuchovius">
+    				<label class="c-field__label" for="instagram">Instagram</label>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="c-form__footer c-actions">
+        <button class="c-button c-button--default">Cancel</button>
+        <button disabled_ class="c-button c-button--primary l-flex--grow">Update profile</button>
+      </div>
+
+    </div>
+
+  </main>
+
+{{ end }}

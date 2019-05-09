@@ -9,6 +9,10 @@
   max-width: 100%;
   margin: 0;
 
+  &--large {
+    width: 8rem;
+  }
+
   &--block {
     width: 8rem;
   }
@@ -21,6 +25,10 @@
 
     &--medium {
       width: 4rem;
+    }
+
+    &--large {
+      width: $spacing-base * 14;
     }
   }
 }

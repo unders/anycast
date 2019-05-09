@@ -4,9 +4,14 @@
 
 .l-flex {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .l-flex--grow {
   flex-grow: 1;
+}
+
+.l-flex--apart {
+  justify-content: space-between;
 }

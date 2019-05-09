@@ -21,6 +21,7 @@ button, input[type="submit"] {
   font-weight: bold;
   line-height: normal;
   text-align: center;
+  justify-content: center;
   white-space: nowrap;
   cursor: pointer;
   padding: 1rem $spacing-small;
@@ -244,10 +245,10 @@ button, input[type="submit"] {
   justify-content: flex-end;
 
   .c-button {
-    margin: 0 $spacing-tiny $spacing-xsmall;
+    margin-bottom: $spacing-xsmall;
+  }
 
-    &:last-of-type {
-      margin-right: 0;
-    }
+  .c-button + .c-button {
+    margin-left: $spacing-xsmall;
   }
 }

@@ -7,9 +7,9 @@
   align-items: center;
 
   &__link {
+    @extend .u-text-small;
     border-radius: $border-radius;
     color: $color-gray-1;
-    font-size: 1.6rem;
     padding: 0 $spacing-small;
     display: block;
 
@@ -106,6 +106,13 @@
       &--current {
         border-bottom-color: $color-gray-1 !important;
         background: transparent;
+      }
+    }
+
+    @media #{$breakpoint-small-max} {
+
+      .c-nav__link {
+        line-height: 4.86rem;
       }
     }
   }

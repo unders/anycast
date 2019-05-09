@@ -32,7 +32,7 @@ h1, h2, h3, h4,
 .u-header-medium,
 .u-header-small,
 .u-header-xsmall {
-  font-weight: $text-font-weight-heavy;
+  font-weight: $text-font-weight-massive;
   line-height: 1.25;
   margin-bottom: $spacing-xsmall;
 
@@ -113,8 +113,7 @@ a {
   transition: .2s;
 }
 
-p a {
-  color: $color-text;
+p a, .c-link {
   border-bottom: 1px solid $color-gray-3;
 
   &:hover, &:focus {

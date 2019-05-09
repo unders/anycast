@@ -2,12 +2,17 @@
 // FORMS
 //-----------------------------------------------------------------------
 
-// FIELDS WITH FLOATING LABEL
+.c-form {
+
+  &__footer {
+    margin-top: $spacing-small;
+  }
+}
 
 .c-field {
+  @extend .u-margin-bottom-medium;
   display: block;
   position: relative;
-  padding: 0;
 
   &__label {
     position: absolute;
@@ -22,7 +27,9 @@
   &__input {
     background: transparent;
     width: 100%;
+    font-size: $text-font-size-md;
     padding: $spacing-xsmall 0;
+    margin-top: 2rem;
     border: 0;
     border-radius: 0;
     border-bottom: 1px solid $color-gray-3;
@@ -33,12 +40,12 @@
       transition: .2s;
     }
     &:placeholder-shown:not(:focus)::placeholder {
-      //opacity: 0;
+      opacity: 0;
     }
 
     &:placeholder-shown:not(:focus) + * {
-      font-size: 1.8rem;
-      color: $color-gray-3;
+      font-size: $text-font-size-md;
+      color: $color-gray-2;
       top: 2.4rem;
     }
 
@@ -59,12 +66,15 @@
       height: $spacing-base*20;
     }
 
+    &--placeholder-visible {
+
+    }
+
   }
 
   &__helper {
-    margin: $spacing-tiny 0 0 0;
     font-size: 1.4rem;
-    color: $color-gray-3;
+    color: $color-gray-2;
   }
 
 
@@ -72,11 +82,11 @@
 
   &--success {
 
-    .field__input {
+    .c-field__input {
       border-color: $color-success;
     }
 
-    .field__helper {
+    .c-field__helper {
       color: $color-success;
     }
 
@@ -84,11 +94,11 @@
 
   &--error {
 
-    .field__input {
+    .c-field__input {
       border-color: $color-danger;
     }
 
-    .field__helper {
+    .c-field__helper {
       color: $color-danger;
     }
 
@@ -101,7 +111,7 @@
     padding: 1rem 0 $spacing-base;
     border-bottom: 1px solid rgba(0,0,0,.1);
 
-    .field__label {
+    .c-field__label {
       position: static;
       display: flex;
       align-items: center;
@@ -113,54 +123,13 @@
 
     }
 
-    .field__inner-label {
+    .c-field__inner-label {
       font-size: 1.8rem;
     }
 
-    .field__input {
+    .c-field__input {
       display: none;
     }
-
-  }
-
-  &--select {
-    position: relative;
-
-    .field__input {
-      padding: 1.4rem $spacing-base 1.2rem 0;
-      background: $color-white;
-      line-height: 1.2;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      cursor: pointer;
-
-      &::-ms-expand {
-        display: none;
-      }
-
-      &:hover, &:focus {
-        color: $color-link;
-      }
-
-      &[disabled], &:disabled {
-        color: $color-black;
-        opacity: .5;
-        background: rgba(0,0,0,.05);
-        cursor: not-allowed;
-      }
-
-    }
-
-    &:after {
-      position: absolute;
-      right: $spacing-base;
-      top: $spacing-base*3.5;
-      content: "\e842";
-      margin-left: auto;
-      transition: transform .2s;
-    }
-
   }
 
 
@@ -175,6 +144,45 @@
   input[type="number"] {
     line-height: 1;
     font-size: 1.4rem;
+  }
+}
+
+.c-select {
+  position: relative;
+
+  &__input {
+    padding: 1.4rem $spacing-base 1.2rem 0;
+    background: $color-white;
+    line-height: 1.2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:hover, &:focus {
+      color: $color-link;
+    }
+
+    &[disabled], &:disabled {
+      color: $color-black;
+      opacity: .5;
+      background: rgba(0,0,0,.05);
+      cursor: not-allowed;
+    }
+
+  }
+
+  &:after {
+    position: absolute;
+    right: $spacing-base;
+    top: $spacing-base*3.5;
+    content: "\e842";
+    margin-left: auto;
+    transition: transform .2s;
   }
 
 }
@@ -278,8 +286,4 @@
   	background: #7b7b7b;
   }
 
-}
-
-.form__actions {
-  margin-top: $spacing-small;
 }
