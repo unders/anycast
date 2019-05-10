@@ -1,0 +1,17 @@
+//
+// UTILITIES / VISIBILITY
+//-----------------------------------------------------------------------
+
+@media #{$breakpoint-small-max} {
+
+  .u-hidden-sm {
+    display: none !important;
+  }
+}
+
+@media #{$breakpoint-medium} {
+
+  .u-hidden-md {
+    display: none !important;
+  }
+}

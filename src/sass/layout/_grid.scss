@@ -5,6 +5,7 @@
 .l-grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: $spacing-small;
 
   @media #{$breakpoint-medium} {
     display: grid;

@@ -1,0 +1,16 @@
+//
+// UTILITIES / MIX
+//-----------------------------------------------------------------------
+
+.truncate {
+  @include truncate;
+}
+
+.u-divider-dot {
+  margin: 0 $spacing-tiny;
+  display: inline-block;
+
+  &:after {
+    content: '•';
+  }
+}

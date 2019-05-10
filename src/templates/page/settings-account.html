@@ -1,0 +1,53 @@
+{{ define "title" }}{{.String.Title_Index}}{{ end }}
+{{ define "main" }}
+
+  <main class="l-main l-container l-container--small">
+
+    <nav class="c-nav c-nav--tabs">
+      <a href="/settings-profile.html" class="c-nav__link">Profile</a>
+      <a href="/settings-password.html" class="c-nav__link">Password</a>
+      <a href="/settings-account.html" class="c-nav__link c-nav__link--current">Account</a>
+      <a href="/settings-notifications.html" class="c-nav__link">Notifications</a>
+    </nav>
+
+    <div class="c-form">
+
+      <div class="c-field">
+				<input class="c-field__input" id="email" type="text" placeholder="Your old password" value="leuchovius@gmail.com">
+				<label class="c-field__label" for="email">Your email</label>
+      </div>
+
+      <div class="u-border-bottom u-padding-bottom-medium l-grid">
+        <div class="l-grid__item--span-4">
+          <h3>You are connected to Facebook</h3>
+          <div class="u-small">You are using World Today using your Facebook account. We will never post to Facebook or message your friends without your permission.</div>
+        </div>
+        <div class="l-grid__item--span-2 l-flex">
+          <img src="/assets/images/avatar-member-johannes.png" alt="" class="c-avatar u-margin-right-xsmall">
+          <div class="u-small">
+            <div class="u-text-loud">Johannes Leuchovius</div>
+            <a href="#" class="c-link">Disconnect</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-border-bottom u-padding-top-medium u-padding-bottom-medium l-flex l-flex--apart u-margin-bottom-medium">
+        <div class="">
+          <h3>Delete account</h3>
+          <div class="u-small">Permanently delete your account and all of your content.</div>
+        </div>
+        <div class="">
+          <button class="c-button c-button--default">Delete account</button>
+        </div>
+      </div>
+
+      <div class="c-form__footer c-actions">
+        <button class="c-button c-button--default">Cancel</button>
+        <button class="c-button c-button--primary l-flex--grow">Update Account</button>
+      </div>
+
+    </div>
+
+  </main>
+
+{{ end }}

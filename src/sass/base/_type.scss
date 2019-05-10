@@ -75,7 +75,7 @@ h2, .u-header-medium {
 
 h3, .u-header-small {
   font-size: 1.6rem;
-  font-weight: $text-font-weight;
+  //font-weight: $text-font-weight;
 
   @media #{$breakpoint-medium} {
     font-size: 1.8rem;

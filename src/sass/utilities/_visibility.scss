@@ -1,0 +1,27 @@
+//
+// UTILITIES / TYPE
+//-----------------------------------------------------------------------
+
+.u-text-quiet {
+  color: $color-gray-2;
+
+  a {
+    color: $color-gray-2;
+  }
+}
+
+.u-text-loud {
+  font-weight: $text-font-weight-heavy;
+}
+
+.u-text-serif {
+  font-family: $text-font-family-serif;
+}
+
+.u-text-small, .u-small {
+  font-size: $text-font-size-small;
+
+  @media #{$breakpoint-medium} {
+    font-size: $text-font-size-small-md;
+  }
+}

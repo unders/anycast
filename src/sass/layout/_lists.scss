@@ -18,8 +18,9 @@
 
 .l-list--inline {
   flex-direction: row;
+  flex-wrap: wrap;
 
-  > li + li {
-    margin-left: $spacing-medium;
+  > li:not(:last-of-type) {
+    margin-right: $spacing-medium;
   }
 }
