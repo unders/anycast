@@ -3,33 +3,40 @@
 //-----------------------------------------------------------------------
 
 .l-modal {
+  padding: $grid-gutter;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: $zindex-modal;
-  display: block;
-  width: 75%;
-  max-width: 76rem;
-  padding: $spacing-xlarge;
   overflow: hidden;
-  background-color: $color-gray-5;
-  border: 0;
-  border-radius: $border-radius;
-  transform: translate(-50%, -50%);
+  overflow-y: auto;
   visibility: hidden;
   opacity: 0;
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    @extend .u-high;
+    background-color: $color-gray-5;
+    border: 0;
+    border-radius: $border-radius;
+    padding: $spacing-large;
+    position: relative;
+  }
 
   &--spaced {
-    padding: $spacing-xlarge $spacing-base*20;
+    .l-modal__content {
+       padding: $spacing-large $spacing-medium;
+    }
   }
 
   &--full {
-    padding: $grid-gutter;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: none;
+    .l-modal__content {
+      padding: $grid-gutter;
+      transform: none;
+    }
   }
 
   &.l-modal--visible,
@@ -39,6 +46,18 @@
   }
 
   @media #{$breakpoint-medium} {
+
+    &__content {
+      width: 75%;
+      max-width: 76rem;
+      margin: $spacing-large 0;
+    }
+
+    &--spaced {
+      .l-modal__content {
+         padding: $spacing-xlarge $spacing-base*20;
+      }
+    }
 
   }
 }

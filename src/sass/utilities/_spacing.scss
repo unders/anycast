@@ -74,6 +74,17 @@
 }
 
 
+// LEFT
+
+.u-margin-left-tiny {
+  margin-left: $spacing-tiny;
+
+  @media #{$breakpoint-medium} {
+    margin-left: $spacing-tiny-md;
+  }
+}
+
+
 // PADDING
 //---------------------------
 

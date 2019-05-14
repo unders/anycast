@@ -21,7 +21,7 @@ button, input[type="submit"] {
   font-weight: bold;
   line-height: normal;
   text-align: center;
-  justify-content: center;
+  //justify-content: center;
   white-space: nowrap;
   cursor: pointer;
   padding: 1rem $spacing-small;
@@ -214,17 +214,19 @@ button, input[type="submit"] {
 // OTHER
 
 .c-button--block {
-  display: block;
+  //text-align: left;
+  display: inline-block;
+  width: 100%;
 }
 
 .c-button--close {
   background: no-repeat;
+  padding: $spacing-small $spacing-medium;
   position: absolute;
-  right: $spacing-small;
-  padding: 0;
+  top: 0;
+  right: 0;
   outline: 0;
-  color: $color-white;
-  font-size: $spacing-medium;
+  font-size: $spacing-large;
   font-weight: normal;
   line-height: 1;
   opacity: .6;

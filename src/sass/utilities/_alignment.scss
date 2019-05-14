@@ -25,6 +25,10 @@
 
 // LEFT
 
+.u-text-align-left {
+  text-align: left;
+}
+
 @media #{$breakpoint-medium} {
 
   .u-align-left-md {

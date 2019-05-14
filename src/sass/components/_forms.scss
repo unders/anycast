@@ -11,6 +11,7 @@
 
 .c-field {
   @extend .u-margin-bottom-medium;
+  width: 100%;
   display: block;
   position: relative;
 
@@ -75,6 +76,7 @@
   &__helper {
     font-size: 1.4rem;
     color: $color-gray-2;
+    text-align: left;
   }
 
 
