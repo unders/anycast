@@ -10,9 +10,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="assets/javascripts/data-toggle.js"></script>
 </head>
-<body>
+<body class="toggle-open">
   {{ template "part/header" . }}
   {{- block "main" . }} {{ end }}
   {{ template "part/footer" . }}
+  {{ template "part/sign-in" . }}
 </body>
 </html>

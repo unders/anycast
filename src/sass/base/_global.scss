@@ -6,12 +6,16 @@ body {
   background: $color-body-background;
   transition: .2s;
 
+
+  // OVERLAY MASK
+
   &.toggle-open {
     overflow: hidden;
 
     &:after {
       content: '';
-      background: rgba($color-gray-4, .5);
+      background: rgba($color-gray-4, .8);
+      display: block;
       position: fixed;
       top: 0;
       right: 0;

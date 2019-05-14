@@ -9,13 +9,19 @@
   z-index: $zindex-modal;
   display: block;
   width: 75%;
+  max-width: 76rem;
+  padding: $spacing-xlarge;
   overflow: hidden;
-  background-color: $color-body-background;
+  background-color: $color-gray-5;
   border: 0;
   border-radius: $border-radius;
   transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
+
+  &--spaced {
+    padding: $spacing-xlarge $spacing-base*20;
+  }
 
   &--full {
     padding: $grid-gutter;
@@ -24,6 +30,12 @@
     bottom: 0;
     left: 0;
     transform: none;
+  }
+
+  &.l-modal--visible,
+  &.toggle-open {
+    visibility: visible;
+    opacity: 1;
   }
 
   @media #{$breakpoint-medium} {

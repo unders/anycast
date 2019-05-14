@@ -1126,7 +1126,8 @@ body {
     overflow: hidden; }
     body.toggle-open:after {
       content: '';
-      background: rgba(224, 224, 224, 0.5);
+      background: rgba(224, 224, 224, 0.8);
+      display: block;
       position: fixed;
       top: 0;
       right: 0;
@@ -1353,13 +1354,17 @@ body {
   z-index: 300;
   display: block;
   width: 75%;
+  max-width: 76rem;
+  padding: 4.8rem;
   overflow: hidden;
-  background-color: #E0E0E0;
+  background-color: #F5F5F5;
   border: 0;
   border-radius: 0;
   transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0; }
+  .l-modal--spaced {
+    padding: 4.8rem 16rem; }
   .l-modal--full {
     padding: 1.6rem;
     top: 0;
@@ -1367,6 +1372,9 @@ body {
     bottom: 0;
     left: 0;
     transform: none; }
+  .l-modal.l-modal--visible, .l-modal.toggle-open {
+    visibility: visible;
+    opacity: 1; }
 
 .icon, .c-filter__item--clear:before {
   font-size: 2.4rem; }
@@ -2189,13 +2197,25 @@ button, input[type="submit"] {
   .control--radio input:disabled ~ .control__indicator:after {
     background: #7b7b7b; }
 
+.u-align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
 @media only screen and (max-width: 899px) {
-  .u-hidden-sm {
-    display: none !important; } }
+  .u-align-center-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; } }
 
 @media only screen and (min-width: 900px) {
-  .u-hidden-md {
-    display: none !important; } }
+  .u-align-left-md {
+    display: unset;
+    flex-direction: unset;
+    align-items: unset;
+    text-align: unset; } }
 
 .u-border-top {
   border-top: 1px solid #BFBFBF; }
@@ -2211,6 +2231,14 @@ button, input[type="submit"] {
 
 .u-highest {
   box-shadow: 0 20px 55px -8px rgba(0, 0, 0, 0.4); }
+
+@media only screen and (max-width: 899px) {
+  .u-hidden-sm {
+    display: none !important; } }
+
+@media only screen and (min-width: 900px) {
+  .u-hidden-md {
+    display: none !important; } }
 
 .u-margin-right-xsmall {
   margin-right: 0.8rem; }
