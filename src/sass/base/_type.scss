@@ -22,18 +22,12 @@ body {
 }
 
 
-// HEADINGS // Move to utilities?
+// HEADINGS
 //---------------------------
 
-h1, h2, h3, h4,
-.u-header-super,
-.u-header-xlarge,
-.u-header-large,
-.u-header-medium,
-.u-header-small,
-.u-header-xsmall {
-  font-weight: $text-font-weight-massive;
+h1, h2, h3, h4 {
   line-height: 1.25;
+  font-weight: $text-font-weight-medium;
   margin-bottom: $spacing-xsmall;
 
   @media #{$breakpoint-medium} {
@@ -41,54 +35,29 @@ h1, h2, h3, h4,
   }
 }
 
-.u-header-super {
-  font-size: 64rem;
-
-  @media #{$breakpoint-medium} {
-    font-size: 8rem;
-  }
+h1 {
+  font-weight: $text-font-weight-heavy;
+  @extend .u-large;
 }
 
-.u-header-xlarge {
+h2 {
+  font-weight: $text-font-weight-heavy;
   font-size: 2.4rem;
-
-  @media #{$breakpoint-medium} {
-    font-size: 4rem;
-  }
+  @extend .u-medium;
 }
 
-h1, .u-header-large {
-  font-size: 2rem;
-
-  @media #{$breakpoint-medium} {
-    font-size: 3.2rem;
-  }
-}
-
-h2, .u-header-medium {
-  font-size: 2.4rem;
-
-  @media #{$breakpoint-medium} {
-    font-size: 2.4rem;
-  }
-}
-
-h3, .u-header-small {
+h3 {
   font-size: 1.6rem;
-  //font-weight: $text-font-weight;
-
-  @media #{$breakpoint-medium} {
-    font-size: 1.8rem;
-  }
+  @extend .u-small;
 }
 
-h4, .u-header-xsmall {
+h4 {
   color: $color-gray-2;
-  font-size: 1.3rem;
   letter-spacing: 0.1em;
   line-height: $spacing-medium;
   text-transform: uppercase;
   border-bottom: $border-width solid $color-gray-3;
+  @extend .u-tiny;
 }
 
 
@@ -96,6 +65,7 @@ h4, .u-header-xsmall {
 //---------------------------
 
 p {
+  line-height: 180%;
   margin-bottom: $spacing-xsmall;
 
   @media #{$breakpoint-medium} {
@@ -121,16 +91,6 @@ p a, .c-link {
     border-color: $color-link-hover;
   }
 
-}
-
-
-// LISTS
-//---------------------------
-
-ol, ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 

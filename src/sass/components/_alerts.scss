@@ -4,90 +4,68 @@
 
 // ALLERTS
 
-.alerts {
-  display: block;
+.c-alerts {
   position: fixed;
+  bottom: 0;
+  left: 0;
   width: 32rem;
-  padding: $spacing-small 2rem;
+  padding: $grid-gutter;
   max-height: 100%;
   z-index: $zindex-alert;
   overflow-y: auto;
 
-  .alert {
-    padding-right: $spacing-small;
-    margin-bottom: $spacing-xsmall;
-  }
+  display: none;
 
   @media #{$breakpoint-medium} {
     width: 38rem;
-    padding-right: $grid-gutter;
-    padding-left: $grid-gutter;
+    padding-right: $grid-gutter-md;
+    padding-left: $grid-gutter-md;
   }
 
-}
-
-.alerts--topleft {
-  top: 0;
-  left: 0;
-}
-
-.alerts--topright {
-  top: 0;
-  right: 0;
-}
-
-.alerts--bottomleft {
-  bottom: 0;
-  left: 0;
-
-  .alert {
-    animation: .4s 6s fadeOutLeft both;
+  .c-alert {
+    //animation: .4s 6s fadeOutLeft both;
   }
 
+  &.toggle-open {
+    display: block;
+  }
 }
 
-.alerts--bottomright {
-  right: 0;
-  bottom: 0;
-}
-
-.alert {
+.c-alert {
+  @extend .u-xsmall;
   background-color: $color-gray-1;
-  position: relative;
-  margin: $spacing-base 0 $spacing-small;
-  padding: $spacing-base*2 $spacing-small $spacing-xsmall $spacing-xsmall;
   border-radius: $border-radius;
   color: $color-white;
+  padding: 1.2rem $spacing-small;
+  margin: $spacing-small 0;
+  position: relative;
 }
 
-.alert--brand {
+.c-alert--brand {
   background: $color-brand-primary;
 }
 
-.alert--info {
+.c-alert--info {
   background: $color-info;
 }
 
-.alert--warning {
+.c-alert--warning {
   background: $color-warning;
 }
 
-.alert--success {
+.c-alert--success {
   background: $color-success;
 }
 
-.alert--danger {
+.c-alert--danger {
   background: $color-danger;
 }
 
 
-// MESSAGE
+// INLINE BLOCK MESSAGE
 
-.message {
-  height: $spacing-super*2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.c-message-block {
+  @extend .u-align-center;
+  color: $color-gray-2;
+  padding: $spacing-super;
 }

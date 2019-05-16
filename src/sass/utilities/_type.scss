@@ -22,10 +22,63 @@
   color: $color-brand-primary;
 }
 
-.u-text-small, .u-small {
-  font-size: $text-font-size-small;
+
+// SIZES
+//---------------------------
+
+.u-super {
+  font-size: 4.8rem;
 
   @media #{$breakpoint-medium} {
-    font-size: $text-font-size-small-md;
+    font-size: 8rem;
+  }
+}
+
+.u-xlarge {
+  font-size: 2.4rem;
+
+  @media #{$breakpoint-medium} {
+    font-size: 4rem;
+  }
+}
+
+.u-large { // h1
+  font-size: 2.4rem;
+
+  @media #{$breakpoint-medium} {
+    font-size: 3.2rem;
+  }
+
+}
+
+.u-medium { // h2
+  font-size: 1.8rem;
+
+  @media #{$breakpoint-medium} {
+    font-size: 2.4rem;
+  }
+}
+
+.u-small { // h3
+  font-size: 1.6rem;
+
+  @media #{$breakpoint-medium} {
+    font-size: 1.8rem;
+  }
+}
+
+.u-xsmall { // P small
+  font-size: $text-font-size-small; // 1.4rem
+
+  @media #{$breakpoint-medium} {
+    font-size: $text-font-size-small-md; // 1.6rem
+  }
+}
+
+.u-tiny { // h4
+  font-size: 1.2rem;
+
+  @media #{$breakpoint-medium} {
+    font-size: 1.4rem;
   }
 }

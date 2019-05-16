@@ -1,0 +1,19 @@
+{{ define "title" }}{{.String.Title_Index}}{{ end }}
+{{ define "main" }}
+
+  <main class="l-main l-container l-container--small">
+
+    <nav class="c-nav c-nav--tabs">
+      <a href="/settings-profile.html" class="c-nav__link">Profile</a>
+      <a href="/settings-password.html" class="c-nav__link">Password</a>
+      <a href="/settings-account.html" class="c-nav__link">Account</a>
+      <a href="/settings-notifications.html" class="c-nav__link c-nav__link--current">Notifications</a>
+    </nav>
+
+    <div class="c-message-block">
+      There is nothing here at the moment. See you another day!
+    </div>
+
+  </main>
+
+{{ end }}
