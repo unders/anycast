@@ -15,7 +15,7 @@
   }
 
   &__comment-box {
-    margin-bottom: $spacing-small;
+    //margin-bottom: $spacing-small;
     display: grid;
     grid-template: auto auto / auto 1fr;
     grid-template-areas:
@@ -30,6 +30,7 @@
 
   &__comment-field {
     grid-area: field;
+    margin-bottom: 0 !important;
 
     &.toggle-open + .c-discussion__comment-footer { // Temp styling
       display: flex;
@@ -46,7 +47,7 @@
     background: transparent;
     border-bottom-color: transparent;
     //height: 4.4rem;
-    padding: .5rem 0;
+    padding: .3rem 0 .7rem;
 
     &::placeholder {
       color: $color-gray-2;

@@ -67,8 +67,12 @@
       height: $spacing-base*20;
     }
 
-    &--placeholder-visible {
+    &--show-placeholder {
+      margin-top: 0;
 
+      &::placeholder {
+        opacity: 1 !important;
+      }
     }
 
   }

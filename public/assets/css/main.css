@@ -1446,7 +1446,7 @@ button, input[type="submit"] {
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
-  padding: 1rem 1.6rem;
+  padding: 1.4rem 1.6rem;
   vertical-align: middle;
   text-decoration: none;
   transition: all .15s ease-in-out; }
@@ -1467,8 +1467,8 @@ button, input[type="submit"] {
     justify-content: center;
     align-content: center;
     overflow: hidden;
-    width: 4rem;
-    height: 4rem;
+    width: 4.4rem;
+    height: 4.4rem;
     padding: 0; }
     .c-button--icon .c-button__icon {
       margin: 0; }
@@ -1934,71 +1934,6 @@ button, input[type="submit"] {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
 
-.c-discussion__header {
-  border-bottom: 1px solid #BFBFBF;
-  margin-bottom: 1.6rem; }
-
-.c-discussion__title {
-  line-height: 6.4rem;
-  margin: 0; }
-
-.c-discussion__comment-box {
-  margin-bottom: 1.6rem;
-  display: grid;
-  grid-template: auto auto / auto 1fr;
-  grid-template-areas: "avatar field" "avatar footer"; }
-
-.c-discussion .c-avatar {
-  grid-area: avatar;
-  margin-right: 2.4rem; }
-
-.c-discussion__comment-field {
-  grid-area: field; }
-  .c-discussion__comment-field.toggle-open + .c-discussion__comment-footer {
-    display: flex; }
-  .c-discussion__comment-field.toggle-open .c-field__input {
-    border-color: #6F19DD;
-    border-bottom-width: .2rem;
-    margin-bottom: 0; }
-
-.c-discussion .c-field__input {
-  background: transparent;
-  border-bottom-color: transparent;
-  padding: .5rem 0; }
-  .c-discussion .c-field__input::placeholder {
-    color: #8A8A8A;
-    transition: .2s; }
-
-.c-discussion__comment-footer {
-  grid-area: footer;
-  display: none; }
-
-.c-discussion__block {
-  padding: 4.8rem 0; }
-  .c-discussion__block:nth-child(even) {
-    background: #F5F5F5; }
-
-.c-discussion__entry {
-  display: grid;
-  grid-template: auto auto / auto 1fr;
-  grid-template-areas: "avatar header" "avatar content"; }
-
-.c-discussion__entry-header {
-  grid-area: header;
-  line-height: 3.2rem; }
-  .c-discussion__entry-header span:not(:last-of-type) {
-    margin-right: 2.4rem; }
-
-.c-discussion__content {
-  grid-area: content; }
-
-.c-discussion__body {
-  margin-bottom: 2.4rem; }
-
-@media only screen and (min-width: 900px) {
-  .c-discussion__entry-header {
-    line-height: 4rem; } }
-
 .c-form__footer {
   margin-top: 1.6rem; }
 
@@ -2044,6 +1979,10 @@ button, input[type="submit"] {
       cursor: not-allowed; }
     .c-field__input--textarea-large {
       height: 16rem; }
+    .c-field__input--show-placeholder {
+      margin-top: 0; }
+      .c-field__input--show-placeholder::placeholder {
+        opacity: 1 !important; }
   .c-field__helper {
     font-size: 1.4rem;
     color: #8A8A8A;
@@ -2166,6 +2105,71 @@ button, input[type="submit"] {
   .control--radio input:disabled ~ .control__indicator:after {
     background: #7b7b7b; }
 
+.c-discussion__header {
+  border-bottom: 1px solid #BFBFBF;
+  margin-bottom: 1.6rem; }
+
+.c-discussion__title {
+  line-height: 6.4rem;
+  margin: 0; }
+
+.c-discussion__comment-box {
+  display: grid;
+  grid-template: auto auto / auto 1fr;
+  grid-template-areas: "avatar field" "avatar footer"; }
+
+.c-discussion .c-avatar {
+  grid-area: avatar;
+  margin-right: 2.4rem; }
+
+.c-discussion__comment-field {
+  grid-area: field;
+  margin-bottom: 0 !important; }
+  .c-discussion__comment-field.toggle-open + .c-discussion__comment-footer {
+    display: flex; }
+  .c-discussion__comment-field.toggle-open .c-field__input {
+    border-color: #6F19DD;
+    border-bottom-width: .2rem;
+    margin-bottom: 0; }
+
+.c-discussion .c-field__input {
+  background: transparent;
+  border-bottom-color: transparent;
+  padding: .3rem 0 .7rem; }
+  .c-discussion .c-field__input::placeholder {
+    color: #8A8A8A;
+    transition: .2s; }
+
+.c-discussion__comment-footer {
+  grid-area: footer;
+  display: none; }
+
+.c-discussion__block {
+  padding: 4.8rem 0; }
+  .c-discussion__block:nth-child(even) {
+    background: #F5F5F5; }
+
+.c-discussion__entry {
+  display: grid;
+  grid-template: auto auto / auto 1fr;
+  grid-template-areas: "avatar header" "avatar content"; }
+
+.c-discussion__entry-header {
+  grid-area: header;
+  line-height: 3.2rem; }
+  .c-discussion__entry-header span:not(:last-of-type) {
+    margin-right: 2.4rem; }
+
+.c-discussion__content {
+  grid-area: content; }
+
+.c-discussion__body {
+  margin-bottom: 2.4rem; }
+
+@media only screen and (min-width: 900px) {
+  .c-discussion__entry-header {
+    line-height: 4rem; } }
+
 .c-alerts {
   position: fixed;
   bottom: 0;
@@ -2188,7 +2192,7 @@ button, input[type="submit"] {
   background-color: #333;
   border-radius: 0;
   color: #fff;
-  padding: 1.2rem 1.6rem;
+  padding: 1.3rem 1.6rem;
   margin: 1.6rem 0;
   position: relative; }
 

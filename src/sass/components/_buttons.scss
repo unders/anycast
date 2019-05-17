@@ -24,7 +24,8 @@ button, input[type="submit"] {
   //justify-content: center;
   white-space: nowrap;
   cursor: pointer;
-  padding: 1rem $spacing-small;
+  //padding: 1rem $spacing-small;
+  padding: 1.4rem $spacing-small;
   vertical-align: middle;
   text-decoration: none;
   transition: all .15s ease-in-out;
@@ -57,8 +58,8 @@ button, input[type="submit"] {
     justify-content: center;
     align-content: center;
     overflow: hidden;
-    width: $spacing-base*5;
-    height: $spacing-base*5;
+    width: $spacing-base*5.5;
+    height: $spacing-base*5.5;
     padding: 0;
 
     .c-button__icon {
