@@ -19,10 +19,8 @@ curl -L https://github.com/unders/tmplgen/releases/download/v1.0.0/tmplgen_1.0.0
 5. `cd ../`
 
 #### Option 1
-Start dev server with `make start` and write HTML and Sass inside `src` directory.
 
-#### Option 2
-Write directly to `public` folder.
+Start dev server with `make start` and write HTML and Sass inside `src` directory.
 
 ## Working with Images
 
