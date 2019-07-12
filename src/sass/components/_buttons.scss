@@ -25,7 +25,7 @@ button, input[type="submit"] {
   white-space: nowrap;
   cursor: pointer;
   //padding: 1rem $spacing-small;
-  padding: 1.4rem $spacing-small;
+  padding: 1.4rem 2rem;
   vertical-align: middle;
   text-decoration: none;
   transition: all .15s ease-in-out;
@@ -58,18 +58,18 @@ button, input[type="submit"] {
     justify-content: center;
     align-content: center;
     overflow: hidden;
-    width: $spacing-base*5.5;
-    height: $spacing-base*5.5;
+    width: $spacing-xlarge;
+    height: $spacing-xlarge;
     padding: 0;
 
     .c-button__icon {
       margin: 0;
     }
 
-    &.c-button--large {
-      width: $spacing-xlarge;
-      height: $spacing-xlarge;
-    }
+    //&.c-button--large {
+      //width: $spacing-xlarge;
+      //height: $spacing-xlarge;
+    //}
   }
 
   &--avatar {

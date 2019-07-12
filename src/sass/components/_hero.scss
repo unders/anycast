@@ -43,7 +43,8 @@
 
   &__title {
     @extend .u-xlarge;
-    @extend .u-margin-bottom-small;
+    margin-top: $spacing-large;
+    //@extend .u-margin-bottom-small;
     font-family: $text-font-family-serif;
   }
 

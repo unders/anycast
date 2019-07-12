@@ -119,3 +119,14 @@ hr {
   border: none;
   border-bottom: 1px solid $border-color;
 }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $spacing-medium;
+  display: block;
+}
+
+figure {
+  margin: 0;
+}

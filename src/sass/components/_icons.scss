@@ -12,5 +12,6 @@
   &:before {
     position: relative;
     top: 1px;
+    transition: transform .2s;
   }
 }

@@ -103,3 +103,19 @@
     padding-bottom: $spacing-medium-md;
   }
 }
+
+.u-padding-top-large {
+  padding-top: $spacing-large;
+
+  @media #{$breakpoint-medium} {
+    padding-top: $spacing-large-md;
+  }
+}
+
+.u-padding-bottom-large {
+  padding-bottom: $spacing-large;
+
+  @media #{$breakpoint-medium} {
+    padding-bottom: $spacing-large-md;
+  }
+}
