@@ -11,7 +11,7 @@
     margin: 0;
 
     &.toggle-open {
-      z-index: $zindex-menu;
+      //z-index: $zindex-menu;
     }
   }
 
@@ -19,11 +19,38 @@
     background: $color-white;
     display: none;
     @extend .u-high;
-    z-index: $zindex-menu;
+    position: relative;
+    //z-index: $zindex-menu;
   }
 
   &.toggle-open .c-menu__content {
     display: block;
+  }
+
+  &.toggle-open {
+    z-index: 500;
+
+    .c-menu__toggle {
+      position: relative;
+      z-index: 520;
+    }
+
+    .c-menu__content {
+      z-index: 520;
+    }
+
+    &:after {
+      content: '';
+      background: rgba($color-gray-4, .8);
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      //z-index: $zindex-mask;
+      z-index: 500;
+    }
   }
 
   @media #{$breakpoint-small-max} { // Drawer style

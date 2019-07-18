@@ -10,7 +10,10 @@ body {
   // OVERLAY MASK
 
   &.toggle-open {
-    overflow: hidden;
+
+    @media #{$breakpoint-small-max} {
+      overflow: hidden;
+    }
 
     &:after {
       content: '';

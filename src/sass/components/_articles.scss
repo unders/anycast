@@ -55,6 +55,7 @@
   @media #{$breakpoint-small-max} {
 
     .c-article__item {
+      grid-column-gap: 0.2rem;
       margin-bottom: $spacing-small;
     }
 
@@ -64,6 +65,10 @@
 
     .c-article__link {
       line-height: 2rem;
+    }
+
+    .c-article__meta-items {
+      flex-wrap: wrap;
     }
 
     .c-article__meta-item {
@@ -92,7 +97,7 @@
       &:hover, &:focus, &--current {
         background: $color-white;
         box-shadow: $box-shadow-high;
-        z-index: $zindex-filter;
+        //z-index: $zindex-filter;
 
         .c-article__actions {
           display: flex;

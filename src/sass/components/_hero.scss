@@ -4,9 +4,10 @@
 
 .c-hero {
   background: $color-brand-primary;
+  //background: $color-gray-1;
   min-height: 70vh;
   padding-top: $spacing-super + $spacing-xsmall;
-  overflow: hidden;
+  //overflow: hidden;
   position: relative;
   display: flex;
 
@@ -16,7 +17,7 @@
 
   &__media {
     filter: grayscale(100%);
-    opacity: .2;
+    opacity: .1;
     position: absolute;
     margin-bottom: 0;
     height: 100%;
@@ -31,7 +32,7 @@
     display: grid;
     grid-template-rows: 1fr auto;
     justify-items: center;
-    z-index: 2;
+    z-index: $zindex-navbar;
   }
 
   &__content-inner {
@@ -51,15 +52,13 @@
   &__meta-items {
     @extend .u-margin-bottom-small;
     display: flex;
+    justify-content: center;
   }
 
   &__meta-item {
     color: $color-white;
     font-size: 1.3rem;
-
-    &:not(:last-of-type) {
-      margin-right: $spacing-medium;
-    }
+    margin: 0 $spacing-xsmall;
   }
 
   &__meta-link {
@@ -79,14 +78,23 @@
     width: 100%;
     margin-bottom: $spacing-medium;
     align-self: end;
+    text-align: left;
   }
 
+  @media #{$breakpoint-small-max} {
+
+    &__meta-items {
+      flex-wrap: wrap;
+    }
+
+  }
 
   @media #{$breakpoint-medium} {
     padding-top: $spacing-xlarge + $spacing-small + $spacing-xsmall;
 
     &__meta-item {
       font-size: 1.4rem;
+      margin: 0 $spacing-small;
     }
 
     &__actions {

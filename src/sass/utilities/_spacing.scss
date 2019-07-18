@@ -5,6 +5,25 @@
 // MARGIN
 //---------------------------
 
+// TOP
+
+.u-margin-top-small {
+  margin-top: $spacing-small;
+
+  @media #{$breakpoint-medium} {
+    margin-top: $spacing-small-md;
+  }
+}
+
+.u-margin-top-medium {
+  margin-top: $spacing-medium;
+
+  @media #{$breakpoint-medium} {
+    margin-top: $spacing-medium-md;
+  }
+}
+
+
 // RIGHT
 
 .u-margin-right-xsmall {
@@ -12,6 +31,14 @@
 
   @media #{$breakpoint-medium} {
     margin-right: $spacing-xsmall-md;
+  }
+}
+
+.u-margin-right-small {
+  margin-right: $spacing-small;
+
+  @media #{$breakpoint-medium} {
+    margin-right: $spacing-small-md;
   }
 }
 

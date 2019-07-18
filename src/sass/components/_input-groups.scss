@@ -22,4 +22,9 @@
       border-bottom-right-radius: $border-radius;
     }
   }
+
+  .c-menu .c-button {
+    //border-left-width: 0;
+    margin-left: -1px;
+  }
 }

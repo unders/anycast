@@ -114,9 +114,9 @@ $breakpoint-large:        "only screen and (min-width : 1400px)";
 // Z-INDEXES
 //---------------------------
 
-$zindex-mask:             100;
+$zindex-filter:           100;
 $zindex-navbar:           200;
-$zindex-modal:            300;
-$zindex-filter:           400;
+$zindex-mask:             300;
+$zindex-modal:            400;
 $zindex-menu:             500;
 $zindex-alert:            600;

@@ -11,7 +11,7 @@
   z-index: $zindex-navbar;
 
   &__brand {
-    background: url("../images/worldtoday.svg") no-repeat scroll center center / 100% auto;
+    background: url("/assets/images/worldtoday.svg") no-repeat scroll center center / 100% auto;
     text-indent: -999999px;
     display: block;
     width: 14rem;
@@ -39,6 +39,7 @@
 
     &__brand {
       width: 19rem;
+      width: 26rem;
     }
   }
 }

@@ -29,6 +29,7 @@
     &.toggle-open .c-field__input { // Temp styling
       border-color: $color-brand-primary;
       border-bottom-width: .2rem;
+      margin-top: 0;
       margin-bottom: 0;
     }
   }
@@ -64,6 +65,22 @@
     font-size: 1.3rem;
     line-height: 1.3;
     @extend .u-margin-bottom-xsmall;
+  }
+
+  &__entry {
+
+    > .c-discussion__body {
+       @extend .u-margin-bottom-medium;
+    }
+
+    .c-discussion__entry,
+    .c-discussion__comment-box {
+      margin-left: $spacing-base * 2.5;
+    }
+
+    .c-discussion__actions {
+      margin-left: $spacing-base * 0;
+    }
   }
 
   &__body {
@@ -103,7 +120,8 @@
 
   // Temp styling
 
-  .toggle-entries.toggle-closed {
+  .toggle-entries.toggle-closed,
+  .toggle-entries-2.toggle-closed {
     display: none;
   }
 

@@ -20,7 +20,7 @@ button, input[type="submit"] {
   font-size: 1.4rem;
   font-weight: bold;
   line-height: normal;
-  text-align: center;
+  text-align: left;
   //justify-content: center;
   white-space: nowrap;
   cursor: pointer;
@@ -85,6 +85,10 @@ button, input[type="submit"] {
 
   &--light {
     color: $color-white;
+
+    &:visited {
+      color: $color-white;
+    }
 
     &:hover,
     &:focus,

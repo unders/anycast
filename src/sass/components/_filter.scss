@@ -29,13 +29,12 @@
 
   &__items {
     display: grid;
-    grid-template: auto / repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template: auto / repeat(auto-fit, minmax(14rem, 1fr));
     grid-gap: $spacing-xsmall;
   }
 
   &__item {
     @extend .c-button;
-    @extend .c-button--default;
     text-align: left;
     margin-bottom: $spacing-xsmall;
     display: block;
@@ -80,8 +79,19 @@
       transition: .2s;
     }
 
-    &.toggle-open .c-filter__content {
-      bottom: 0;
+    &.toggle-open {
+
+      .c-filter__toggle {
+        z-index: $zindex-filter + 120;
+      }
+
+      .c-filter__content {
+        z-index: $zindex-filter + 110;
+      }
+
+      .c-filter__content {
+        bottom: 0;
+      }
     }
 
     &__items {
