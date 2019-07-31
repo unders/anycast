@@ -32,7 +32,7 @@
     display: grid;
     grid-template-rows: 1fr auto;
     justify-items: center;
-    z-index: $zindex-navbar;
+    z-index: $zindex-navbar - 10;
   }
 
   &__content-inner {
