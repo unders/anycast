@@ -7,13 +7,17 @@
 
   .c-article__item {
     display: grid;
-    grid-template: auto auto / auto 1fr auto;
+    grid-template: auto auto / auto 1fr;
     grid-column-gap: $spacing-xsmall;
     grid-template-areas:
     "order link actions"
     "order meta actions";
     align-items: center;
     position: relative;
+
+    &.toggle-open {
+      //z-index: $zindex-menu;
+    }
   }
 
   .c-article__order {
@@ -50,6 +54,10 @@
 
   .c-article__actions {
     grid-area: actions;
+
+    &.toggle-open:after {
+      display: none;
+    }
   }
 
   @media #{$breakpoint-small-max} {
@@ -85,6 +93,14 @@
       border-bottom: 1px solid $color-gray-4;
     }
 
+    .c-menu {
+      z-index: auto;
+
+      .c-menu__toggle {
+        z-index: auto;
+      }
+    }
+
   }
 
   @media #{$breakpoint-medium} {
@@ -94,10 +110,10 @@
       padding: $spacing-xsmall-md;
       transition: .1s;
 
-      &:hover, &:focus, &--current {
+      &:hover, &:focus, &.toggle-open {
         background: $color-white;
         box-shadow: $box-shadow-high;
-        //z-index: $zindex-filter;
+        z-index: $zindex-menu;
 
         .c-article__actions {
           display: flex;

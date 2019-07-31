@@ -4,15 +4,10 @@
 
 .c-menu {
   position: relative;
-  //z-index: $zindex-menu;
 
   &__toggle {
     outline: none;
     margin: 0;
-
-    &.toggle-open {
-      //z-index: $zindex-menu;
-    }
   }
 
   &__content {
@@ -20,7 +15,6 @@
     display: none;
     @extend .u-high;
     position: relative;
-    //z-index: $zindex-menu;
   }
 
   &.toggle-open .c-menu__content {
@@ -28,29 +22,18 @@
   }
 
   &.toggle-open {
-    z-index: 500;
+    z-index: $zindex-mask;
 
     .c-menu__toggle {
       position: relative;
-      z-index: 520;
+      z-index: $zindex-mask + 20;
     }
 
     .c-menu__content {
-      z-index: 520;
+      z-index: $zindex-mask + 20;
     }
 
-    &:after {
-      content: '';
-      background: rgba($color-gray-4, .8);
-      display: block;
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      //z-index: $zindex-mask;
-      z-index: 500;
-    }
+    @include mask;
   }
 
   @media #{$breakpoint-small-max} { // Drawer style
