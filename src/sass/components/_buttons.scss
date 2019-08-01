@@ -36,10 +36,13 @@ button, input[type="submit"] {
 
   &:hover,
   &:focus,
-  &:active,
-  &--active {
+  &:active {
     background: $color-gray-5;
     outline: 0;
+  }
+
+  &--active {
+    color: $color-brand-primary;
   }
 
   &[disabled] {
@@ -121,6 +124,35 @@ button, input[type="submit"] {
     background: $color-white;
     color: $color-text;
   }
+}
+
+
+// UPVOTE
+
+.c-button--upvote {
+
+  @media #{$breakpoint-small-max} {
+
+    display: inline-flex !important;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    width: $spacing-xlarge;
+    height: $spacing-xlarge;
+    padding: 0;
+
+    .c-button__icon {
+      margin: 0;
+    }
+  }
+
+  @media #{$breakpoint-medium} {
+    width: 13rem;
+  }
+}
+
+.c-button--upvote-block {
+
 }
 
 

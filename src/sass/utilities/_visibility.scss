@@ -15,3 +15,24 @@
     display: none !important;
   }
 }
+
+
+// INACTIVE AND ACTIVE
+
+.c-button, .c-nav__link {
+
+  .u-hidden-inactive {
+    display: none;
+  }
+
+  &--active {
+
+    .u-hidden-inactive {
+      display: inline;
+    }
+
+    .u-hidden-active {
+      display: none;
+    }
+  }
+}

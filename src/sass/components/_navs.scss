@@ -13,8 +13,12 @@
     padding: 0 $spacing-small;
     display: block;
 
-    &:focus, &:hover, &--current {
+    &:focus, &:hover {
       background: $color-gray-5;
+    }
+
+    &--active {
+      color: $color-brand-primary;
     }
 
     &:not(.c-nav__link--button) {

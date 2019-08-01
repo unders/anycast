@@ -7,7 +7,7 @@
 
   .c-article__item {
     display: grid;
-    grid-template: auto auto / auto 1fr;
+    grid-template: auto auto / auto 1fr auto;
     grid-column-gap: $spacing-xsmall;
     grid-template-areas:
     "order link actions"
@@ -15,8 +15,20 @@
     align-items: center;
     position: relative;
 
-    &.toggle-open {
-      //z-index: $zindex-menu;
+    &--upvoted {
+
+      .c-article__actions {
+        opacity: 1;
+        z-index: 0;
+      }
+
+      .c-menu__toggle {
+        opacity: 0;
+      }
+
+      .c-button--upvote {
+        opacity: 1;
+      }
     }
   }
 
@@ -65,6 +77,13 @@
     .c-article__item {
       grid-column-gap: 0.2rem;
       margin-bottom: $spacing-small;
+
+      &--upvoted {
+
+        .c-menu__toggle {
+          opacity: 1;
+        }
+      }
     }
 
     .c-article__order {
@@ -113,11 +132,21 @@
       &:hover, &:focus, &.toggle-open {
         background: $color-white;
         box-shadow: $box-shadow-high;
-        z-index: $zindex-menu;
 
         .c-article__actions {
-          display: flex;
+          //background: $color-white;
+          //background: linear-gradient(270deg, $color-white 75%, rgba(255, 255, 255, 0) 100%);
+          opacity: 1;
+          z-index: $zindex-menu;
         }
+
+        .c-article__action {
+          opacity: 1;
+        }
+      }
+
+      &.toggle-open {
+        z-index: $zindex-menu;
       }
     }
 
@@ -155,26 +184,31 @@
     }
 
     .c-article__actions {
-      background: $color-white;
-      background: linear-gradient(270deg, $color-white 75%, rgba(255, 255, 255, 0) 100%);
       border-radius: 0 $border-radius $border-radius 0;
-      padding-right: $spacing-small-md;
-      padding-left: $spacing-base * 10;
-      grid-area: unset;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      display: none;
+      //padding-right: $spacing-small-md;
+      padding-left: $spacing-small-md;
+      //padding-right: $spacing-small-md;
+      //padding-left: $spacing-base * 10;
+      //grid-area: unset;
+      //position: absolute;
+      //top: 0;
+      //right: 0;
+      //bottom: 0;
+      //display: flex;
       flex-wrap: nowrap;
       justify-content: flex-end;
       align-items: center;
       align-content: center;
-      z-index: $zindex-menu;
+      opacity: 0;
     }
 
     .c-article__action:not(:first-of-type) {
       margin-left: $spacing-tiny-md;
+    }
+
+    .c-menu__content {
+      top: calc(100% + 1.6rem);
+      right: -1.6rem;
     }
   }
 }
