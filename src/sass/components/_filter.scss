@@ -14,7 +14,7 @@
   }
 
   &__toggle.toggle-open .icon:before {
-    content: "\e8f6";
+    content: $icon--x;
   }
 
   &__content {
