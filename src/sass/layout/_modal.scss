@@ -3,7 +3,6 @@
 //-----------------------------------------------------------------------
 
 .l-modal {
-  padding: $grid-gutter;
   position: fixed;
   top: 0;
   right: 0;
@@ -15,68 +14,40 @@
   visibility: hidden;
   opacity: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   &__content {
-    @extend .u-high;
+    //@extend .u-high;
     background-color: $color-gray-5;
     border: 0;
     border-radius: $border-radius;
-    padding: $spacing-large;
+    width: 100%;
+    margin: auto;
+    padding: $spacing-xlarge $spacing-large;
     position: relative;
   }
 
-  &--small {
-    .l-modal__content {
-      //padding: $spacing-medium;
-    }
-  }
-
-  &--spaced {
-    .l-modal__content {
-       padding: $spacing-large $spacing-medium;
-    }
-  }
-
-  &--full {
-    .l-modal__content {
-      padding: $grid-gutter;
-      transform: none;
-    }
-  }
-
-  &.l-modal--visible,
   &.toggle-open {
     visibility: visible;
     opacity: 1;
   }
 
-  @media #{$breakpoint-small-max} { // FULL COVER
+  @media #{$breakpoint-small-max} {
 
+    background-color: $color-gray-5;
 
+    &__content {
+     justify-content: center;
+    }
+
+    .c-button--close {
+      position: fixed;
+    }
   }
 
   @media #{$breakpoint-medium} {
 
     &__content {
-      //width: 75%;
       max-width: 76rem;
-      margin: $spacing-large 0;
     }
-
-    &--small {
-      .l-modal__content {
-        //min-width: 50rem;
-        //padding: $spacing-medium;
-      }
-    }
-
-    &--spaced {
-      .l-modal__content {
-         padding: $spacing-xlarge $spacing-base*20;
-      }
-    }
-
   }
 }
