@@ -380,19 +380,19 @@ th {
   content: ""; }
 
 .icon--arrow-down:before {
-  content: ""; }
+  content: ""; }
 
 .icon--arrow-left:before {
-  content: ""; }
+  content: ""; }
 
 .icon--arrow-right:before {
-  content: ""; }
+  content: ""; }
 
 .icon--arrow-up:before {
-  content: ""; }
+  content: ""; }
 
 .icon--arrow-up-right:before {
-  content: ""; }
+  content: ""; }
 
 .icon--bookmark:before {
   content: ""; }
@@ -716,13 +716,11 @@ body {
     flex: 1; }
 
 .icon, .c-filter__item--clear:before {
-  font-size: 2.4rem; }
+  font-size: 24px;
+  display: inline-block; }
   .icon, .c-filter__item--clear:before, .icon:before, .c-filter__item--clear:before, .icon:after {
-    line-height: .7; }
-  .icon:before, .c-filter__item--clear:before {
-    position: relative;
-    top: 1px;
-    transition: transform .2s; }
+    line-height: .7;
+    vertical-align: -.2rem; }
 
 .c-nav {
   display: flex;
@@ -747,8 +745,7 @@ body {
       .c-nav__link--disabled:hover, .c-nav__link--disabled:focus {
         background: transparent; }
   .c-nav__icon {
-    margin-right: 1.6rem;
-    display: inline-block; }
+    margin-right: 1.6rem; }
   .c-nav--list {
     min-width: 19.2rem;
     flex-direction: column; }
@@ -773,6 +770,8 @@ body {
       border-radius: 200rem;
       font-size: 1.4rem;
       line-height: 3.2rem;
+      padding-top: 0;
+      padding-bottom: 0;
       margin-bottom: 0.8rem; }
   .c-nav--tabs {
     border-bottom: 1px solid #BFBFBF; }
@@ -874,7 +873,7 @@ button, input[type="submit"] {
     color: #fff; }
   .c-button--primary:hover, .c-filter__item--current:hover, .c-button--primary:focus, .c-filter__item--current:focus {
     border-color: #5814af;
-    background: #5814af;
+    background: #5814af !important;
     color: #fff; }
 
 .c-button--outline {
@@ -1047,6 +1046,8 @@ button, input[type="submit"] {
   margin-bottom: 0.8rem;
   display: block;
   position: relative; }
+  .c-filter__item:hover, .c-filter__item:focus {
+    background: #fff; }
   .c-filter__item--clear {
     padding-right: 3.2rem; }
     .c-filter__item--clear:before {

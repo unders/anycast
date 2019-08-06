@@ -127,35 +127,6 @@ button, input[type="submit"] {
 }
 
 
-// UPVOTE
-
-.c-button--upvote {
-
-  @media #{$breakpoint-small-max} {
-
-    display: inline-flex !important;
-    justify-content: center;
-    align-content: center;
-    overflow: hidden;
-    width: $spacing-xlarge;
-    height: $spacing-xlarge;
-    padding: 0;
-
-    .c-button__icon {
-      margin: 0;
-    }
-  }
-
-  @media #{$breakpoint-medium} {
-    width: 13rem;
-  }
-}
-
-.c-button--upvote-block {
-
-}
-
-
 // PRIMARY
 
 .c-button--primary {
@@ -169,7 +140,7 @@ button, input[type="submit"] {
   &:hover,
   &:focus {
     border-color: $color-link-hover;
-    background: $color-link-hover;
+    background: $color-link-hover !important;
     color: $color-white;
   }
 }
@@ -186,9 +157,14 @@ button, input[type="submit"] {
     color: $color-text;
   }
 
-  &:hover,
-  &:focus,
   &.c-button--active {
+    border-color: $color-gray-3;
+    //background: $color-text;
+    color: $color-brand-primary;
+  }
+
+  &:hover,
+  &:focus {
     border-color: $color-text;
     background: $color-text;
     color: $color-white;

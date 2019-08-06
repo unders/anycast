@@ -87,8 +87,16 @@
     @extend .u-margin-bottom-large;
   }
 
-  .c-discussion__toggle-replies.toggle-open .icon:before {
-    transform: rotate(180deg);
+  .c-discussion__toggle-replies {
+
+    &:hover,
+    &:focus {
+      background: $color-white;
+    }
+
+    &.toggle-open .icon:before {
+      transform: rotate(180deg);
+    }
   }
 
 

@@ -23,6 +23,7 @@
 
     &:not(.c-nav__link--button) {
       line-height: 6.4rem;
+      //padding: 2rem 2rem;
     }
 
     &--button {
@@ -43,7 +44,6 @@
 
   &__icon {
     margin-right: $spacing-small;
-    display: inline-block;
   }
 
   &--list {
@@ -88,6 +88,8 @@
       border-radius: $border-radius-rounded;
       font-size: 1.4rem;
       line-height: $spacing-large;
+      padding-top: 0;
+      padding-bottom: 0;
       margin-bottom: $spacing-xsmall;
     }
   }
