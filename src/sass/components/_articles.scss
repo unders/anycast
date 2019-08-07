@@ -125,13 +125,18 @@
       justify-content: center;
       align-content: center;
       overflow: hidden;
-      width: $spacing-xlarge;
+      width: $spacing-small;
       height: $spacing-xlarge;
       padding: 0;
 
       .c-button__icon {
+        font-size: 1.6rem;
         margin: 0;
       }
+    }
+
+    .c-menu__toggle {
+      margin-right: - $spacing-xsmall;
     }
 
   }

@@ -9,16 +9,22 @@
 .c-chip {
   display: inline-flex;
   padding: 0 1.2rem;
-  background: $color-text;
-  color: $color-white;
+  background: $color-gray-4;
+  color: $color-text;
   font-size: 1.1rem;
   line-height: 2.4rem;
   white-space: nowrap;
   text-align: center;
   border-radius: $border-radius;
 
-  &--light {
+  &:hover,
+  &:focus {
+    background: $color-white;
+  }
+
+  &--dark {
     background: rgba($color-white, .2);
+    color: $color-white;
 
     &:hover, &:focus {
       background: $color-white;

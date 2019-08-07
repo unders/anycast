@@ -20,8 +20,7 @@ button, input[type="submit"] {
   font-size: 1.4rem;
   font-weight: bold;
   line-height: normal;
-  text-align: left;
-  //justify-content: center;
+  text-align: center;
   white-space: nowrap;
   cursor: pointer;
   //padding: 1rem $spacing-small;
@@ -52,8 +51,17 @@ button, input[type="submit"] {
     box-shadow: none;
   }
 
+  &--align-left {
+
+  }
+
   &__icon {
     margin-right: $spacing-xsmall;
+
+    &--right {
+      margin-right: 0;
+      margin-left: $spacing-xsmall;
+    }
   }
 
   &--icon {
@@ -68,11 +76,6 @@ button, input[type="submit"] {
     .c-button__icon {
       margin: 0;
     }
-
-    //&.c-button--large {
-      //width: $spacing-xlarge;
-      //height: $spacing-xlarge;
-    //}
   }
 
   &--avatar {
@@ -86,7 +89,7 @@ button, input[type="submit"] {
     margin: 0 !important;
   }
 
-  &--light {
+  &--dark {
     color: $color-white;
 
     &:visited {
@@ -149,7 +152,7 @@ button, input[type="submit"] {
 // OUTLINE
 
 .c-button--outline {
-  border-color: $color-text;
+  border-color: $color-gray-3;
   background: transparent;
   color: $color-text;
 
@@ -170,7 +173,7 @@ button, input[type="submit"] {
     color: $color-white;
   }
 
-  &.c-button--light {
+  &.c-button--dark {
     border-color: $color-white;
     background: transparent;
     color: $color-white;

@@ -3,9 +3,13 @@
 //-----------------------------------------------------------------------
 
 .c-footer {
-  margin-top: $spacing-xlarge;
-  margin-bottom: $spacing-xlarge;
+  padding-top: $spacing-xlarge;
+  padding-bottom: $spacing-xlarge * 2;
   display: flex;
   align-content: center;
   justify-content: center;
+
+  @media #{$breakpoint-medium} {
+    padding-bottom: $spacing-xlarge;
+  }
 }

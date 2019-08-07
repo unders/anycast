@@ -22,14 +22,14 @@
     }
   }
 
-  &--light {
+  &--dark {
 
     .c-navbar__brand {
       filter: invert(100%) brightness(3);
     }
 
     .c-navbar__nav > .c-nav__link {
-      @extend .c-button--light;
+      @extend .c-button--dark;
     }
   }
 
@@ -38,8 +38,7 @@
     margin-bottom: $spacing-xsmall-md;
 
     &__brand {
-      width: 19rem;
-      width: 26rem;
+      width: 22rem;
     }
   }
 }
