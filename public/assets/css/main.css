@@ -778,6 +778,14 @@ body {
   .l-media__body {
     flex: 1; }
 
+.l-section {
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem; }
+  @media only screen and (min-width: 900px) {
+    .l-section {
+      margin-top: 9.6rem;
+      margin-bottom: 9.6rem; } }
+
 .icon, .c-filter__item--clear:before {
   font-size: 24px;
   display: inline-block; }
@@ -1787,47 +1795,53 @@ button, input[type="submit"] {
 .u-text-primary {
   color: #1244F1; }
 
-.u-super {
+.u-header-huge {
   font-size: 4.8rem; }
   @media only screen and (min-width: 900px) {
-    .u-super {
-      font-size: 8rem; } }
+    .u-header-huge {
+      font-size: 9.6rem; } }
 
-.u-xlarge, .c-hero__title {
+.u-header-xlarge, .c-hero__title {
   font-size: 2.4rem; }
   @media only screen and (min-width: 900px) {
-    .u-xlarge, .c-hero__title {
+    .u-header-xlarge, .c-hero__title {
       font-size: 4rem; } }
 
-.u-large, h1 {
+.u-header-large, h1 {
   font-size: 2.4rem; }
   @media only screen and (min-width: 900px) {
-    .u-large, h1 {
+    .u-header-large, h1 {
       font-size: 3.2rem; } }
 
-.u-medium, h2 {
+.u-header-medium, h2 {
   font-size: 1.8rem; }
   @media only screen and (min-width: 900px) {
-    .u-medium, h2 {
+    .u-header-medium, h2 {
       font-size: 2.4rem; } }
 
-.u-small, h3 {
+.u-header-small, h3 {
   font-size: 1.6rem; }
   @media only screen and (min-width: 900px) {
-    .u-small, h3 {
+    .u-header-small, h3 {
       font-size: 1.8rem; } }
 
-.u-xsmall, .c-nav__link, .c-alert {
-  font-size: 1.4rem; }
-  @media only screen and (min-width: 900px) {
-    .u-xsmall, .c-nav__link, .c-alert {
-      font-size: 1.6rem; } }
-
-.u-tiny, h4 {
+.u-header-xsmall, h4 {
   font-size: 1.2rem; }
   @media only screen and (min-width: 900px) {
-    .u-tiny, h4 {
+    .u-header-xsmall, h4 {
       font-size: 1.4rem; } }
+
+.u-text-large {
+  font-size: 1.8rem; }
+  @media only screen and (min-width: 900px) {
+    .u-text-large {
+      font-size: 2.4rem; } }
+
+.u-text-xsmall, .c-nav__link, .c-alert {
+  font-size: 1.4rem; }
+  @media only screen and (min-width: 900px) {
+    .u-text-xsmall, .c-nav__link, .c-alert {
+      font-size: 1.6rem; } }
 
 .u-margin-top-small {
   margin-top: 1.6rem; }
@@ -1840,6 +1854,12 @@ button, input[type="submit"] {
   @media only screen and (min-width: 900px) {
     .u-margin-top-medium {
       margin-top: 3.2rem; } }
+
+.u-margin-top-large {
+  margin-top: 3.2rem; }
+  @media only screen and (min-width: 900px) {
+    .u-margin-top-large {
+      margin-top: 4.8rem; } }
 
 .u-margin-right-xsmall {
   margin-right: 0.8rem; }
@@ -1889,10 +1909,10 @@ button, input[type="submit"] {
     .u-margin-bottom-xlarge, .c-nav--pagination {
       margin-bottom: 6.4rem; } }
 
-.u-margin-bottom-super {
+.u-margin-bottom-huge {
   margin-bottom: 6.4rem; }
   @media only screen and (min-width: 900px) {
-    .u-margin-bottom-super {
+    .u-margin-bottom-huge {
       margin-bottom: 9.6rem; } }
 
 .u-margin-left-tiny {

@@ -6,7 +6,7 @@
   background: darken($color-brand-primary, 10%);
   //background: $color-gray-5;
   min-height: 70vh;
-  padding-top: $spacing-super + $spacing-xsmall;
+  padding-top: $spacing-huge + $spacing-xsmall;
   //overflow: hidden;
   position: relative;
   display: flex;
@@ -43,7 +43,7 @@
   }
 
   &__title {
-    @extend .u-xlarge;
+    @extend .u-header-xlarge;
     margin-top: $spacing-xlarge;
     //@extend .u-margin-bottom-small;
     font-family: $text-font-family-serif;

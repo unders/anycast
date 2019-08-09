@@ -37,18 +37,18 @@ h1, h2, h3, h4 {
 
 h1 {
   font-weight: $text-font-weight-heavy;
-  @extend .u-large;
+  @extend .u-header-large;
 }
 
 h2 {
   font-weight: $text-font-weight-heavy;
   font-size: 2.4rem;
-  @extend .u-medium;
+  @extend .u-header-medium;
 }
 
 h3 {
   font-size: 1.6rem;
-  @extend .u-small;
+  @extend .u-header-small;
 }
 
 h4 {
@@ -57,7 +57,7 @@ h4 {
   line-height: $spacing-medium;
   text-transform: uppercase;
   border-bottom: $border-width solid $color-gray-3;
-  @extend .u-tiny;
+  @extend .u-header-xsmall;
 }
 
 

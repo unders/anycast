@@ -23,6 +23,14 @@
   }
 }
 
+.u-margin-top-large {
+  margin-top: $spacing-large;
+
+  @media #{$breakpoint-medium} {
+    margin-top: $spacing-large-md;
+  }
+}
+
 
 // RIGHT
 
@@ -92,11 +100,11 @@
   }
 }
 
-.u-margin-bottom-super {
-  margin-bottom: $spacing-super;
+.u-margin-bottom-huge {
+  margin-bottom: $spacing-huge;
 
   @media #{$breakpoint-medium} {
-    margin-bottom: $spacing-super-md;
+    margin-bottom: $spacing-huge-md;
   }
 }
 
