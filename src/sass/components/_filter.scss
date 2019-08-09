@@ -19,8 +19,11 @@
 
   &__content {
     background: $color-gray-5;
-    padding: $spacing-large 0;
-    display: none;
+
+    .l-container {
+      padding-top: $spacing-large;
+      padding-bottom: $spacing-large;
+    }
   }
 
   &.toggle-open .c-filter__content {
@@ -116,8 +119,17 @@
       align-items: center;
     }
 
-    &.toggle-open .c-filter__header {
-      border-color: transparent;
+    &__content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s;
+    }
+
+    &.toggle-open {
+
+      .c-filter__content {
+        max-height: 120rem;
+      }
     }
 
   }

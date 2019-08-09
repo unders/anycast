@@ -354,6 +354,67 @@ td,
 th {
   padding: 0; }
 
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.fadeIn {
+  animation-name: fadeIn; }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0) scaleY(1.2); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInDown {
+  animation-name: fadeInDown; }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0) scaleY(1.2); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInUp {
+  animation-name: fadeInUp; }
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); } }
+
+.fadeOutLeft {
+  animation-name: fadeOutLeft; }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+.zoomIn {
+  animation-name: zoomIn; }
+
 @font-face {
   font-family: "worldtoday";
   src: url("/assets/fonts//worldtoday.ttf?pqimnt") format("truetype"), url("/assets/fonts//worldtoday.woff?pqimnt") format("woff"), url("/assets/fonts//worldtoday.svg?pqimnt#worldtoday") format("svg");
@@ -482,7 +543,8 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 300; }
+    z-index: 300;
+    animation: .2s 0s fadeIn both; }
 
 html {
   font-size: 62.5%; }
@@ -696,7 +758,8 @@ body {
     position: relative; }
   .l-modal.toggle-open {
     visibility: visible;
-    opacity: 1; }
+    opacity: 1;
+    animation: .3s 0s fadeIn both; }
   @media only screen and (max-width: 899px) {
     .l-modal {
       background-color: #F5F5F5; }
@@ -999,7 +1062,8 @@ button, input[type="submit"] {
       right: 0;
       bottom: 0;
       left: 0;
-      z-index: 300; }
+      z-index: 300;
+      animation: .2s 0s fadeIn both; }
   @media only screen and (max-width: 899px) {
     .c-menu__content {
       position: fixed;
@@ -1018,7 +1082,8 @@ button, input[type="submit"] {
       top: 100%;
       right: 0;
       margin-top: .3rem;
-      z-index: 500; } }
+      z-index: 500;
+      animation: .1s 0s fadeIn both; } }
 
 .c-filter__header {
   text-align: center; }
@@ -1031,9 +1096,10 @@ button, input[type="submit"] {
   content: ""; }
 
 .c-filter__content {
-  background: #F5F5F5;
-  padding: 3.2rem 0;
-  display: none; }
+  background: #F5F5F5; }
+  .c-filter__content .l-container {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem; }
 
 .c-filter.toggle-open .c-filter__content {
   display: block; }
@@ -1090,8 +1156,12 @@ button, input[type="submit"] {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-    .c-filter.toggle-open .c-filter__header {
-      border-color: transparent; } }
+    .c-filter__content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s; }
+    .c-filter.toggle-open .c-filter__content {
+      max-height: 120rem; } }
 
 .c-articles {
   margin-bottom: 3.2rem; }
@@ -1633,6 +1703,8 @@ button, input[type="submit"] {
       width: 38rem;
       padding-right: 3.2rem;
       padding-left: 3.2rem; } }
+  .c-alerts .c-alert {
+    animation: .4s 6s fadeOutLeft both; }
   .c-alerts.toggle-open {
     display: block; }
 

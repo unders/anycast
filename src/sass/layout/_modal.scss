@@ -29,6 +29,7 @@
   &.toggle-open {
     visibility: visible;
     opacity: 1;
+    animation: .3s 0s fadeIn both;
   }
 
   @media #{$breakpoint-small-max} {
