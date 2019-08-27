@@ -2014,4 +2014,8 @@ button, input[type="submit"] {
     .u-max-height-medium {
       max-height: 80vh; } }
 
+.u-scale-up-20 {
+  transform: scale(1.2);
+  z-index: 0; }
+
 /*# sourceMappingURL=main.css.map */

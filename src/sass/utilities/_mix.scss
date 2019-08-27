@@ -21,6 +21,8 @@
 }
 
 
+// MAX WIDTHS
+
 .u-max-width-tiny {
   max-width: 24rem;
 }
@@ -33,4 +35,12 @@
   @media #{$breakpoint-medium} {
     max-height: 80vh;
   }
+}
+
+
+// ZOOM
+
+.u-scale-up-20 {
+  transform: scale(1.2);
+  z-index: 0;
 }
