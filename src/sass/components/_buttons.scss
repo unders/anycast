@@ -108,6 +108,25 @@ button, input[type="submit"] {
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
   }
+
+  &--dense {
+    padding-right: 0;
+    padding-left: 0;
+
+    .icon--arrow-right {
+      transition: transform .3s ease;
+    }
+
+    &:hover,
+    &:focus {
+      background: transparent;
+      color: $color-brand-primary;
+
+      .icon--arrow-right {
+        transform: translate3d(4px,0,0);
+      }
+    }
+  }
 }
 
 

@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    <main>{{- block "main" . }} {{ end }}</main>
+  {{ template "part/header" . }}
+  {{- block "main" . }} {{ end }}
+  {{ template "part/footer" . }}
 </body>
 </html>
 

@@ -2,7 +2,36 @@
 // HERO
 //-----------------------------------------------------------------------
 
+// HERO
+
 .c-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__media {
+    position: absolute;
+    margin-bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0px;
+  }
+
+  &__content {
+    z-index: $zindex-navbar - 10;
+  }
+
+  @media #{$breakpoint-medium} {
+    &--cover {
+      position: absolute;
+    }
+  }
+}
+
+// HERO ARTICLE
+
+.c-hero-article {
   background: darken($color-brand-primary, 10%);
   //background: $color-gray-5;
   min-height: 70vh;
@@ -13,17 +42,6 @@
 
   &--business {
 
-  }
-
-  &__media {
-    filter: grayscale(100%);
-    opacity: .1;
-    position: absolute;
-    margin-bottom: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    top: 0px;
   }
 
   &__content {
@@ -86,7 +104,6 @@
     &__meta-items {
       flex-wrap: wrap;
     }
-
   }
 
   @media #{$breakpoint-medium} {

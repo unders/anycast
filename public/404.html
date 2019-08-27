@@ -12,14 +12,66 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    <main>
-    <div>
-        <h1>404 - Page Not Found</h1>
-        <p>The specified file was not found on this website.
-            Please check the URL for mistakes and try again.
-        </p>
+  <header class="c-navbar c-navbar--dark_ l-header l-header--above l-container">
+
+    <nav class="c-navbar__nav c-nav">
+      <a class="c-nav__link c-nav__link--button c-button c-button--icon" href="/"><span class="icon icon--arrow-left"></span></a>
+    </nav>
+
+    <a class="c-navbar__brand" href="/">World Today</a>
+
+    <nav class="c-navbar__nav c-nav">
+      <div class="c-nav__entry c-menu">
+        <a class="c-nav__link c-nav__link--button c-button c-button--avatar c-menu__toggle" href="#" data-toggle=".c-navbar .c-menu">
+          <img src="/assets/images/avatar-member-johannes.png" alt="" class="c-avatar">
+        </a>
+        <div class="c-menu__content">
+          <nav class="c-nav c-nav--list">
+            <a href="/profile.html" class="c-nav__link"><span class="c-nav__icon icon icon--user"></span>Profile</a>
+            <a href="/settings-profile.html" class="c-nav__link"><span class="c-nav__icon icon icon--settings"></span>Settings</a>
+            <a href="#" data-toggle="#sign-in-step1" class="c-nav__link"><span class="c-nav__icon icon icon--log-out"></span>Sign out</a>
+            <a href="#" class="c-nav__link c-nav__link--divider-above u-hidden-md" data-toggle=".c-navbar .c-menu, body"><span class="c-nav__icon icon icon--x"></span>Cancel</a>
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <main class="l-main">
+
+    <div class="l-container l-grid u-margin-top-large u-align-items-center">
+      <div class="l-grid__item--span-3">
+        <img class="u-max-height-medium" src="/assets/images/illustration-lights.svg" alt="404" />
+      </div>
+      <div class="l-grid__item--span-3 l-grid__item--offset-3">
+        <h1 class="u-margin-bottom-large_"><span class="u-text-primary">Oops!</span> The page you were looking for doesn’t exist</h1>
+          <p>You may have misstyped the address or the page may have moved.</p>
+          <a class="c-button c-button--dense" href="/">Go to homepage <span class="icon c-button__icon c-button__icon--right icon--arrow-right"></span></a>
+      </div>
     </div>
-</main>
+
+  </main>
+
+  
+
+
+  
+
+    <footer class="c-footer l-footer l-container">
+
+      <nav class="c-nav c-nav--small u-text-quiet">
+        <a class="c-nav__link" href="/about.html">About</a>
+        <a class="c-nav__link" href="/about.html">Privacy</a>
+        <a class="c-nav__link" href="/about.html">Terms</a>
+        <a class="c-nav__link" href="/about.html">Feedback</a>
+        <a class="c-nav__link" href="/about.html">Contact</a>
+        <a class="c-nav__link" data-toggle="#sign-in-step1, body" href="#">Sign in</a>
+      </nav>
+
+    </footer>
+
 </body>
 </html>
 

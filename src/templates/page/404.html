@@ -2,11 +2,38 @@
     {{.String.Title_404}}
 {{ end }}
 {{ define "main" }}
-    <div>
-        <h1>404 - Page Not Found</h1>
-        <p>The specified file was not found on this website.
-            Please check the URL for mistakes and try again.
-        </p>
+
+  <main class="l-main">
+
+    <div class="l-container l-grid u-margin-top-large u-align-items-center">
+      <div class="l-grid__item--span-3">
+        <img class="u-max-height-medium" src="/assets/images/illustration-lights.svg" alt="404" />
+      </div>
+      <div class="l-grid__item--span-3 l-grid__item--offset-3">
+        <h1 class="u-margin-bottom-large_"><span class="u-text-primary">Oops!</span> The page you were looking for doesn’t exist</h1>
+          <p>You may have misstyped the address or the page may have moved.</p>
+          <a class="c-button c-button--dense" href="/">Go to homepage <span class="icon c-button__icon c-button__icon--right icon--arrow-right"></span></a>
+      </div>
     </div>
+
+  </main>
+
+  <!-- <main class="l-main l-main--pull-upwards">
+
+    <div class="c-hero c-hero--cover">
+      <img class="c-hero__media" src="/assets/images/hero-lights.png">
+      <div class="c-hero__content l-container l-grid">
+
+        <div class="l-grid__item--span-3 l-grid__item--offset-3">
+          <h1 class="u-margin-bottom-large_"><span class="u-text-primary">Oops!</span> The page you were looking for doesn’t exist</h1>
+          <p>You may have misstyped the address or the page may have moved.</p>
+          <a class="c-button c-button--dense" href="/">Go to homepage <span class="icon c-button__icon c-button__icon--right icon--arrow-right"></span></a>
+        </div>
+
+      </div>
+    </div>
+
+  </main> -->
+
 {{ end }}
 

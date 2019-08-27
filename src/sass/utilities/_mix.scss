@@ -2,9 +2,14 @@
 // UTILITIES / MIX
 //-----------------------------------------------------------------------
 
+// TRUNCATE
+
 .truncate {
   @include truncate;
 }
+
+
+// DIVIDERS
 
 .u-divider-dot {
   margin: 0 $spacing-tiny;
@@ -12,5 +17,20 @@
 
   &:after {
     content: '•';
+  }
+}
+
+
+.u-max-width-tiny {
+  max-width: 24rem;
+}
+
+// MAX HEIGHTS
+
+.u-max-height-medium {
+  max-height: 50vh;
+
+  @media #{$breakpoint-medium} {
+    max-height: 80vh;
   }
 }
