@@ -74,6 +74,7 @@
   }
 
   &__page-number {
+    @extend .u-text-xsmall;
     padding: 0 $spacing-medium;
   }
 

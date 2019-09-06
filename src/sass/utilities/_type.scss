@@ -27,35 +27,36 @@
 //---------------------------
 
 .u-header-huge {
-  font-size: 4.8rem;
+  font-size: 5.2rem;
+  line-height: 1.3;
 
   @media #{$breakpoint-medium} {
-    font-size: 9.6rem;
+    font-size: 5.2rem * 2;
   }
 }
 
 .u-header-xlarge {
-  font-size: 2.4rem;
+  font-size: 4.1rem;
 
   @media #{$breakpoint-medium} {
-    font-size: 4rem;
+    font-size: 5.2rem;
   }
 }
 
 .u-header-large { // h1
-  font-size: 2.4rem;
+  font-size: 3.2rem;
 
   @media #{$breakpoint-medium} {
-    font-size: 3.2rem;
+    font-size: 4.1rem;
   }
 
 }
 
 .u-header-medium { // h2
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 
   @media #{$breakpoint-medium} {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -79,10 +80,10 @@
 //---------------------------
 
 .u-text-large {
-  font-size: 1.8rem;
+  font-size: 2rem;
 
   @media #{$breakpoint-medium} {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 }
 

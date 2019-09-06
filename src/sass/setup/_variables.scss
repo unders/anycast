@@ -5,27 +5,50 @@
 // COLORS
 //---------------------------
 
-$color-black:             #000;
-$color-gray-1:            #333;
-$color-gray-2:            #8A8A8A;
-$color-gray-3:            #BFBFBF;
-$color-gray-4:            #E0E0E0;
-$color-gray-5:            #F5F5F5;
-$color-white:             #fff;
+$color-black:                   #000;
+$color-gray-1:                  #333;
+$color-gray-2:                  #8A8A8A;
+$color-gray-3:                  #BFBFBF;
+$color-gray-4:                  #E0E0E0;
+$color-gray-5:                  #F5F5F5;
+$color-white:                   #fff;
 
-$color-brand-primary:     #1244F1;
-$color-brand-secendary:   #FA8E6B;
+$color-brand-primary:           #1244F1;
+$color-brand-secendary:         #FA8E6B;
 
-$color-success:           #27AE60;
-$color-info:              #2D9CDB;
-$color-warning:           #F2C94C;
-$color-danger:            #EB5757;
+$color-section-business:        #2BAEE5;
+$color-section-economics:       #F65946;
+$color-section-environment:     #32B576;
+$color-section-general:         $color-brand-primary;
+$color-section-health:          #1EB4B4;
+$color-section-politics:        #574BBB;
+$color-section-science:         #EFC224;
+$color-section-technology:      #EC9125;
 
-$color-body-background:   #E0E0E0;
-$color-text:              $color-gray-1;
+$color-success:                 #27AE60;
+$color-info:                    #2D9CDB;
+$color-warning:                 #F2C94C;
+$color-danger:                  #EB5757;
 
-$color-link:              $color-brand-primary;
-$color-link-hover:        darken($color-brand-primary, 10%);
+$color-body-background:         #E0E0E0;
+$color-text:                    $color-gray-1;
+
+$color-link:                    $color-brand-primary;
+$color-link-hover:              darken($color-brand-primary, 10%);
+
+
+// SECTIONS
+//---------------------------
+
+$section-colors:                (business $color-section-business,
+                                economics $color-section-economics,
+                                environment $color-section-environment,
+                                general $color-section-general,
+                                health $color-section-health,
+                                politics $color-section-politics,
+                                science $color-section-science,
+                                technology $color-section-technology);
+
 
 
 // TYPOGRAPHY
@@ -36,13 +59,17 @@ $text-font-family-serif:        'Playfair Display', 'Georgia', serif;
 
 $text-font-family:              $text-font-family-sans-serif;
 
-$text-font-size-small:          1.4rem;
-$text-font-size:                1.6rem;
-$text-line-height:              1.625;
+$golden-ratio:                  round(1.61803398875);
+$text-font-width-base:          68rem;
+$text-font-size-base:           2rem;
+
+$text-font-size-small:          1.6rem;
+$text-font-size:                1.8rem;
+$text-line-height:              $golden-ratio;
 
 $text-font-size-small-md:       1.6rem;
-$text-font-size-md:             1.8rem;
-$text-line-height-md:           1.625;
+$text-font-size-md:             $text-font-size-base;
+$text-line-height-md:           $golden-ratio;
 
 $text-font-weight:              400;
 $text-font-weight-medium:       500;
@@ -76,6 +103,7 @@ $disabled-opacity:        .5;
 // SPACING
 //---------------------------
 
+$spacing-base:            $text-font-size-base * $text-line-height / 4;
 $spacing-base:            0.8rem;
 $spacing-base-md:         0.8rem;
 

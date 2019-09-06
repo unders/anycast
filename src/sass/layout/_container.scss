@@ -9,7 +9,7 @@
   max-width: 130rem;
 
   &--small {
-    max-width: 90rem;
+    max-width: $text-font-width-base + ($grid-gutter-md * 2) + ($spacing-base * 7);
   }
 
   @media #{$breakpoint-medium} {

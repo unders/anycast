@@ -26,7 +26,7 @@ body {
 //---------------------------
 
 h1, h2, h3, h4 {
-  line-height: 1.25;
+  line-height: 1.5;
   font-weight: $text-font-weight-medium;
   margin-bottom: $spacing-xsmall;
 
@@ -42,19 +42,17 @@ h1 {
 
 h2 {
   font-weight: $text-font-weight-heavy;
-  font-size: 2.4rem;
   @extend .u-header-medium;
 }
 
 h3 {
-  font-size: 1.6rem;
   @extend .u-header-small;
 }
 
 h4 {
   color: $color-gray-2;
   letter-spacing: 0.1em;
-  line-height: $spacing-medium;
+  line-height: $text-line-height;
   text-transform: uppercase;
   border-bottom: $border-width solid $color-gray-3;
   @extend .u-header-xsmall;
@@ -65,7 +63,6 @@ h4 {
 //---------------------------
 
 p {
-  line-height: 180%;
   margin-bottom: $spacing-small;
 
   @media #{$breakpoint-medium} {

@@ -15,6 +15,26 @@
     align-items: center;
     position: relative;
 
+    &:before {
+      content: '';
+      width: .4rem;
+      height: 1.6rem;
+      position: absolute;
+      //top: 0;
+      //bottom: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity .2s;
+    }
+
+    @each $type in $section-colors {
+      &--#{nth($type, 1)} {
+        &:before {
+          background: #{nth($type, 2)};
+        }
+      }
+    }
+
     &--upvoted {
 
       .c-article__actions {
@@ -54,6 +74,10 @@
     grid-area: meta;
   }
 
+  .c-article__meta-item--categories {
+    display: none;
+  }
+
   .c-article__meta-link {
     color: $color-gray-2;
     border-bottom: 1px solid transparent;
@@ -87,7 +111,7 @@
     }
 
     .c-article__order {
-      width: $spacing-large;
+      padding: 0 $spacing-small;
     }
 
     .c-article__link {
@@ -108,8 +132,16 @@
 
     .c-article__item--snapshot {
       margin: $spacing-small;
-      padding-bottom: $spacing-small;
-      border-bottom: 1px solid $color-gray-4;
+      //padding-bottom: $spacing-small;
+      //border-bottom: 1px solid $color-gray-4;
+
+      &:before {
+        opacity: 1;
+      }
+
+      .c-article__meta-item--categories {
+        display: block;
+      }
     }
 
     .c-menu {
@@ -152,6 +184,10 @@
         background: $color-white;
         box-shadow: $box-shadow-high;
 
+        &:before {
+          opacity: 1;
+        }
+
         .c-article__actions {
           opacity: 1;
           z-index: $zindex-menu;
@@ -159,6 +195,10 @@
 
         .c-article__action {
           opacity: 1;
+        }
+
+        .c-article__meta-item--categories {
+          display: block;
         }
       }
 
@@ -169,7 +209,7 @@
 
     .c-article__order {
       font-size: 1.8rem;
-      width: $spacing-large-md;
+      padding: 0 $spacing-small-md;
     }
 
     .c-article__link {
@@ -212,6 +252,14 @@
 
     .c-article__action:not(:first-of-type) {
       margin-left: $spacing-tiny-md;
+    }
+
+    .c-article__action {
+
+      &:hover,
+      &:focus {
+        background: $color-gray-5;
+      }
     }
 
     .c-menu__content {

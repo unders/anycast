@@ -42,27 +42,25 @@
     margin-bottom: $spacing-xsmall;
     display: block;
     position: relative;
+  }
 
-    &:hover,
-    &:focus {
-      background: $color-white;
+  @each $type in $section-colors {
+    &--#{nth($type, 1)} {
+      .c-filter__divider {
+        border-bottom: .4rem solid #{nth($type, 2)};
+      }
+      .c-filter__header {
+        border-color: transparent;
+      }
     }
+  }
 
-    &--current {
-      @extend .c-button--primary;
+  &--topic {
+    .c-filter__divider {
+      border-bottom: .4rem solid $color-gray-1;
     }
-
-   &--clear {
-     padding-right: $spacing-large;
-
-     &:before {
-      @extend .icon;
-      @extend .icon--x;
-      font-size: 1.8rem;
-      position: absolute;
-      right: 1.2rem;
-      top: calc(50% - .6rem);
-     }
+    .c-filter__header {
+      border-color: transparent;
     }
   }
 

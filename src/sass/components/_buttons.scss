@@ -36,12 +36,12 @@ button, input[type="submit"] {
   &:hover,
   &:focus,
   &:active {
-    background: $color-gray-5;
+    background: $color-white;
     outline: 0;
   }
 
   &--active {
-    color: $color-brand-primary;
+    //color: $color-brand-primary;
   }
 
   &[disabled] {
@@ -49,10 +49,6 @@ button, input[type="submit"] {
     pointer-events: none;
     opacity: $disabled-opacity;
     box-shadow: none;
-  }
-
-  &--align-left {
-
   }
 
   &__icon {
@@ -89,21 +85,6 @@ button, input[type="submit"] {
     margin: 0 !important;
   }
 
-  &--dark {
-    color: $color-white;
-
-    &:visited {
-      color: $color-white;
-    }
-
-    &:hover,
-    &:focus,
-    &.c-button--active {
-      background: $color-white;
-      color: $color-text;
-    }
-  }
-
   &--large {
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
@@ -127,12 +108,50 @@ button, input[type="submit"] {
       }
     }
   }
+
+  &--clear {
+   padding-right: $spacing-large;
+
+   &:before {
+    @extend .icon;
+    @extend .icon--x;
+    font-size: 1.8rem;
+    position: absolute;
+    right: 1.2rem;
+    top: calc(50% - .6rem);
+   }
+  }
 }
 
 
-// DEFAULT
+// SECTION THEMED
 
-.c-button--default {
+.c-button {
+
+  @each $type in $section-colors {
+    &--#{nth($type, 1)} {
+
+      &:hover,
+      &:focus,
+      &.c-button--active {
+        background: #{nth($type, 2)};
+        color: $color-white;
+      }
+
+      &.c-button--active {
+        &:hover,
+        &:focus {
+          background: darken(nth($type, 2), 5%);
+        }
+      }
+    }
+  }
+}
+
+
+// LIGHT
+
+.c-button--light {
   background: $color-gray-5;
   color: $color-text;
 
@@ -141,10 +160,27 @@ button, input[type="submit"] {
   }
 
   &:hover,
-  &:focus,
-  &.c-button--active {
+  &:focus {
     background: $color-white;
     color: $color-text;
+  }
+}
+
+
+// DARK
+
+.c-button--dark {
+  background: $color-gray-1;
+  color: $color-white;
+
+  &:visited {
+    color: $color-white;
+  }
+
+  &:hover,
+  &:focus {
+    background: $color-black;
+    color: $color-white;
   }
 }
 
