@@ -4,18 +4,12 @@
 
 .c-discussion {
 
-  &__header {
-    border-bottom: $border-width solid $color-gray-3;
-    margin-bottom: $spacing-small;
-  }
-
-  &__title {
-    line-height: $spacing-huge;
-    margin: 0;
-  }
-
   .c-avatar {
     margin-right: $spacing-small;
+  }
+
+  &__comment-box {
+    align-items: flex-start;
   }
 
   &__comment-field {
@@ -37,8 +31,7 @@
   .c-field__input {
     background: transparent;
     border-bottom-color: transparent;
-    font-size: 1.6rem;
-    padding: .3rem 0;
+    padding: 0;
     display: inherit;
 
     &::placeholder {
@@ -62,7 +55,7 @@
   }
 
   &__entry-header {
-    font-size: 1.4rem;
+    font-size: $text-font-size-small;
     line-height: 1.4;
     @extend .u-margin-bottom-xsmall;
   }
@@ -98,13 +91,8 @@
 
   @media #{$breakpoint-medium} {
 
-    .c-field__input {
-      font-size: 1.8rem;
-      padding: .5rem 0;
-    }
-
     &__entry-header {
-      font-size: 1.6rem;
+      font-size: $text-font-size-small-md;
     }
 
     .c-discussion__entry {
