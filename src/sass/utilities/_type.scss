@@ -87,10 +87,18 @@
   }
 }
 
-.u-text-xsmall { // P small
-  font-size: $text-font-size-small; // 1.4rem
+.u-text-small { // P small
+  font-size: $text-font-size-small; // 1.6rem
 
   @media #{$breakpoint-medium} {
-    font-size: $text-font-size-small-md; // 1.6rem
+    font-size: $text-font-size-small-md; // 1.8rem
+  }
+}
+
+.u-text-xsmall { // P small
+  font-size: $text-font-size-xsmall; // 1.4rem
+
+  @media #{$breakpoint-medium} {
+    font-size: $text-font-size-xsmall-md; // 1.6rem
   }
 }

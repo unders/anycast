@@ -63,11 +63,13 @@ $golden-ratio:                  1.618;
 $text-font-width-base:          68rem;
 $text-font-size-base:           2rem;
 
-$text-font-size-small:          1.4rem;
+$text-font-size-xsmall:         1.4rem;
+$text-font-size-small:          1.6rem;
 $text-font-size:                1.8rem;
 $text-line-height:              $golden-ratio;
 
-$text-font-size-small-md:       1.6rem;
+$text-font-size-xsmall-md:      1.6rem;
+$text-font-size-small-md:       1.8rem;
 $text-font-size-md:             $text-font-size-base;
 $text-line-height-md:           $golden-ratio;
 
