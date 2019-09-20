@@ -1835,7 +1835,7 @@ button, input[type="submit"] {
 
 .c-discussion__entry .c-discussion__actions,
 .c-discussion__entry .c-discussion__entry,
-.c-discussion__entry .c-discussion__comment-box {
+.c-discussion__entry .c-compose {
   margin-left: 2rem; }
 
 .c-discussion__body p {
@@ -1847,26 +1847,30 @@ button, input[type="submit"] {
 @media only screen and (min-width: 900px) {
   .c-discussion .c-discussion__entry .c-discussion__actions,
   .c-discussion .c-discussion__entry .c-discussion__entry,
-  .c-discussion .c-discussion__entry .c-discussion__comment-box {
+  .c-discussion .c-discussion__entry .c-compose {
     margin-left: 5.6rem; } }
 
 .c-discussion .toggle-entries.toggle-closed,
 .c-discussion .toggle-entries-2.toggle-closed {
   display: none; }
 
-.c-discussion .c-discussion__comment-box.toggle-closed {
-  display: none; }
-
 .c-compose {
-  overflow: hidden; }
+  overflow: hidden;
+  transition: .2s; }
   .c-compose__header {
     cursor: pointer; }
   .c-compose__username {
     display: none; }
   .c-compose__field {
     display: none; }
+  .c-compose__input {
+    height: 0;
+    transition: height .2s; }
   .c-compose__actions {
     display: none; }
+    .c-compose__actions .c-button, .c-compose__actions .c-filter__item {
+      opacity: 0;
+      transition: .4s .2s; }
   .c-compose.toggle-open {
     background: #fff;
     box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.1);
@@ -1891,7 +1895,8 @@ button, input[type="submit"] {
     .c-compose.toggle-open .c-compose__actions {
       display: flex; }
       .c-compose.toggle-open .c-compose__actions .c-button, .c-compose.toggle-open .c-compose__actions .c-filter__item {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        opacity: 1; }
 
 .c-alerts {
   position: fixed;

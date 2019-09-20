@@ -29,7 +29,7 @@
 
     .c-discussion__actions,
     .c-discussion__entry,
-    .c-discussion__comment-box {
+    .c-compose {
       margin-left: $spacing-base * 2.5;
     }
   }
@@ -56,7 +56,7 @@
 
       .c-discussion__actions,
       .c-discussion__entry,
-      .c-discussion__comment-box {
+      .c-compose {
         margin-left: $spacing-base * 7;
       }
     }
@@ -71,16 +71,12 @@
     display: none;
   }
 
-  .c-discussion__comment-box.toggle-closed {
-    display: none;
-  }
-
-
 }
 
 
 .c-compose {
   overflow: hidden;
+  transition: .2s;
 
   &__header {
     cursor: pointer;
@@ -94,8 +90,18 @@
     display: none;
   }
 
+  &__input {
+    height: 0;
+    transition: height .2s;
+  }
+
   &__actions {
     display: none;
+
+    .c-button {
+      opacity: 0;
+      transition: .4s .2s;
+    }
   }
 
   &.toggle-open {
@@ -137,6 +143,7 @@
 
       .c-button {
         margin-bottom: 0;
+        opacity: 1;
       }
     }
 
